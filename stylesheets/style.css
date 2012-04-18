@@ -154,7 +154,7 @@ p.header-text-date {
 }
 
 .header-image {
-  background:url(/public/images/franklovecchio/header.png) no-repeat;
+  background:url(../images/header.png) no-repeat;
   width:960px;
   height:300px;
   margin-left:auto;
@@ -386,7 +386,7 @@ p.header-text-date {
 }
 
 a.ps_close {
-  background:#000 url(/public/images/franklovecchio/close.png) no-repeat center center;
+  background:#000 url(../images/close.png) no-repeat center center;
   cursor:pointer;
   width:56px;
   height:56px;
@@ -409,7 +409,7 @@ a.ps_next_photo {
   height:56px;
   z-index:200;
   cursor:pointer;	
-  background:#000 url(/public/images/franklovecchio/next_photo.png) no-repeat 50% 50%;
+  background:#000 url(../images/next_photo.png) no-repeat 50% 50%;
   opacity:0.6px;
   filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
   -moz-border-radius:10px;
