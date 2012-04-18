@@ -199,7 +199,8 @@ p.header-text-date {
 }
 	
 .content-container {
-  background-image :url(../images/stripe.png) repeat-x repeat-y;
+  background-image: url(../images/stripe.png);
+  background-repeat: repeat-y;
   height: 200px;
   width: 100%;
 }
