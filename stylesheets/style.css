@@ -199,7 +199,7 @@ p.header-text-date {
 }
 	
 .content-container {
-  background-image :url(../images/stripe.png);
+  background-image :url(../images/stripe.png) repeat-x repeat-y;
   height: 200px;
   width: 100%;
 }
@@ -245,10 +245,10 @@ p.header-text-date {
   float: left;
   width: 240px;
   margin-right: 20px; 
-  background: rgb(255,255,255);
-  background: rgba(255,255,255);
+  /*background: rgb(255,255,255);
+  background: rgba(255,255,255);*/
   border: 1px solid rgb(255,255,255);
-   color: #0b3a6e;
+  color: #0b3a6e;
   text-decoration: none;
   line-height: 80%;
   font-size: 24px;
