@@ -200,8 +200,8 @@ p.header-text-date {
 	
 .content-container {
   background-image: url(../images/stripe.png);
-  background-repeat: repeat-x;
-  height: 200px;
+  /*background-repeat: repeat-x;*/
+  height: 100%;
   width: 100%;
 }
 
