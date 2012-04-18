@@ -200,15 +200,15 @@ p.header-text-date {
 	
 .content-container {
   background-image: url(../images/stripe.png);
-  background-repeat: repeat-y;
+  background-repeat: repeat-x;
   height: 200px;
   width: 100%;
 }
 
 .single-post-container {
-  width: 100%;
+  width: 800px
   margin: 0 auto;
-  /*padding-left: 20px;*/
+  padding-left: 80px;
 }
 		
 .single-post-head {
