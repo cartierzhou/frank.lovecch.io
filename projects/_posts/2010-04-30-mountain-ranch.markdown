@@ -1,7 +1,8 @@
 ---
-layout: writing
+layout: project
+main: false
 title: Mountain Ranch
-quote: I always wanted to see the frontier.
+quote: I always wanted to see the frontier
 ---
 
 I visited Colorado for the first time in April of Two-thousand and Eight; everything changed. It was then that I fully realized people are capable of choosing multiple places to call 'home' over the course of their lifetime. Several months later, while living and working in Chicago, me and a friend decided to purchase five acres in San Luis Valley on a whim (and off Craigslist, none-the-less). Years later, I would come to describe the whim as 'Manifest Destiny'. My sister and I took a miserable three-day, there-and-back trip over the Christmas holiday weekend that year to Southern Colorado; we managed to sign the deed, get it notarized by the county, and make it back to Chicago in less than forty-eight hours. Colorado, officially, became the second place I got to call 'home'.

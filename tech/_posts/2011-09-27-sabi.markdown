@@ -1,0 +1,54 @@
+---
+layout: snippet
+short: Sabi Sushi
+title: Sabi Sushi, 2.0
+quote: Sabi-nom secret menu
+---
+
+While most of the digital backstory regarding Sabi was exposed in a wonderful article written by the guys, I thought it was about time to elaborate on the technical aspects of what powers the ordering system, call queue, API, and datastore (but probably not in that order).
+
+Amazon EC2 Hosting
+
+When it comes to domain names, Sabi did what everybody else does — use GoDaddy.  I wanted to put up a cool backend, though, and I always feel like using a hosting service to host application frameworks is hindering.  So, I spun up a small ephemeral Ubuntu AMI and scripted it to clone the Sabi repository from GitHub. 
+
+Redis Datastore / Amazon S3
+
+I can barely remember MySQL; while it does have its place, I’m stuck in a NoSQL mind-set.  Besides Redis having really great Node.js bindings, it was an in-memory DB that fit the bill for Sabi’s needs perfectly (though I am an avid Cassandra user, this was not the place for something so heavy).  Sometime last week, I added a simple cron-job that pushes the DB to Amazon’s S3 nightly, just in case the cloud goes down :)  I’ve also been playing with a client-side distributed cache using Redis’ pub/sub…redis-distributed-cache
+
+Express Framework
+
+I have been in love with Node.js since I started reading Hacker News. I’ve written one really intense application with it — a scaling box monitor built on Websockets, REST, and NoSQL (node-monitor) — and in doing so, my love affair only blossomed. It’s really easy to get something prototyped quickly, and with my recent discovery of coding Javascript in Eclipse (HOLY!), the time-span was reduced five-fold!  It seemed the decision to use Node.js as the backend was a no-brainer, I just needed a framework. 
+
+The Sabi API
+
+Knowing that I needed a way to manage the order data, an intermediary API was born.  Since I’ve used (API) frameworks like Ruby’s Sinatra, Java’s Play!, and PHP’s CodeIgniter, I spent most of the first night drinking whiskey and reading up on Express.  And data modeling.  NoSQL is really all about putting data in the same way you want to get it out — I hashed out what they might need along with the current uses I dreamed up.  Whenever possible, I decided on storing a JSON value relating to a key.  It was relatively easy to implement a couple simple routes and basic auth, though Express’ documentation didn’t really help with the latter piece (StackOverflow to the rescue!).  When an order is placed, the Express code looks something like (please ignore my incorrect spelling of queue!):
+
+{% gist 1236856 %}
+
+The interaction between the website/admin setup and the API takes place with a simple jQuery .ajax call that references a PHP file that houses the username/password auth and static variables like e-mails, etc.  That same PHP file uses the Sabi PHP SDK, which looks something like:
+
+{% gist 1240275 %}
+ 
+The Website (or supporting Internet Explorer)
+
+Web design is a mother-f*cker. The guys gave me an initial image, and I built from there.  Wherever possible, I used @font-face tags in place of images, and tried my best to avoid style tags (sigh, there are some still lingering in the forms section).  In the process of trying to support at least IE8+, the most useful tool I found was augment.js, a javascript snippet that makes IE aware of certain prototype objects!  The page obviously uses lots of jQuery, and I even pull some of the information from the DB (like menu items, to start).  When you add or remove items, you should really be thinking:
+
+{% gist 1236860 %}
+
+Admin Console
+
+The admin console is built on one principle - realtime.  While I’m sure they exist, I’ve never seen a point-of-sale system built with websockets…why not try?  Since I could force the guys to use Google’s Chrome browser (which just recently caused headaches in another project), I could guarantee websocket support.  Since Express integrates rather easily with node-websocket-server, everytime anything useful happens on the API side, I push to an administration console that is displayed on computers in the kitchen.  On page open (and websocket open), I do calls via a websocket like “get queued orders”, “get customers”, and other associated data.  I was able to bypass jQuery .ajax calls by creating a simple websocket API; e.g. JSON recognized switch statements from browser to the websocket server running in conjunction with Express.  I didn’t have time to play with the Express templating system, but that’s something I can get to in the future.  
+
+Call System
+
+Even though there is a super-simple online ordering system, some people still like to call in their orders, and we don’t support IE 6 (OH THE HUMANITY).  They received 80+ calls one day in the first week, so I implemented a call queueing system using Twilio.  At its most basic level, when a call comes in, the caller is redirected to the kitchen phone.  If nobody answers in 10 seconds or so, the caller is put on hold for 5 minutes.  They are told they can press 1 at any time to leave a voicemail order, or hold. 
+
+The cool part — websocket integration + analytics.  When a call initially comes in, it shows up in a queue displayed on the admin console by pushing Twilio data through the websocket, and also increments calls by creating a URL for Google Analytics:
+
+{% gist 1246854 %}
+
+Whoever is manning (or womaning) the computer can direct the call to another Sabi associate by selecting them from a dropdown, or they could obviously answer it.  If the caller leaves a voicemail order, we push some data through the websocket and render an HTML5 audio tag next to the ended call.  
+
+The people manning the computers have the ability to update orders via statues:  order finished in kitchen, order being delivered, success, failure, or never made.  When the order is “being delivered”, we send a text message notifying the customer.
+
+The beauty of websockets is that we’re mostly setup for distributed POS now!

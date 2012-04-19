@@ -1,0 +1,42 @@
+---
+layout: layout
+header: tech.
+back: index.html
+---
+
+<div class="project">
+   <div>
+      <h1>The story</h1>
+      <div class="meta">or how I came to be <span>inspired</span>
+      </div>
+      <div class="body">
+         {% for post in site.posts %}
+            {{ post.date }}
+            {% if post.main == 'tech' %}
+               <p>{{ post.quote }}</p>
+               <p><span style="font-size: 40px; line-height: 50px;">&para;</span>
+               <br/><br/>
+                 {{ post.content }}
+               </p>
+               <p class="header-text-date">{{ post.date | date_to_string}}</p>
+            {% endif %}
+	     {% endfor %}
+	     <img src="images/palm_tree.png" alt="" />
+         <div class="spacer">
+         </div>
+      </div>
+   </div>
+   <div class="single-post-container">
+      {% for post in site.posts %}
+         {{ post.date }}
+         {% if post.category == 'tech' and post.main != 'tech' %}
+             <div class="single-post-item">
+                <div class="single-post-head">
+                   <a href="#" />
+                   <h6>{{ post.short }}</h6>
+                </div>
+             </div>
+      {% endif %}
+   {% endfor %}
+   </div>
+</div>

@@ -3,6 +3,13 @@ layout: default
 title: frank.lovecch.io
 ---
 
+{% for post in site.posts %}
+  {{ post.date }}
+  {% if post.category == 'tech' and post.main != 'tech' %}
+  {% endif %}
+{% endfor %}
+
+
 <div class="single-post-container">
    <div class="single-post-item">
       <div class="single-post-head">
@@ -18,7 +25,7 @@ title: frank.lovecch.io
    </div>
    <div class="single-post-item">
       <div class="single-post-head">
-         <a href="#" />
+         <a href="tech.html" />
          <h6>TECH</h6>
       </div>
    </div>
@@ -32,13 +39,13 @@ title: frank.lovecch.io
    </div>
    <div class="single-post-item">
       <div class="single-post-head">
-         <a href="#" />
+         <a href="labs.html" />
          <h6>LABS</h6>
       </div>
    </div>
    <div class="single-post-item">
       <div class="single-post-head">
-         <a href="#" />
+         <a href="archives.html" />
          <h6>ARCHIVES</h6>
       </div>
    </div>

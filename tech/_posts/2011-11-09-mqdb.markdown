@@ -1,0 +1,52 @@
+---
+layout: snippet
+short: MQDB
+title: Distributing Databased w/ MQTT
+quote: Bitchin'
+---
+
+Lately (as in the past 6 months), I’ve had a lot of “oddball” ideas regarding pubsub protocols and what can be done with them.  Aside from this blog, I’m working on a Cassandra pubsub implementation using MQtt and websockets, as well as a basic Twilio Client demo that uses pubsub via VOIP/SMS (in case you were wondering, the platform we just introduced last week - m2m.io - already has this packaged up and authenticated!).  I’ve found the possibilites for any of the MQ protocols to be (nearly) limitless!  After all, isn’t real life much like MQ in terms of exchanges? (that was rhetorical…it is, bitches) 
+
+Happenstance
+
+The idea for distributing databases with MQtt - from noSQL to SQL - came to me while drinking Jack Daniels and enjoying a late-summer sunset in San Luis Valley (wearing cowboy boots, no less).  I believe Netflix said it best, (and I’m paraphrasing here) “different databases for different data”.  At my former employer, we used Cassandra, SimpleDB, and SQLite for various architectures and needs.  While we did have a connection between them, it was API based — I wanted more.  Then, I started playing around with Redis in my spare time.
+
+Trials and Tribulations of the DB Kind
+
+When I needed a one-off storage mechanism for a project on small EC2 instance, say a project like sabisushi.com, Redis started to become my go-to datastore (in a non-distributed environment) because of its weight (Cassandra is a bit heavy).  Somewhere in between experimenting Amazon introduced Elastic Cache, and it spawned my first failed idea: a client-side distributed app in Node.js which emulated Elastic Cache using the Redis PubSub implementation.  The main flaw?  One application (in a team of distributed applications, presumably) would always have to be online.  So, I took another stab at it…and ended up with this: mqdb (written in Java). Let’s go into detail…
+
+Cassandra as a Template
+
+I thought to myself, “What if I follow a similar Cassandra distribution pattern and use MQtt to connect them?”.  MQtt, in terms of speed, is freaky fast — like Android MQtt client -> accelerometer -> 3G -> DB in realtime freaky fast, so I wasn’t concerned there (though I probably wouldn’t hit anywhere near the throughput of Redis’ capabilities?).  What I came up with is obviously much more basic in terms of how data is replicated, but the effect is somewhat the same: a distributed, replicated database from a simpler architecture (Redis was meant to be master/slave), and with no single point of failure (the m2m.io broker(s) are scaling + distributed themselves).  The final product consists of two separate applications; the first app stands in front of the Redis nodes. For the Redis connection, I used the Jedis Java client and abstracted the MQtt connection out (though not fully…yet).  The second app is a demo which would has code that would be implemented into whatever your needs are (say a distributed application of sorts).
+
+Tokening
+
+I emulated a basic form of Cassandra tokening (I’m ignoring numeric key/set names), and it’s probably best explained like so: let’s say you have 6 Redis databases on 6 different EC2 boxes and those are going to be your “cluster” (each EC2 box is considered a node).  When you initially stand up the MQtt application in front of each node, you have a replication factor (RF) of 6 — each piece of data you write from your distributed app hits all 6 nodes.  Now, 6 might be over-doing it; maybe you want a specific portion of the written data to be stored on nodes 1, 2, and 5 (key or set names from a-m), and another to hit nodes 2, 4, and 6 (key or set names from n-z); this would give you a RF of 3…so to speak.  You could also split up the data in a more random fashion based on hash of key/set name and token the nodes based on hashes, but we’re keeping it simple (and the latter example is ideal).  When you want to tell a node to change the way it stores data, you simply publish on a specific m2m.io space (which are namespaces in MQtt terms) with a payload that relates to the new ranges (note: this does not make the Redis node fetch the data from other nodes that match its new range — wayyy to deep for this example!).  
+
+Settin’ Up the Application
+
+I differentiated the m2m.io spaces for ease of understanding and use.  By default, each node subscribes on all stuff that relates to “redis”, and writes all data it receives.  The integrated application only subscribes on the space which the nodes return responses on (if they’ve been asked to fetch a key/set).  
+
+{% gist 1379857 %}
+
+DAO to the Max
+
+While my example is using a Redis DAO, you could theoretically stand up clients in front of different databases and have a cross-database platform…think legacy + modern!  Very cool.
+
+{% gist 1379858 %}
+
+Models
+
+Each MQtt payload is abstracted into a model for ease of use.  I have 3 models; 1 for data being written, 1 for management payloads (e.g. re-tokening node), and 1 for publishing data being read off the node.
+
+{% gist 1379859 %}
+
+{% gist 1379860 %}
+
+{% gist 1379862 %}
+
+MQDB, Redis Appplication
+
+We’ve arrived at the application which stands in front of the Redis DB; it handles all the MQtt connections, payload management, DAOs, etc (the MQtt class needs to be abstracted for use, still — it currently just shows the methods I used).
+
+{% gist 1381688 %}
