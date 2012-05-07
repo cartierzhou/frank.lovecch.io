@@ -2,7 +2,7 @@
 layout: snippet
 short: Apigee Doc Gen
 title: Apigee Documentation Generator
-quote: Because your code is __so__ self documenting
+quote: Because your code is so self documenting
 ---
 
 UPDATE:  I broke this because I was including css/js from another box that died (so was the Isidorey link) :)  Luckily, I have everything in S3 — I just need to take the time and put the demo back together, but at least the code is available.
