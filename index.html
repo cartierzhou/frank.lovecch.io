@@ -3,12 +3,6 @@ layout: default
 title: frank.lovecch.io
 ---
 
-{% for post in site.posts %}
-  {{ post.date }}
-  {% if post.category == 'tech' and post.main != 'tech' %}
-  {% endif %}
-{% endfor %}
-
 <div class="single-post-container">
    <div class="single-post-item">
       <div class="single-post-head">

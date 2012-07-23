@@ -1,6 +1,0 @@
----
-main: tech
-quote: Snippets of smidgens
----
-
-Editor's note: I routinely break shit.

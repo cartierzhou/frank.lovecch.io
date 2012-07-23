@@ -1,0 +1,55 @@
+h1 {
+  font: bold 100% "Century Schoolbook", Georgia, Times, serif;
+  font-size: 70px;
+  letter-spacing: -3px;
+  color: #fff;
+}
+h2 {
+  font: bold 100% "Century Schoolbook", Georgia, Times, serif;
+  font-size: 40px;
+  line-height: 90%;
+  letter-spacing: -2px;
+  color: #333;
+  margin: .2em 0 .4em;
+}
+h3 {
+  font: normal 100% "Lucida Grande", Verdana, Helvetica, Arial, sans-serif
+}
+h4 {
+  font: normal 60% Georgia, "Century Schoolbook", Times, serif;
+  color: #031020;
+  letter-spacing: 4px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin: 30px 0 30px 10px;
+}
+h5 {
+  font: normal 60% Georgia, "Century Schoolbook", Times, serif;
+  color: #fff;
+  letter-spacing: 4px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin: 30px 0 30px 10px;
+}
+h6 {
+  font: normal 55% Georgia, "Century Schoolbook", Times, serif;
+  color: #0b3a6e;
+  letter-spacing: 4px;
+  line-height: 60%;
+  text-transform: uppercase;
+}
+h6:hover {
+  text-decoration: underline
+}
+p {
+  font-size: 80%;
+  color: #6691be;
+  line-height: 100%;
+}
+p.header-text-date {
+  font: normal 100% "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: gray;
+}

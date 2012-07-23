@@ -4,20 +4,19 @@ header: projects.
 back: index.html
 ---
 
-<link href="/public/stylesheets/franklovecchio/middleware.sass" rel="stylesheet" />
 <div class="project">
    <div>
       <h1>The story</h1>
       <div class="meta">or how I came to be <span>inspired</span>
       </div>
       <div class="body">
+	     <!--
+	     Render only a specific file
+	     -->
          {% for post in site.posts %}
             {% if post.main == 'projects' %}
                <p>"{{ post.quote }}"</p>
-               <p><span style="font-size: 40px; line-height: 50px;">&para;</span>
-               <br/><br/>
-                 {{ post.content }}
-               </p>
+               <p>{{ post.content }}</p>
                <p class="header-text-date">{{ post.date | date_to_string}}</p>
             {% endif %}
 	     {% endfor %}
@@ -30,13 +29,13 @@ back: index.html
       <div class="single-post-item">
          <div class="single-post-head">
             <a href="#" />
-            <h6>MOUNTAIN RANCH</h6>
+            <h6>WALDEN RANCH</h6>
          </div>
       </div>
       <div class="single-post-item">
          <div class="single-post-head">
             <a href="#" />
-            <h6>FAST & FRESH</h6>
+            <h6>FAST &amp; FRESH</h6>
          </div>
       </div>
       <div class="single-post-item">
