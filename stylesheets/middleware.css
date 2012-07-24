@@ -19,15 +19,14 @@ div.the-social-network-list {
     }
 div.single-post-container {
   width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
   text-align: center;
+  clear: both;
 } 
   div.single-post-item {
     margin-top: 20px;
     float: left;
-    width: 23%;
-    margin-right: 2%;
+    width: 31%;
+    margin-left: 2%;
     border: 1px solid rgb(255, 255, 255);
     color: #0b3a6e;
     text-decoration: none;
@@ -48,18 +47,8 @@ div.single-post-container {
     color: #0b3a6e;
     text-decoration: none;
     line-height: 80%;
-    font-size: 24px;
+    font-size: 14px;
     text-align: center;
-  }
-  div.single-post-head a {
-    color: #0b3a6e;
-    text-decoration: none;
-    line-height: 80%;
-    font-size: 24px;
-    text-align: center;
-  }	
-  div.single-post-head a:hover {
-    color: #9fe722;
   }
 a:visited {
   color: #0b3a6e;

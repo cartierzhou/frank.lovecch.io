@@ -1,0 +1,12 @@
+---
+layout: layout
+header: a snippet
+quote: 
+back: writings.html
+---
+
+My freshman year at UIC I lived in SRH on the west side of campus. Back then I found it so hard to make it to East Campus riding the El or inter-campus bus that I never actually made it to a full week of class, not even during my first week of school. I guess I spent all that extra time becoming who I am, or taking apart shit, same difference. I recall making a bet with Billy, my SRH 7th floor neighbor. The bet was simply this: make it to a full week of class. I forgot what I was supposed to win (obviously I didn't), but I do remember Billy saying that if I lost, I would be streaking through the all girls 5th floor. Yup, you guessed it - naked Frank. 5 years of college later, in my last full week of school, I shall attempt a feat which has never been done throughout the course of my entire college career: TO ATTEND A FULL WEEK OF CLASS.  Friday (tomorrow), with all fingers crossed, will be the last day I play hookey...EVER!
+
+I won't make a bet I can't win this time, though :)
+
+UPDATE I only made it to 2 classes. I think I now hold a world record.

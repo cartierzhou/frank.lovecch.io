@@ -1,6 +1,6 @@
 ---
 layout: layout
-header: snippets of smidgens.
+header: but never greater,<br/>than a good amount.
 back: index.html
 ---
 
@@ -14,7 +14,7 @@ back: index.html
 	     Render only a specific file
 	     -->
          {% for post in site.posts %}
-            {% if post.main == 'tech' %}
+            {% if post.main == 'thoughts' %}
                <p>"{{ post.quote }}"</p>
                <p>{{ post.content }}</p>
                <p class="header-text-date">{{ post.date | date_to_string}}</p>

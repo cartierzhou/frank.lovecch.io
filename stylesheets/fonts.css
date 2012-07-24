@@ -38,18 +38,8 @@ h6 {
   line-height: 60%;
   text-transform: uppercase;
 }
-h6:hover {
-  text-decoration: underline
-}
 p {
   font-size: 80%;
   color: #6691be;
   line-height: 100%;
-}
-p.header-text-date {
-  font: normal 100% "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: gray;
 }

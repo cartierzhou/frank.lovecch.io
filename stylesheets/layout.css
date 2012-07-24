@@ -27,6 +27,12 @@ header.header-container {
       padding-top: 60px;
       text-align: right;
     }
+	  p.header-text-date {
+	    font: normal 100% "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	    font-size: 12px;
+	    letter-spacing: 1px;
+	    color: gray;
+	  }
 }
 div.content-container {
   height: 400px;

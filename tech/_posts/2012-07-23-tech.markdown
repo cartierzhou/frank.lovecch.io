@@ -1,0 +1,10 @@
+---
+main: tech
+quote: On Getting the Gist of it.
+---
+
+When I was seventeen, I moved into the SRH freshman dormitory situated upon the West Campus of The University of Illinois-Chicago. My lifetime streak of never receiving less than a B grade on a report card ended shortly after an XBOX t-shirt wearing, Linux preaching computer nerd moved into the room next to us (and I say that with the highest of regard). Steve wore a purple robe around the mixed-sex dorm, and I dubbed him "Hef"; the name sticks to this day. 
+
+I fell into computers via upgrades to the "'puter my parents bought me for Christmas", and web development came with our newly formed hockey club my roommate and I started needing a website (more on that later). Hef guided me through using telnet, SSH, and an emacs terminal for hacking the HTML templates UIC provided.
+
+That's the short of how I became a developer, really (I'm saving up for the long-winded tale). These are my trials and tribulations as a daily developer; snippets of smidgens.
