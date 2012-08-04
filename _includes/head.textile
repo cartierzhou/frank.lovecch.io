@@ -1,0 +1,9 @@
+<title>a place to call my own | frank.lovecch.io</title>
+<link href="/stylesheets/bootstrap.css" rel="stylesheet" />
+<link href="/stylesheets/prettify.css" rel="stylesheet" />
+<link href="/stylesheets/utils.css" rel="stylesheet" />
+<link href="/stylesheets/fonts.css" rel="stylesheet" />
+<link href="/stylesheets/layout.css" rel="stylesheet" />
+<link href="/stylesheets/middleware.css" rel="stylesheet" />
+<link href="/stylesheets/project.css" rel="stylesheet" />
+<script src="/javascripts/jquery.js" type="text/javascript"></script>

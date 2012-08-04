@@ -25,64 +25,21 @@ back: index.html
          </div>
       </div>
    </div>
-   <div class="single-post-container">
-      <div class="single-post-item">
-         <div class="single-post-head">
-            <a href="#" />
-            <h6>WALDEN RANCH</h6>
+   {% for post in site.posts %}
+      {% if post.category == 'tech' %}
+         {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
+         {% if mod_three == '0' %}
+            <div class="single-post-container">
+         {% endif %}
+         <div class="single-post-item">
+            <div class="single-post-head">
+               <a href="{{ post.url }}" />
+               <h6>{{ post.title }}</h6>
+            </div>
          </div>
-      </div>
-      <div class="single-post-item">
-         <div class="single-post-head">
-            <a href="#" />
-            <h6>FAST &amp; FRESH</h6>
-         </div>
-      </div>
-      <div class="single-post-item">
-         <div class="single-post-head">
-            <a href="#" />
-            <h6>A CONSORTIUM</h6>
-         </div>
-      </div>
-   </div>
-   <div class="single-post-container">
-      <div class="single-post-item">
-         <div class="single-post-head">
-            <a href="#" />
-            <h6>AR BAR</h6>
-         </div>
-      </div>
-      <div class="single-post-item">
-         <div class="single-post-head">
-            <a href="#" />
-            <h6>BMX</h6>
-         </div>
-      </div>
-      <div class="single-post-item">
-         <div class="single-post-head">
-            <a href="#" />
-            <h6>GREEN</h6>
-         </div>
-      </div>
-   </div>
-   <div class="single-post-container">
-      <div class="single-post-item">
-         <div class="single-post-head">
-            <a href="#" />
-            <h6>FASHION</h6>
-         </div>
-      </div>
-      <div class="single-post-item">
-         <div class="single-post-head">
-            <a href="#" />
-            <h6>MODERN MILITA</h6>
-         </div>
-      </div>
-      <div class="single-post-item">
-         <div class="single-post-head">
-            <a href="#" />
-            <h6>MISC</h6>
-         </div>
-      </div>
-   </div>
+        {% if mod_three == '2' or forloop.last %}
+           </div>
+        {% endif %}
+    {% endif %}
+{% endfor %}
 </div>

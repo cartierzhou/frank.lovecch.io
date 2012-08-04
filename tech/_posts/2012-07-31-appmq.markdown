@@ -1,0 +1,8 @@
+---
+layout: snippet
+short: APPMQ
+title: APPMQ
+quote: Open-source PAAS with MQTT, Github, and AWS.
+---
+
+An AppMQ node consists of 5 layers: Redis DB, MQTT broker, MQTT client, REST API, monitor. Currently, the framework is not written to scale, though it is definitely possible to do! This means that the application is not "Load-Balanced" via AWS standards, and that we're using an Elastic IP to manage what would be DNS. Ideally, the whole AWS infrastructure would just be scripted using a Load-Balanced Group and their other APIs.

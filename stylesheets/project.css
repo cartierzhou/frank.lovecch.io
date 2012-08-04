@@ -24,39 +24,40 @@ div.project {
     font-style: italic;
     letter-spacing: .2em;
     border-bottom: 1px solid rgba(69, 54, 37, 0.2);
-    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
   }
   div.project div.meta .span {
     text-transform: capitalize;
     font-style: normal;
     color: rgba(69, 54, 37, 0.8);
   }
-  div.project div.body p {
-    text-align: justify;
-    font-family: Verdana;
-    -moz-column-count: 2;
-    -moz-column-gap: 1em;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 1em;
-    column-count: 2;
-    column-gap: 1em;
-    line-height: 1.5em;
-    color: rgb(69, 54, 37);
+  div.project div.body div.columns {
+	margin-top: -20px;
+	-webkit-column-width: 48%;
+	-webkit-column-gap: 2%;
+	-webkit-column-count: 2;
+	-moz-column-width: 48%;
+	-moz-column-gap: 2%;
+	-moz-column-count: 2;
+	width: 80%;
+	margin: 0 auto;
+    text-align: justify;	
   }
-  div.project div.body p:first-child {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 1.25em;
-    font-family: Georgia;
+  div.project p {
+	line-height: 1.5em;
+	font-family: Verdana;
+	color: rgb(69, 54, 37);
+  }
+  div.project p.quote {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: Georgia;
     font-style: italic;
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
-    letter-spacing: 0.1em;
-  }
-  div.project div.body p:first-child:first-line {
-    font-weight: bold;
+	color: rgb(69, 54, 37);
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	font-size: 1.25em;
+	text-align: center;
   }
   div.project div.date {
     font-family: Georgia;
@@ -69,3 +70,18 @@ div.project {
     padding-top: 0.5em;
     margin-top: 2em;
   }
+img.project {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -moz-box-shadow: 5px 5px 7px #888;
+  -webkit-box-shadow: 5px 5px 7px #888;
+}
+
+img.inline {
+  border: 1px solid gray;
+  display: block;   
+  overflow: visible;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 98%;
+}
