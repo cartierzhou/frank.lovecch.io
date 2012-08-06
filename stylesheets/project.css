@@ -31,8 +31,16 @@ div.project {
     font-style: normal;
     color: rgba(69, 54, 37, 0.8);
   }
+  div.social-icon-source {
+    height: 150px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+  }
   div.project div.body div.columns {
+	border-top: 1px solid #eee;
 	margin-top: -20px;
+	padding-top: 10px;
 	-webkit-column-width: 48%;
 	-webkit-column-gap: 2%;
 	-webkit-column-count: 2;
@@ -73,8 +81,6 @@ div.project {
 img.project {
   margin-top: 20px;
   margin-bottom: 20px;
-  -moz-box-shadow: 5px 5px 7px #888;
-  -webkit-box-shadow: 5px 5px 7px #888;
 }
 
 img.inline {

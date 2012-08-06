@@ -1,8 +1,13 @@
 ---
-layout: layout
-header: a facebook note.
-quote: I Got Booted / Frank and the Terrible, Horrible, No Good, Very Bad Day
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: frank &amp; the terrible,<br/>horrible, no good,<br/> very bad day.
+short: booted.
+quote: Parking tickets will be the death of me.
+when: 4 October 2006
 ---
 
 I hate the Chicago bureaucracy. Let me tell you a story of love and hate and all the things in between. Back in the summer I painted the front bumper on my '95 Civic. I lost the front plate after putting the bumper back on, and filed a police report and contacted the secretary of state to get a new front plate sent in. $6 bucks for a new one. Nice. They faxed me a piece of paper to put in my front window as a substitute until the plate was mailed to me. But alas, the fine gentleman at the Chicago Police Department neglected this piece of paper day in and day out, and I received roughly 10 parking tickets of $50 each for 'NO FRONT PLATE'. So, I contested every ticket by mail. I got out of almost every ticket, except for 2 of them-I was ordered to pay $50 per ticket. How is it possible that I could be guilty and not guilty for the same offense!?!
@@ -13,4 +18,4 @@ Flash forward to today. I walk outside. My beautiful little ricer was booted. My
 
 I called the number on the little orange sticker they plaster to your window after getting booted. The ONLY way to talk to a real person is to pretend you have a rotary phone and wait for all the menu options to be listed. That's just stupid, I told the man on phone after he told me to drive to a location to pay the boot fee. 'I know, he said, but it's the way it works.' Don't tell me you know it's stupid, that's stupid. ASSES. I paid because I needed a car tomorrow.
 
-On the way home from this catastrophe, Babe O'Reilly came on the radio, a song I had not
+On the way home from this catastrophe, Babe O'Reilly came on the radio, and everything went back to normal.

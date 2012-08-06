@@ -1,3 +1,14 @@
+---
+layout: post
+main: false
+status: in-progress
+category: projects
+back: projects.html
+title: heat exchanger.
+quote: A double-wall stove pipe heat-exhanger.
+when: 20 4 2010
+---
+
 A Double-wall stove pipe heat exchanger
 
 Abstract

@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: a snippet
-quote: 
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: an ode to brink.
+quote: Soul skaters.
+when: 23 September 2009
 ---
 
 It has been 10 years since the Disney Channel aired their stupendous creation, "Brink!". I was in 8th grade at the time, and apparently, just discovering what 'soul skating' was all about (I think quotations may be an important part of this 'ode').

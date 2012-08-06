@@ -1,6 +1,6 @@
 ---
 layout: layout
-header: but never greater,<br/> than a good amount.
+header: rods &amp; ricers.
 back: index.html
 ---
 
@@ -14,8 +14,11 @@ back: index.html
 	     Render only a specific file
 	     -->
          {% for post in site.posts %}
-            {% if post.main == 'thoughts' %}
+            {% if post.main == 'rodsandricers' %}
+               <img class="project" src="/images/rodsandricers.png" />
                <p class="quote">"{{ post.quote }}"</p>
+               <div class="spacer">
+               </div>
                <div class="columns">
 	              <p>{{ post.content }}</p>
 	           </div>
@@ -29,7 +32,7 @@ back: index.html
    </div>
    {% for post in site.posts %}
       {% if post.status == 'completed' %}
-      {% if post.category == 'thoughts' %}
+      {% if post.category == 'rodsandricers' %}
          {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
          {% if mod_three == '0' %}
             <div class="single-post-container">
@@ -37,11 +40,7 @@ back: index.html
          <div class="single-post-item">
             <div class="single-post-head">
                <a href="{{ post.url }}" />
-               {% if post.short %}
-                  <h6>{{ post.short }}</h6>
-               {% else %}
-                  <h6>{{ post.title }}</h6>
-               {% endif %}
+               <h6>{{ post.title }}</h6>
             </div>
          </div>
         {% if mod_three == '2' or forloop.last %}

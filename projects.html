@@ -28,6 +28,7 @@ back: index.html
       </div>
    </div>
    {% for post in site.posts %}
+      {% if post.status == 'completed' %}
       {% if post.category == 'projects' %}
          {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
          {% if mod_three == '0' %}
@@ -42,6 +43,7 @@ back: index.html
         {% if mod_three == '2' or forloop.last %}
            </div>
         {% endif %}
+    {% endif %}
     {% endif %}
 {% endfor %}
 </div>

@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: a facebook note
-quote: My Musical Influences Throughout Time
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: musical influences.
+quote: I've got a basketball-Jones for you.
+when: 12 December 2007
 ---
 
 Going back to as far as I can remember, here is a list of songs/albums that I associate with certain things or instantaneously changed my perspective.  I don't want to fix my grammatical mistakes because I need a nap.

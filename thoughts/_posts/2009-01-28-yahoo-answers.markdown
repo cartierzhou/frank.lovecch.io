@@ -1,14 +1,17 @@
 ---
-layout: layout
-header: a snippet
-quote: 
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: yahoo answers.
+quote: What was the question?
+when: 28 January 2009
 ---
 
 When Google, Wikipedia, Digg, and real people fail to answer a question I have, I turn to Yahoo Answers. By now, we should alll know about the 'anonymous internet fucktard rule'. If you don't, go here first -> http://blag.xkcd.com/2008/10/08/youtube-audio-preview/.
 
 Actually, you should probably go there anyways, and make sure to read the comic! (don't forget the hover)
-
 
 Great, that's settled. After asking a few questions here and there on Yahoo Answers, I began to find that nearly 3 out of 4 answers I received were created by opinionated morons who knew nothing about what I was asking. The responders also failed to answer in a way that showed they read AND understood the question! I brushed it off, partially because there was always 1 solid answer that helped me (at least a little bit), and partially because I saw how much these people were answering questions - they're called power users. If you have read anything about the Digg/Reddit battle, you'll see that the power user phenomenon has become highly followed, and highly fought about; but let's save that battle for another note.
 

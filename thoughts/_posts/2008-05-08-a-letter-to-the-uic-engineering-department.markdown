@@ -1,8 +1,13 @@
 ---
-layout: layout
-header: a dedication
-quote: Never sent, was to be continued
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: a letter to the uic<br/>engineering dept.
+short: a letter to uic
+quote: Just let me use my calculator.
+when: 5 May 2008
 ---
 
 I had a couple weeks off between graduation and my entrance into a salaried position, and I spent it trying to formulate the beginning of a letter to the Engineering Department at UIC, for betterment of the program. My intial thoughts on (somewhat) completing it were correct; I withheld the letter until I had experienced the corporate world, and I plan to add and edit from my current perspective when the inspiration comes about.

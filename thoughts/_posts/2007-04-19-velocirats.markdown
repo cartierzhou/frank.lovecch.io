@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: a facebook note
-quote: Velocirates
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: velocirats.
+quote: Teenage Mutant Ninja...Rats.
+when: 19 April 2007
 ---
 
 Teenage Mutant Ninja...Rats. Yes, that's what I said. I'll start at the beginning...

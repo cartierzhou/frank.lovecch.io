@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: a snippet
-quote: 
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: and in the end.
+quote: Rufio, Rufio, Ru-fi-oooo.
+when: 2 May 2008
 ---
 
 The flawless spring night has sprung life back into my fingers, and I can type yet again.

@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: a snippet
-quote: 
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: cellphone word-banks.
+quote: Before auto-correct.
+when: 22 February 2009
 ---
 
 The purposeful non-integration of words like 'cunt' in cell phone text-messaging word banks angers me.

@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: movie day
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: movie day.
 quote: Terra!
-back: writings.html
+when: 1 June 2010
 ---
 
 Every once in a while, when the opportunity presents itself, I take a day for film rejuvenation. I've done this since I was a kid, though never with a purpose in my younger years; back then, free time was a sparity (no time to spare+rarity). During my post-collegiate days, Paul's Wisconsin cabin was the last instance I can remember a plethoral viewance; poor weather and sun-comas brought on Out Cold and various other re-watchables, along with heavy boozing. This weekend's case was no different, except for one thing: I wasn't surrounded by drunken lobsters, or even a Squeeks trying to maintain dignity. When the happenstance of a film day finally did come about-face, I plopped down with an alcoholic-inebriator in one hand, positioned the laptop where its namesake beckons, and sat through a series of cinema I felt the need to rediscover, hoping to gain inpsiration and cheer.

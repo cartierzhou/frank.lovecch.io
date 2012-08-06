@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: a snippet
-quote: 
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: so i says.
+quote: A what?!
+when: 9 March 2008
 ---
 
 The setting: Johnny's Ice House, a hockey rink near UIC, more specifically the player's bench.

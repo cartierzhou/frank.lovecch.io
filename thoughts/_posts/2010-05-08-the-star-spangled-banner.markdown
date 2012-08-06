@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: the star spangled banner
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: star-spangled.
 quote: Oh, see can you say?
-back: writings.html
+when: 8 May 2010
 ---
 
 I have never been emotionaly moved by a live performance of the song. You can call it un-American, maybe even Communist, but I spent a great deal of hours researching performances on YouTube, and eventually figured out what made them so uninspiring.

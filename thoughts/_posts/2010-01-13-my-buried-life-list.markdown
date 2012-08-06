@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: A non-comprehensive, end-all be-all list of things to do before I die
-quote: What do you want to do, before you die?
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: my buried-life list.
+quote: Wnat do you want to do, before you die?
+when: 1 January 2010
 ---
 
 These are the things left to do before I die. I was extremely inspired by the guys on the upcoming MTV show The Buried Life, especially since I have been pursuing one of the major items below. My list is a little bit different than theirs, as I've left out having a family, falling in love, etc (They're on a list, but not this one!). I've also left out the college-ruled, multi-page list of cars I want to own/restore and the business ideas I want to pursue; we don't have all day here. Some of the items seem trivial, but all reflect a moment in time I can recall saying, 'I want to do that!'. You might not get some of the references, but oh well :) Dream big.

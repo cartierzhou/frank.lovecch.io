@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: a letter to the piratebay
-quote: A patriot to the cause
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: to pirate bay
+quote: A patriot to only the cause.
+when: 8 August 2010
 ---
 
 I was staying in sunny Salida, CO - there was lots of time to kill with nobody around. Internet wasn't installed at my friend's condo, but I was able to mooch off their neighbor's wireless connection. Somewhere in between downloading films and pornography, I felt it necessary to let Peter Sunde know what their battles meant to me. File sharing and theft is more than what the title describes - it's about the battle to keep the internet open and unrestricted, free from the persecution of the corporate sector. Looking back, I'm such a dork.

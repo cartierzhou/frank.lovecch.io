@@ -1,8 +1,12 @@
 ---
-layout: layout
-header: on hockey, and team sports.
-quote: Ducks fly together!
-back: writings.html
+layout: post
+main: false
+status: in-progress
+category: thoughts
+back: thoughts.html
+title: ducks fly together.
+quote: On hockey &amp; team sports.
+when: 2 May 2008
 ---
 
 This is a very long piece of work, which I'm still writing. It won't be finished for a long time, mostly because of its importance to me, but also because of my Google tendency to leave things in beta.

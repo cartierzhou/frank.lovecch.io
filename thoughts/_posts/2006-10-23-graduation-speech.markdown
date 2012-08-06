@@ -1,11 +1,13 @@
 ---
-layout: layout
-header: a facebook note.
-quote: My Sister's High School Graduation Speech
-back: writings.html
+layout: post
+main: false
+status: completed
+category: thoughts
+back: thoughts.html
+title: a graduation speech.
+quote: Plagarism at its finest.
+when: 23 October 2006
 ---
-
-I am getting rid of my Myspace very soon...and doing so requires that I get rid of the "blog" section. So, here is a writing from August 16, 2006. 
 
 This is the speech my sister, the 2006 class president of Bartlett High School, gave at graduation. I helped her write some of it (if you can't tell from some of the references), but she really did a great job. I figured I would post it becasue she is going away to school in a few days and I will miss her, even though she is quite a pain in the ass.
 
