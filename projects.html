@@ -10,9 +10,6 @@ back: index.html
       <div class="meta">or how I came to be <span>inspired</span>
       </div>
       <div class="body">
-	     <!--
-	     Render only a specific file
-	     -->
          {% for post in site.posts %}
             {% if post.main == 'projects' %}
                <p class="quote">"{{ post.quote }}"</p>
