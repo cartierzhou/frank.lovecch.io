@@ -59,7 +59,8 @@ div.project {
   div.project div.body div.columns h2 {
     font-size: 18px;	
     border-top: 1px solid #eee;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-variant: uppercase;
   }
   div.project p.quote {

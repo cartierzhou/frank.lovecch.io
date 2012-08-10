@@ -68,3 +68,8 @@ a:hover {
   height: 800px;
   display: block;
 }
+/* Override Bootstrap */
+code {
+  line-height: 190%;
+  border: none;
+}

@@ -4,17 +4,16 @@ main: false
 status: completed
 category: thoughts
 back: thoughts.html
-title: dating site profile
+title: ok, cupid.
 quote: I'm a sentimentalist. 
 when: 5 May 2012
 ---
 
-When I was in college, I posted on Craigslist. Nothing dirty <b>[that I'll admit?]</b>, just a <i>boy seeks girl</i> kind of thing. And I met a pretty girl. She was nice, but I didn't feel any romantic connection <b>[and she didn't drink...at all]</b>. We became partial friends, but it never stuck. Fast-forward four years; I'm new to Colorado, unemployed, living in a garage, and had no contacts under forty years of age. It was an interesting time. I had nothing better to do but join a real dating website. And I used Starbucks wi-fi to do it. It was rather hard to be inconspicuous about parusing babes in a well-traveled coffeeshop, but I think my tiny ten-inch netbook helped with that. I got a monthly subscription to <a href="">match.com</a> for free, presumably because I clicked on an ad they only show to lonely, horny, broke twenty-four year olds. And I went out on one single date with a remarkable woman. Older, vibrant, beautiful. A scar on her cheek that gave her character. Obviously, I fell in love and lied about the the garage: `I was renting a room from a guy in Wash Park`. I may have even written her a tiny love letter about her giving me hope and such <b>[fucking sap]</b>. And then I got a job, and she blew me off. Go figure.
+When I was in college, I posted on Craigslist. Nothing dirty **\[that I'll admit?\]**, just a _boy seeks girl_ kind of thing. And I met a pretty girl. As is said, she was nice - read: there was absolutely no romantic connection. We did manage to became partial friends, but it never really stuck. Fast-forward _four_ years; I'm new to Colorado, unemployed, living in a garage, and had no contacts under _forty_ years of age **\[it was an interesting time]**. I really had nothing better to do but join a dating website, and I leveradged [Starbucks](http://starbucks.com)'s free Wi-Fi to do it. It was rather hard to be inconspicuous about parusing babes in a well-traveled place, but I think my tiny, _ten_ inch netbook must have helped with that. I signed up for a free monthly subscription to [Match](http://match.com), `presumably because I clicked on an ad they only show to lonely, horny, broke twenty-four year olds`.
 
-The moral of the story? What follows below is how you writing a dating site profile.
+I won't go into depth about the few dates I went on over the course of a year, but things ended up working out pretty well. Moral of the story? Write a good profile.
 
-<h1>On How to Write a Profile</h1>
-
+<h2>[an online dating profile]</h2>
 In 160 characters or less (stolen from my Twitter):
 "modern-day grifter, digital business empowerer, tinkerer, vintage auto enthusiast, api masherer, android developer, and at my roots: a self-taught lifehacker."
 
@@ -30,4 +29,4 @@ I keep myself busy with constant projects, but would really enjoy another creati
 
 The interests: I restore, build, and create things - whether it be the digital or physical. I like oddness in all forms, and really want to attend a midnight showing of something at The Esquire. I consider fragments of myself embedded in previous generations, but my mind seems to run in current mode. I'm fairly active, and Colorado continues to throw new things at me - I enjoy sports, but rarely watch them (save Blackhawks).
 
-The realistic: I'm looking for someone who is open-minded, considers laying under the stars and drinking wine an intimate date, and is the definable opposite of a negative-nancy. Some wit and learnedness would also be appreciated :) Ideally, I'll find a relationship that rivals: <a href="">http://www.brintonfilms.com/lex-loren-engagementsave-the-date</a>.
+The realistic: I'm looking for someone who is open-minded, considers laying under the stars and drinking wine an intimate date, and is the definable opposite of a negative-nancy. Some wit and learnedness would also be appreciated :) Ideally, I'll find a relationship that rivals [this](http://www.brintonfilms.com/lex-loren-engagementsave-the-date).
