@@ -4,7 +4,7 @@ main: false
 status: completed
 category: tech
 back: tech.html
-title: mqttpub github hook.
+title: mqttpub.
 quote: An MQTT Github hook!
 source: github-services
 when: 8 August 2012

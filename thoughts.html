@@ -1,5 +1,6 @@
 ---
 layout: layout
+subheader: thoughts.
 header: but never greater,<br/> than a good amount.
 back: index.html
 ---
@@ -36,12 +37,13 @@ back: index.html
          {% endif %}
          <div class="single-post-item">
             <div class="single-post-head">
-               <a href="{{ post.url }}" />
+               <a href="{{ post.url }}">
                {% if post.short %}
                   <h6>{{ post.short }}</h6>
                {% else %}
                   <h6>{{ post.title }}</h6>
                {% endif %}
+               </a>
             </div>
          </div>
         {% if mod_three == '2' or forloop.last %}

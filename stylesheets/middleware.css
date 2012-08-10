@@ -27,7 +27,7 @@ div.single-post-container {
     float: left;
     width: 31%;
     margin-left: 2%;
-    border: 1px solid rgb(255, 255, 255);
+    /*border: 1px solid rgb(255, 255, 255);*/
     color: #0b3a6e;
     text-decoration: none;
     line-height: 200%;
@@ -41,14 +41,8 @@ div.single-post-container {
       border-bottom: 1px solid #dbdbd4;
       height: 20px;
     }
-  div.single-post-head h2 {
-    margin: 20px;
-    padding-bottom: 20px;
-    color: #0b3a6e;
-    text-decoration: none;
-    line-height: 80%;
-    font-size: 14px;
-    text-align: center;
+  div.single-post-head h6 {
+    line-height: 120%;
   }
 a:visited {
   color: #0b3a6e;
@@ -56,4 +50,21 @@ a:visited {
   line-height: 80%;
   font-size: 24px;
   text-align: center;
+}
+a:hover {
+  text-decoration: none;
+}
+.gist {
+  width: 100%; 
+  column-span: all;
+  -moz-column-span: all;
+  -webkit-column-span: all; 
+  overflow: auto; 
+  height: 100px;
+  height: 100px;
+  z-index: 999;
+}
+.gist:hover {
+  height: 800px;
+  display: block;
 }

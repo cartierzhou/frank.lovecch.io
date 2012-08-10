@@ -1,0 +1,47 @@
+<!doctype html> 
+<html>
+   <head>
+	  {% include head.textile %}  
+   </head>
+   <body>
+      <header class="header-container">
+         <div class="header-mast">
+            <div class="header-logo">
+               <h1>frank.lovecch.io</h1>
+            </div>
+         </div>
+         <div class="header-image">
+            <div class="header-text">
+               <p class="header-text-date">{{ page.category }}.</p>
+               <h2>{{ page.title }}</h2>
+            </div>
+         </div>
+         <a href="/{{ page.back }}">
+            <h5 class="center cursor">[&larr;]</h5>
+         </a>
+      </header>
+      <div class="content-container">
+         <div class="project">
+            <div>
+               <div class="body">
+	              <p class="quote">"{{ page.quote }}"</p>
+	              <div class="meta">
+                  </div>
+                  <img class="project" src="/images/jeep.jpg" /> <!-- src="{{ page.image }}" -->
+                  <div class="columns">
+	                 <p><span style="font-size: 40px;">&para;</span>{{ content }}</p>
+	              </div>
+                  <p class="header-text-date">{{ page.when }}</p>
+                  <img src="/images/palm_tree.png" alt="" />
+                  <div class="spacer">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="clear">
+      </div>
+      <footer class="footer-container">
+      </footer>
+   </body>
+</html>

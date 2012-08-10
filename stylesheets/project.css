@@ -56,6 +56,12 @@ div.project {
 	font-family: Verdana;
 	color: rgb(69, 54, 37);
   }
+  div.project div.body div.columns h2 {
+    font-size: 18px;	
+    border-top: 1px solid #eee;
+    padding-top: 5px;
+    font-variant: uppercase;
+  }
   div.project p.quote {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -81,6 +87,7 @@ div.project {
 img.project {
   margin-top: 20px;
   margin-bottom: 20px;
+  border: 1px solid #eee;
 }
 
 img.inline {

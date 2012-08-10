@@ -1,0 +1,212 @@
+---
+layout: rodsandricers_post
+main: false
+status: completed
+category: rodsandricers
+back: rodsandricers.html
+title: 1993 Jeep Wrangler
+quote: Rebuilding Big Red.
+image: images/jeep.jpg
+when: 16 August 2010
+---
+
+This Midwest rust-bucket was the first automobile I ever officially purchased, at the ripe age of twenty-three.  I found it on <a href="http://craigslist.org">Craigslist</a> for nineteen-hundred dollars shortly after my ninety-five Civic blew up (<a href="">that</a> is a story in itself). A friend and I traveled to a ruly southern suburb of Chicago called Midloathian to pick her up. We gave it a quick test drive around the block, signed the paperwork over some awkward conversation, and traveled back in separate vehicles. Our destination was the UIC <a href="">SAE</a> automotive lab. On arrival, we drove it up the <a href="">Jerry-rigged</a> ramps for a more thorough inspection under better light. Our first modifications to the Jeep <b>[that would affectionately become known as Big Red]</b> included ripping off the tubular bumpers <b>[rusted through a long time ago]</b>, and an attempted fix of the <i>doors which would not unlock</i>.  
+
+<h2>Rebuild</h2>
+
+The Extruded aluminum front bumper
+
+Bought from <a href="http://onlinemetals.com/">Online Metals</a> for about $50, its four-foot length gives the front of the vehicle a vintage appearance.  It was sprayed with <a href="https://shoponline.wurthusa.com/wurthusa/servlet/CyberVendor/category/G4232218/Catalog/group.jsp/">Bedliner</a>, as is most of the body.  The product runs about $230 per kit, and is made to cover a decent-sized truck bed.
+The bumper is fastened to the frame with four generic tow hooks and a <a href="http://harborfreight.com">Harbor Freight</a> winch that sits atop <b>[I don't do any serious off-roading, so I just needed something for emergency situations]</b>.  The winch cost $100, and works great!  
+
+2) Cat-eye headlamp bezels
+
+The front headlamp bezels were both cracked near the top, so I "fixed" them.  
+
+
+3) Accents
+
+Besides painting the bezels, the fender supports and inner-grill structure were left red to complete the two-tone effect.
+
+
+4) Hood-mounted Hi-Lift jack
+
+While you can purchase hood-mounting brackets, I took a trip to <a href="http://homedepot.com">Home Depot</a> and spent about $10 on custom bracketry.  My jack is fixed by two bolts, and also locks to the body.
+
+
+5) Hood lettering
+
+There is some obscure site where you can buy the "Wrangler" letters, but I opted to make them on my own.  I spent some time on forums and font websites, finding a font called Earth's Accent on <a href="http://www.dafont.com/font.php?file=earth&page=1&nb_ppp_old=10&text=Wrangler&nb_ppp=10&psize=m&classt=alpha">Dafont.com</a>.  With a little modification by my graphics guy, he was able to get the decals to look better than original.  After polishing the hood and removing the original white lettering, the black lettering really gave the Jeep a more agressive look.
+
+
+6) Hood-mounted hockey sticks
+
+The picture above was taken before a long-distance move from Chicago to Denver, so the interior was full.  Using a simple nylon strap and a small clamp, the sticks mounted perfectly to the hood.  The drive proved the mount solid, and now I regularly place the sticks there on the way to hockey...just for kicks.
+
+
+<img class="storyresize" src="images/jeep2.jpg" alt="jeep" />
+
+
+7) Flat fenders
+
+I couldn't afford tube fenders, and did my best to replicate the look.  After ripping off the original plastic sideskirts, I went to work with a cut-off-wheel.  Besides cutting away a ton of rust, I removed the front portions of the metal fenders.  Since there is a side-arch in the original stamped fender steel <b>[where the plastic sideskirts bolted on]</b>, I had to piece in some aluminum to make the body line.  Lots of epoxy later and POR-15 later, they looked OK.
+
+
+8) Jerry can toolbox
+
+I had to do a ton of body work to passenger side, and all the material and metal gave it a weird appearance.  To cover it up, I invented the side-mount.  I cut the gas can into two pieces, using door edge guard to clean it up.  I also added a locking mechanism, then glued on the cap.  It's held onto the body using four half-inch bolts and rubber bushings.  Currently I keep fluids and a pump in there, no reason to get the inside messy.
+
+
+9) LJ nerf bars
+
+I modified LJ nerf bars I found for $30 on <a href="http://Craigslist.org">Craigslist</a>.  The stock YJ ones are much shorter than these.  Since the plastic sideskirts were removed, I needed something longer which hid the ugliness that was the transmission mount, but also flowed with the lengthened body line.  After welding and cutting on a frame jig, I capped them with something from the plumbing department at <a href="http://homedepot.com">Home Depot</a>.
+
+
+10) Willy's style shovel/axe kit
+
+I didn't want to put an actual Willy's shovel kit on the Jeep, as I needed some way to lock the axe in place.  I can't remember where I purchased the mounting brackets, intended for the cowl, but the online store had something to do with firefighting.  
+
+
+<img class="storyresize" src="images/jeep3.jpg" alt="jeep" />
+
+
+11) Gas filler neck elongation
+
+I moved the filler neck up so I could fill my up tank on "automatic", as YJ's typically are a pain to put gas in, thanks to the stock location.  
+
+
+12) Flush-mounted tail-lights
+
+I wanted to use the original housings instead of the typical LED ones you see, then placed them lower because of my filler neck modification.  I glued in the housing, and added some bars for protection <b>[and sweet looks]</b>.
+
+
+13) Tow-hitch and hookup
+
+This was a relatively easy add, and I welded it on for extra strength.  <a href="http://jcwhitney.com">JC Whitney</a> came through much cheaper than <a href="http://quadratec.com">Quadratec</a>.
+
+
+14) Charlie Bronson rope
+
+With a few slightly modified <a href="http://homedepot.com">Home Depot</a> brackets, I found a place for rope on my Jeep.  I haven't had a need for it yet, but really, no Jeep is complete without some rope.
+
+
+15)  Extension cord reel
+
+The extension cord connects to a power strip mounted on in the inside of the tub.  It has been used multiple times for dozens of things, one of which is a ceramic space heater mounted inside as well.  
+
+
+16) Tints
+
+The rear cab tints give the YJ a sleeker apperance, especially with the massive windows on the hard top.
+
+
+17) Willy's style side-mounted spare
+
+The side-mounted spare, while limiting tire size to thirty-one inches with no lift, definitely gives this YJ a unique look.  I believe I may be the only person in history to do this, so that excites me.  With the top off, it really does feel more vintage.
+
+
+18) Snorkel
+
+I purchased the snorkel off <a href="http://ebay.com">Ebay</a> for around $200 with shipping.  This was about $160 less than the <a href="http://quadratec.com">Quadratec</a> one, and it didn't have any air box adapting hardware - I had to make that on my own.  I first used an air duct pipe and pieced some fittings into it, but that broke in the Denver altitude.  I finally used some PVC fittings in conjuction with exhaust pipe turns, and that finished the project, except for its ugliness.  A fresh coat of black should fix that.
+
+
+19) Rims 
+
+I took the stock rims and added some flair to them with bedliner and red-accented center caps.  I also eye-dropped some red paint into the "Jeep" indentation.  It's all in the details.
+
+
+20) Snowboard roof rack
+
+Another <a href="http://homedepot.com">Home Depot</a> concontion, I mounted the racks I bought used on <a href="http://geartrade.com">Gear Trade</a> with about $50 worth of pipe, pvc, and fittings.  I was careful to seam-seal the hell out of the brackets, and aside from missing a few spots with black paint, they turned out fine.
+
+
+<img class="storyresize" src="images/jeep6.jpg" alt="jeep" />
+
+20) Door panel removal
+
+I removed the faded-gray door panels and drilled in beefier grab-handles from Home Depot.  I put on new door seals, and sprayed bedliner on everything.  The access panel was painted to keep with the two-tone look.   Woops, forgot to black out the faded door lock housing.
+ 
+
+<img class="storyresize" src="images/jeep7.jpg" alt="jeep" />
+
+21) YJ to CJ dash conversion
+
+The dashboard conversion was the source of endless headaches, and I still have issues.  The lesson: order everything new. 
+
+<img class="storyresize" src="images/jeep8.jpg" alt="jeep" />
+
+22) Inverter cover
+
+I have a power inverter bolted to the driver's side seat that powers electric tools like a heat and impact gun.  I needed a cover for it during the summer, so I cut and blacked out a clear plastic drawer from something you would find at any <a href="http://walmart.com">Walmart</a> .
+
+
+<img class="storyresize" src="images/jeep9.jpg" alt="jeep" />
+
+23) Waterproof seats
+
+I got the seats off <a href="http://summitracing.com">Summit Racing</a>.  Besides being plastic and waterproof, I drilled drain holes in them.  Now, I have no qualms about forgetting to put the top up in a rainstorm, the entire tub is <b>[virtually]</b> rust and waterproof.
+
+
+24) Heavy-duty shocks
+
+25) Beefier rear leaf-springs
+
+26) Front 4WD axles
+
+27) Clutch kit
+
+28) Windsheield frame and glass
+
+29) Winterforce tires
+
+30) Frame patches
+
+31) Underhood compartment
+
+
+32) Modified TJ transfer case skid-plate
+
+The stock YJ skid plate was heavily detiorated, and I didn't want to spend upwards of $350 on a tubular or stamped mount.  While the TJ one is slightly wider, it only required a few hole slots to get it fit properly.  
+
+
+33) Bedliner everywhere
+
+
+34) Window black-out
+
+I got tired of the quarter-glass squealing on the highway (because of aged rubber and the time I locked myself out), so I removed it.  In its place is steel that was glued in.
+
+
+Future Modifications
+
+
+1) Longboard mount
+
+I can not, for the life of me, find the Monster? Jeep that had a longboard mount off the rear roll bar.  I think I may use <a href="http://www.rdmoffroad.com/powertankrollbarclamps-tjyjljblack.aspx">these</a> clamps for my mount.
+
+
+2) Onboard welder
+
+I first saw the <a href="http://www.jedi.com/">Jedi</a> do this <b>[though not the first]</b>, and I fell in love with the idea.  This probably won't happen until I do a TDI conversion, but a man can wish.
+
+
+3) Snowboard soft top mount
+
+4) Custom speaker placement
+
+
+Lessons Learned
+
+
+1) Body Work
+
+I glued on the rear valence panel, then fiberglassed over it.  There are now two stress cracks in the glass, but it's structurally sound.  When I put in another frame, I'll fix this.  
+2) 
+
+	
+<h2>Forum Posts</h2>
+<a href="http://www.jeepforum.com/forum/f286/big-red-991235/">Jeep Forum 1</a>
+<a href="http://www.jeepforum.com/forum/f22/1993-wrangler-993425/">Jeep Forum 2</a>
+<a href="http://www.nc4x4.com/forums/showthread.php?t=29895">North Carolina 4x4 Forum</a>
+<a href="http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1259555503/0">Arduino Forum</a>
+<div id="line">
