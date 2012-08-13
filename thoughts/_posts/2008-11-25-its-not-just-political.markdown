@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: not just political.
 quote: Remove money from politics.
-when: 25 November 2008
 ---
 
 The election process and the recent bailouts/economic crisis have forced me to vent some things.

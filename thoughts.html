@@ -25,28 +25,97 @@ back: index.html
          </div>
       </div>
    </div>
+   <h3>[writing]</h3>
    {% for post in site.posts %}
       {% if post.status == 'completed' %}
-      {% if post.category == 'thoughts' %}
-         {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
-         {% if mod_three == '0' %}
-            <div class="single-post-container">
-         {% endif %}
-         <div class="single-post-item">
-            <div class="single-post-head">
-               <a href="{{ post.url }}">
-               {% if post.short %}
-                  <h6>{{ post.short }}</h6>
-               {% else %}
-                  <h6>{{ post.title }}</h6>
+         {% if post.category == 'thoughts' %}
+            {% if post.subcategory == 'writing' %}
+               {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
+               {% if mod_three == '0' %}
+                  <div class="single-post-container">
                {% endif %}
-               </a>
-            </div>
-         </div>
-        {% if mod_three == '2' or forloop.last %}
-           </div>
-        {% endif %}
-    {% endif %}
-    {% endif %}
-{% endfor %}
+               <div class="single-post-item">
+                  <div class="single-post-head">
+                     <a href="{{ post.url }}">
+                     {% if post.short %}
+                        <h6>{{ post.short }}</h6>
+                     {% else %}
+                        <h6>{{ post.title }}</h6>
+                     {% endif %}
+                     </a>
+                  </div>
+               </div>
+               {% if mod_three == '2' or forloop.last %}
+                  </div>
+               {% endif %}
+            {% endif %}
+         {% endif %}
+      {% endif %}
+   {% endfor %}
+</div>
+<div class="clear">
+</div>
+<div class="subcategory">
+</div>
+<div class="project">
+   <h3>[blog]</h3>
+   {% for post in site.posts %}
+      {% if post.status == 'completed' %}
+         {% if post.category == 'thoughts' %}
+            {% if post.subcategory == 'blog' %}
+               {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
+               {% if mod_three == '0' %}
+                  <div class="single-post-container">
+               {% endif %}
+               <div class="single-post-item">
+                  <div class="single-post-head">
+                     <a href="{{ post.url }}">
+                     {% if post.short %}
+                        <h6>{{ post.short }}</h6>
+                     {% else %}
+                        <h6>{{ post.title }}</h6>
+                     {% endif %}
+                     </a>
+                  </div>
+               </div>
+               {% if mod_three == '2' or forloop.last %}
+                  </div>
+               {% endif %}
+            {% endif %}
+         {% endif %}
+      {% endif %}
+   {% endfor %}
+</div>
+<div class="clear">
+</div>
+<div class="subcategory">
+</div>
+<div class="project">
+   <h3>[letters]</h3>
+   {% for post in site.posts %}
+      {% if post.status == 'completed' %}
+         {% if post.category == 'thoughts' %}
+            {% if post.subcategory == 'letters' %}
+               {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
+               {% if mod_three == '0' %}
+                  <div class="single-post-container">
+               {% endif %}
+               <div class="single-post-item">
+                  <div class="single-post-head">
+                     <a href="{{ post.url }}">
+                     {% if post.short %}
+                        <h6>{{ post.short }}</h6>
+                     {% else %}
+                        <h6>{{ post.title }}</h6>
+                     {% endif %}
+                     </a>
+                  </div>
+               </div>
+               {% if mod_three == '2' or forloop.last %}
+                  </div>
+               {% endif %}
+            {% endif %}
+         {% endif %}
+      {% endif %}
+   {% endfor %}
 </div>

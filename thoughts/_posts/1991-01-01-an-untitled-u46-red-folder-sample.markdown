@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: writing
 back: thoughts.html
 title: u-46 red folder.
 quote: I never owned a hamster as a pet.
-when: 1 January 1991
 ---
 
 The district I attended through my senior year in high school kept a red folder full of writing samples that dated back to when I entered the district in 1991. One of my favorite pieces follows, an untitled sample from 3rd grade (including grammatical errors):

@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: star-spangled.
 quote: Oh, see can you say?
-when: 8 May 2010
 ---
 
 I have never been emotionaly moved by a live performance of the song. You can call it un-American, maybe even Communist, but I spent a great deal of hours researching performances on YouTube, and eventually figured out what made them so uninspiring.

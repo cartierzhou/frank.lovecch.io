@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: letters
 back: thoughts.html
 title: to the sartorialist.
 quote: Wearing my heart on my sleeve.
-when: 8 May 2010
 ---
 
 If I died tomorrow, I would wish that every person who inspired me receive an explanatory letter. I started with the book dedication above, and I continue here.

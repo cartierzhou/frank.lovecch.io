@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: a defining moment.
 quote: Ice-man, power-Lloyd.
-when: 2 November 2008
 ---
 
 In order to understand this, you will have to first read the note I wrote two years ago, 'Defining Moments', and then REALLY read this comic: http://xkcd.com/137/.

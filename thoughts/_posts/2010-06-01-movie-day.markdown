@@ -3,13 +3,15 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: movie day.
 quote: Terra!
-when: 1 June 2010
 ---
 
-Every once in a while, when the opportunity presents itself, I take a day for film rejuvenation. I've done this since I was a kid, though never with a purpose in my younger years; back then, free time was a sparity (no time to spare+rarity). During my post-collegiate days, Paul's Wisconsin cabin was the last instance I can remember a plethoral viewance; poor weather and sun-comas brought on Out Cold and various other re-watchables, along with heavy boozing. This weekend's case was no different, except for one thing: I wasn't surrounded by drunken lobsters, or even a Squeeks trying to maintain dignity. When the happenstance of a film day finally did come about-face, I plopped down with an alcoholic-inebriator in one hand, positioned the laptop where its namesake beckons, and sat through a series of cinema I felt the need to rediscover, hoping to gain inpsiration and cheer.
+Every once in a while **\[when the opportunity presents itself\]**, I take a day for film - call it a rejuvenation of sorts. I've done this since I was a kid, but never with a purpose in my younger years; back then, free time was a sparity **\[no time to spare+rarity\]**. My friend Paul's Wisconsin cabin was the last instance I can remember of a plethoral viewance, way back in my collegiate days. Poor weather and sun-comas brought on screenings of _Out Cold) and various other re-watchables **\[along with heavy boozing\]**. 
+
+This weekend's case was no different, except for one thing: I wasn't surrounded by drunken lobsters, or even a Squeeks trying to maintain dignity. When the happenstance of a film day finally did come about-face, I plopped down with an alcoholic-inebriator in one hand, positioned the laptop where its namesake beckons, and sat through a series of cinema I felt the need to rediscover, hoping to gain inpsiration and cheer.
 
 I was dog-sitting in Lakewood (a non-plain boxed suburb of Denver) this weekend, and though I didn't partake in any new films, many were revisited for the first time in years, and in Blu-Ray! In between my various activiites, I managed to watch The Fifth Element, Risky Business, Gone With the Wind, Dirty Dancing, more than half a smidgen of of Diner, and just up to the part where Luca Brazi meets with Don Corleone in The Godfather (Part I). If I came out of this weekend with anything, it was a reaffirmation of my sentimentality - we'll call it a defining moment.
 

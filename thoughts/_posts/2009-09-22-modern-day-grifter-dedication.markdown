@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: writing
 back: thoughts.html
 title: a dedication.
 quote: The longest dedication in the history of histories.
-when: 22 September 2009
 ---
 
 The first of a two-part story, based on events in my life. I first heard the term 'grifter' from the title of a little-known John Cusack movie (big fan). I have never seen it, but know the basic premise. If I had to compare the feel of the screenplay to other films, I would mention SLC Punk, Ferris Bueller's Day Off, and anything early Kevin Smith. In other words, lots of dialogue. This story originally started out in book form as a collection of stories. I decided the medium wasn't condusive to the tales since I could practically picture the film in my head. I prepared quite a long dedication, though, and it's too much a part of my soul to sit in the bowels of Google Docs.", content: "I shall take this chance, possibly my one and only (hence the length), to administer gratitude towards the most influential sources in my life; all artists in their own right, and all of whom I dare not impose physical bother. By now, I should have given my gratitude to those most closest to me; my utmost thanks goes out to everyone who helped with the book. Each and all of you, really - thanks - I love you for it. Also, I promised to refrain from one word dedications for persons of single names or initials like vast dedications seem to to; I owe these influential people the full and explanatory truth, it is the least I can do.

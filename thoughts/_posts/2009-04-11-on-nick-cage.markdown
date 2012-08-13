@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: on nick cage.
 quote: My hand!
-when: 11 April 2009
 ---
 
 I have read a slew of articles in the past year about Nicolas Cage, and all of them were negative; see the link for an example:

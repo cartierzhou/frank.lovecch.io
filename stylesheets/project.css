@@ -56,6 +56,11 @@ div.project {
 	font-family: Verdana;
 	color: rgb(69, 54, 37);
   }
+  div.subcategory {
+    margin-top: 20px;
+    height: 30px;	
+    width: 100px;
+  }
   div.project div.body div.columns h2 {
     font-size: 18px;	
     border-top: 1px solid #eee;

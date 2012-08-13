@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: auld lang syne.
 quote: Vivien Leigh in Waterloo Bridge...
-when: 31 December 2009
 ---
 
 In accordance with the spirit of this new year, I have been digging through the intranets for the best versions of 'Auld Lang Syne'. I managed to find the video versions of some favorites, along with a couple new ones that are super stellar. Some that I like aren't on YouTube but can be found on Itunes, so ya know, fuck that. Enjoy, kids.

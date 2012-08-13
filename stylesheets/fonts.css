@@ -13,7 +13,12 @@ h2 {
   margin: .2em 0 .4em;
 }
 h3 {
-  font: normal 100% "Lucida Grande", Verdana, Helvetica, Arial, sans-serif
+  font: bold 100% "Century Schoolbook", Georgia, Times, serif;
+  font-size: 30px;
+  line-height: 90%;
+  letter-spacing: -2px;
+  color: #333;
+  margin: .2em 0 .4em;
 }
 h4 {
   font: normal 60% Georgia, "Century Schoolbook", Times, serif;

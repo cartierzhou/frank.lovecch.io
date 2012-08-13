@@ -3,11 +3,11 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: frank &amp; the terrible,<br/>horrible, no good,<br/> very bad day.
 short: booted.
 quote: Parking tickets will be the death of me.
-when: 4 October 2006
 ---
 
 I hate the Chicago bureaucracy. Let me tell you a story of love and hate and all the things in between. Back in the summer I painted the front bumper on my '95 Civic. I lost the front plate after putting the bumper back on, and filed a police report and contacted the secretary of state to get a new front plate sent in. $6 bucks for a new one. Nice. They faxed me a piece of paper to put in my front window as a substitute until the plate was mailed to me. But alas, the fine gentleman at the Chicago Police Department neglected this piece of paper day in and day out, and I received roughly 10 parking tickets of $50 each for 'NO FRONT PLATE'. So, I contested every ticket by mail. I got out of almost every ticket, except for 2 of them-I was ordered to pay $50 per ticket. How is it possible that I could be guilty and not guilty for the same offense!?!

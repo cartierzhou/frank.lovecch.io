@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: yahoo answers.
 quote: What was the question?
-when: 28 January 2009
 ---
 
 When Google, Wikipedia, Digg, and real people fail to answer a question I have, I turn to Yahoo Answers. By now, we should alll know about the 'anonymous internet fucktard rule'. If you don't, go here first -> http://blag.xkcd.com/2008/10/08/youtube-audio-preview/.

@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: a graduation speech.
 quote: Plagarism at its finest.
-when: 23 October 2006
 ---
 
 This is the speech my sister, the 2006 class president of Bartlett High School, gave at graduation. I helped her write some of it (if you can't tell from some of the references), but she really did a great job. I figured I would post it becasue she is going away to school in a few days and I will miss her, even though she is quite a pain in the ass.

@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: wise tv, wycc.
 quote: The Gary Cooper swagga'.
-when: 10 October 2006
 ---
 
 Upon falling asleep for 3 hours after working all day, I woke up at 11:45 p.m., just in time to start my system dynamics homework due...well, today. I looked at it for a while with a very perplexed expression on my face-the kind of look on a dog's face when he plays with the poo that just came out of his ass. I took a much needed study break and turned on the tube after getting a snickety-snack of milk and cookies. Very excited I was to find a Frank Capra movie just about to start on the Wise Channel; a movie by the name of 'Meet John Doe', a movie I had never seen (shocking). 

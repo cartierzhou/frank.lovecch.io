@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: blog
 back: thoughts.html
 title: ok, cupid.
-quote: I'm a sentimentalist. 
-when: 5 May 2012
+quote: I'm a sentimentalist.
 ---
 
 When I was in college, I posted on Craigslist. Nothing dirty, just a _boy seeks girl_ kind of thing. And I met a pretty girl. As is said, she was nice - read: there was absolutely no romantic connection. We did manage to became partial friends, but it never really stuck. Fast-forward _four_ years; I'm new to Colorado, unemployed, living in a garage, and had no contacts under _forty_ years of age **\[it was an interesting time\]**. I really had nothing better to do but join a dating website, and I leveradged [Starbucks](http://starbucks.com)'s free Wi-Fi to do it. It was rather hard to be inconspicuous about parusing babes in a well-traveled place, but I think my tiny, _ten_ inch netbook must have helped with that. I signed up for a free monthly subscription to [Match](http://match.com), `presumably because I clicked on an ad they only show to lonely, horny, broke twenty-four year olds`.

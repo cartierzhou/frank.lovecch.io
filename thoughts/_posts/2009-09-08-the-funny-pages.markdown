@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: writing
 back: thoughts.html
 title: the funny pages.
 quote: Haven't been the same since Bill Watterson.
-when: 8 Septebmer 2009.
 ---
 
 It was during the fall semester of 1995, and I was in fifth grade. For 10 minutes every Tuesday, we were forced to sit quietly and read something of value; the dictators called it 'Sustained Silent Reading', or SSR in short. At this age, mind you, only some of us read. The others, clearly too cool for reading, carved initials into desks (years later, these kids would fail at life). It was also during this time that Scholastic pamphlets were passed out, each copy holding descriptions for the newly released books in our favorite series: Goosebumbs, The Boxcar Children, Animorphs, and probably anything written by Judy Bloom. Mrs. Musial's class, fifth grade, SSR. Got that?

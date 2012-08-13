@@ -3,10 +3,10 @@ layout: post
 main: false
 status: completed
 category: thoughts
+subcategory: writing
 back: thoughts.html
 title: the big sneeze.
 quote: I sneeze in singles.
-when: 18 September 2009
 ---
 
 My eyes closed themselves instantly. The moment hovered. Then it happened; much like the long-forgotten atomic test explosions in Bikini Atoll, my mouth blasted out squalid mucus membrane into the sweaty, middle section of my left most hand.'Achoo'. I was a loud sneezer, and everyone heard. Most females managed to sound like mice yelling.
