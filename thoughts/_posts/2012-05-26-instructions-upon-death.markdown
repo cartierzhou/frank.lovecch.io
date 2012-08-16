@@ -1,7 +1,7 @@
 ---
 layout: post
 main: false
-status: completed
+status: in-progress
 category: thoughts
 subcategory: letters
 back: thoughts.html
