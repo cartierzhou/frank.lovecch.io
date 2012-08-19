@@ -97,7 +97,7 @@ img.project {
 }
 
 img.inline {
-  border: 1px solid gray;
+  border: 1px solid #eee;
   display: block;   
   overflow: visible;
   margin-top: 20px;
