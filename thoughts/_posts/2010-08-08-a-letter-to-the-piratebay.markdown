@@ -10,7 +10,7 @@ short: to the pirate bay.
 quote: A patriot to only the cause.
 ---
 
-I was in sunny Salida, CO, and trapped on the back porch of a condo I couldn't get into. The location of the hidden key was not known to me, and I was waiting on a phone call. Since there was lots of time to kill, I jumped onto the neighbor's Wi-Fi connection. `Somewhere in between downloading films and pornography`, I felt it necessary to let _Peter Sunde_, one of [http://thepiratebay.se](The Pirate Bay)'s founders, know what his battles meant to me.  File sharing and theft is more than what the title describes - it's about the battle to keep the internet open, unrestricted, and free from the limitations the money-hungry corporate sector would like to impose. Looking back, I'm such a dork.
+I was in sunny Salida, CO, and trapped on the back porch of a condo I couldn't get into. The location of the hidden key was not known to me, and I was waiting on a phone call. Since there was lots of time to kill, I jumped onto the neighbor's Wi-Fi connection. `Somewhere in between downloading films and pornography`, I felt it necessary to let _Peter Sunde_, one of [The Pirate Bay](http://thepiratebay.se)'s founders, know what his battles meant to me.  File sharing and theft is more than what the title describes - it's about the battle to keep the internet open, unrestricted, and free from the limitations the money-hungry corporate sector would like to impose. Looking back, I'm such a dork.
 
 <h2>[a letter]</h2>
 To the staff of the TPB Crew:

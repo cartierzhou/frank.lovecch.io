@@ -37,10 +37,3 @@ header.header-container {
 	    color: gray;
 	  }
 }
-div.content-container {
-  height: 400px;
-  width: 100%;
-}
-footer.footer-container {
-  height: 60px;
-}

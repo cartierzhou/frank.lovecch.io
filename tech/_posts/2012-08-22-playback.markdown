@@ -1,0 +1,804 @@
+---
+layout: tech_post
+main: false
+status: completed
+category: tech
+back: tech.html
+title: playback.
+quote: Advanced Play! 2.0 and Backbone.js Applications with CoffeeScript.
+source: playback
+---
+
+TODO: add some jquery stuff. add models/collections. add some history checks?
+
+I've been doing a lot of front-end development these past couple years, in between [bouts](http://github.com/franklovecchio/app-mq) of the complete opposite. I guess you might call it developer _pivoting_, which seems to happen frequently with startups **\[otherwise known as fighting fires\]**. I enjoy being able to push my limits every time I have the chance to revisit the same problem I encountered in the past, but always armed with a better skill-set than before; this especially applies to UI. Since the release of [Bootstrap](http://twitter.com/bootstrap), I've taken notice to the seemingly endless amount of new techniques and libraries available for solving interface problems better. The reinvention, or building upon, was no-doubt absolutely necessary - not _just_ [Hacker News](http://news.ycombinator.org) propoganda. Have you ever tried to build a large, complex web application which needed to support all browsers back to IE7, and every browser that runs on any tablet or mobile device? It's damned hard, but the tools are getting better and making development much more efficient. 
+
+<h2>Why Play! 2.0 &amp; Backbone.js?</h2>
+
+Let's let history tell the story. _Two_ years ago, I would have written a PHP-based application in [CodeIgniter](http://codeigniter.com), and `heavily mixed Javascript and PHP`, using a library like [YUI](http://yuilibrary.com/) as the AJAX wrapper for building UI elements from data sets:
+
+<div class="snippet">
+   <pre>
+YAHOO.util.Event.addListener(window, &quot;load&quot;, function () {
+  YAHOO.example.XHR_JSON = function () {
+    var myColumnDefs = [{
+      key: &quot;status&quot;,
+      label: &quot;Status&quot;,
+      sortable: true,
+      resizeable: true
+    }, {
+      key: &quot;name&quot;,
+      label: &quot;Name&quot;,
+      sortable: true,
+      resizeable: true
+    }];
+    var myDataSource = new YAHOO.util.DataSource(&quot;doThis.php?someParam=&lt;? echo $someParam; ?&gt;&amp;someOtherParam=&lt;? echo $someOtherParam; ?&gt;&quot;);
+    myDataSource.responseType = YAHOO.util.DataSource.TYPE_JSON;
+    myDataSource.connXhrMode = &quot;queueRequests&quot;;
+    myDataSource.responseSchema = {
+      resultsList: &quot;ResultSet.Result&quot;,
+      fields: [&quot;status&quot;, &quot;name&quot;]
+    };
+    singleSelectDataTable = new YAHOO.widget.DataTable(&quot;single&quot;,
+    myColumnDefs, myDataSource, {
+      selectionMode: &quot;single&quot;,
+      width: &quot;100%&quot;
+    });
+    singleSelectDataTable.on('initEvent', function () {
+      YAHOO.util.Dom.setStyle(singleSelectDataTable.getTableEl(), 'width', '100%');
+    });
+    // Subscribe to events for row selection
+    singleSelectDataTable.subscribe(&quot;rowMouseoverEvent&quot;, singleSelectDataTable.onEventHighlightRow);
+    singleSelectDataTable.subscribe(&quot;rowMouseoutEvent&quot;, singleSelectDataTable.onEventUnhighlightRow);
+    singleSelectDataTable.subscribe(&quot;rowClickEvent&quot;, singleSelectDataTable.onEventSelectRow);
+    singleSelectDataTable.subscribe(&quot;rowSelectEvent&quot;, function (trEl, record) {
+      var status = trEl.record._oData.status;
+      var name = trEl.record._oData.name;
+      ... this shit continues
+  }();
+});	
+  </pre>
+</div>
+
+_One_ year ago, I would have been writing a Java-based application in [Play! 1.2.4](http://www.playframework.org/documentation/1.2.4/home), and `echoing HTML inside Javascript`. I remember re-rendering the headers of _ul_ blocks and having to create my own `repaint` methods **\[because of CSS issues\]** when building UI elements from data sets, and the same went for tables:
+
+<div class="snippet">
+   <pre>
+function HTMLCreator() {
+  this.createDivTableHeader = function () {
+    var html = '&lt;li class=&quot;ticket-header&quot;&gt;';
+    html += '&lt;ul&gt;';
+    html += '&lt;li class=&quot;ticket-header-ticket&quot; style=&quot;width: 10%;&quot;&gt;Status&lt;/li&gt;';
+    html += '&lt;li class=&quot;ticket-header-activity&quot; style=&quot;width: 20%;&quot;&gt;Duration&lt;/li&gt;';
+    html += '&lt;li class=&quot;ticket-header-user&quot; style=&quot;width: 20%;&quot;&gt;Agent&lt;/li&gt;';
+    html += '&lt;li class=&quot;ticket-header-priority&quot; style=&quot;width: 20%;&quot;&gt;Caller&lt;/li&gt;';
+    html += '&lt;li class=&quot;ticket-header-age&quot; style=&quot;width: 20%;&quot;&gt;Company&lt;/li&gt;';
+    html += '&lt;li class=&quot;ticket-header-age&quot; style=&quot;width: 5%;&quot;&gt;Flags&lt;/li&gt;';
+    html += '&lt;li class=&quot;ticket-header-age&quot; style=&quot;width: 5%;&quot;&gt;Priority&lt;/li&gt;';
+    html += '&lt;/ul&gt;';
+    html += '&lt;/li&gt;';
+    return html;
+  };
+  ... this shit continues
+}
+  </pre>
+</div>
+
+It makes me want to cry/pout when looking back. Building sustainable, reusable features like that took forever. I didn't know any better, and the learning curve on the shiny new frameworks like [Backbone.js](http://backbonejs.org) was rather steep; especially when you wanted to throw in learning _true_ CoffeeScript at the same time **\[because it just seemed like the thing to do\]**.
+
+When decision had to be made on architecture at at [2lemetry](http://2lemetry.com), we chose [Play! 2.0](http://playframework.org) and [Scala](http://scala-lang.org) as our web application back-end/language; it supports the massive amounts of Java libraries out there, _and_ works with [AKKA](http://akka.io). We adopted the framework before it was even released, and that only caused a few headaches :) 
+
+It also had multiple features we were looking for in terms of front-end development, namely `compiled CoffeeScript, routes, and templates`.
+
+<h2>Standards</h2>
+1. All CoffeeScript, all the time. **\[yes, Jason, that means you too :)\]**.
+1. `No Javascripts inside HTMl files`.
+1. [Format HTML](http://www.freeformatter.com/html-formatter.html).
+1. Format CoffeeScript: _two_-space indents.
+1. No `""`, only `''` in Javascripts.
+
+<h2>Open Source</h2>
+We made the decision to open-source what we've learned for a few reasons:
+
+1. We haven't found anything like this in the wild.
+1. It's a good, real-world use case of an application in production.
+1. We love open-source, and want the community to help `make it better` with their knowledge. After all, we're learning too.
+
+<h2>Play! 2.0 Setup</h2>
+
+In order to start building our application, you'll need to download _Play!_, have Java installed, and generally know how to do stuff.
+
+1. Use the command-line toolset _Play!_ has built in to create a _Scala_ application:
+
+<div class="snippet">
+   <pre class="terminal">
+Franks-MacBook-Pro:playback franklovecchio$ sudo ../frameworks/play-2.0/play new playback
+       _            _ 
+ _ __ | | __ _ _  _| |
+| '_ \| |/ _' | || |_|
+|  __/|_|\____|\__ (_)
+|_|            |__/ 
+             
+play! 2.0, http://www.playframework.org
+
+The new application will be created in /Users/franklovecchio/Desktop/dev/playback
+
+What is the application name? 
+&gt; playback
+
+Which template do you want to use for this new application? 
+
+  1 - Create a simple Scala application
+  2 - Create a simple Java application
+  3 - Create an empty project
+
+&gt; 1
+
+OK, application playback is created.
+
+Have fun!
+  </pre>
+</div>
+
+1. Launch the _SBT_ wrapper.
+
+1. Run `clean`.
+
+1. Run `update`.
+
+1. Run `eclipsify`.
+
+<div class="snippet">
+   <pre class="terminal">
+Franks-MacBook-Pro:playback franklovecchio$ cd playback/
+Franks-MacBook-Pro:playback franklovecchio$ sudo ../../frameworks/play-2.0/play
+[info] Loading project definition from /Users/franklovecchio/Desktop/dev/playback/project
+[info] Set current project to playback (in build file:/Users/franklovecchio/Desktop/dev/playback/)
+       _            _ 
+ _ __ | | __ _ _  _| |
+| '_ \| |/ _' | || |_|
+|  __/|_|\____|\__ (_)
+|_|            |__/ 
+             
+play! 2.0, http://www.playframework.org
+
+&gt; Type &quot;help play&quot; or &quot;license&quot; for more information.
+&gt; Type &quot;exit&quot; or use Ctrl+D to leave this console.
+
+[playback] $ clean
+[success] Total time: 0 s, completed Aug 23, 2012 5:13:43 PM
+[playback] $ update
+[info] Updating {file:/Users/franklovecchio/Desktop/dev/playback/playback/}playback...       
+[success] Total time: 2 s, completed Aug 23, 2012 5:13:46 PM
+[playback] $ eclipsify
+[info] About to create Eclipse project files for your project(s).
+[info] Compiling 5 Scala sources and 1 Java source to /Users/franklovecchio/Desktop/dev/playback/playback/target/scala-2.9.1/classes...
+[info] Successfully created Eclipse project files for project(s): playback
+  </pre>
+</div>
+
+<h2>IDE</h2>
+Import the project into your editor, which is _Eclipse_ in my case. The _Scala_ plugin and _Play!_ do not always play well. Some things to be aware of:
+
+1. When adding new template files, you have to specify `Ok` in the controller, `play run` the application, then `refresh` _Eclipse_ to be able to reference the newly added template.
+
+1. Like I said earlier, lots of CoffeeScript files slow down compiling the app when packaged Javascripts are changed, and it's quite noticeable.
+
+<h2>Defaults</h2>
+The framework creates an application which expects something a little bit different then what we're doing, and leaving unused assets around can get confusing. Please delete:
+
+1. `/public/stylesheets/main.css`
+1. `/app/views/index.scala.html`
+
+<h2>Routing</h2>
+Rendering a single HTML file requires _two_ modifications to the _Play!_ application. Normally, we'd have to add a route to the `/conf/routes` file to point the HTTP request to the right place, but it's already done for us: 
+
+<div class="snippet">
+   <pre>
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path=&quot;/public&quot;, file)
+   </pre>
+</div>
+
+Each route references a method inside a `Controller`. Since a default is already defined, we can just modify the `index` action to reference our new application file, `app.scala.html` **\[which, consequently, hasn't been created yet\]**.
+
+<div class="snippet">
+   <pre>
+object Application extends Controller {
+  def index = Action { request =&gt;
+    Ok(views.html.app.render())
+    // Ok 
+    // Use above to let Play! compile the template, and only then can you can safely reference it.
+  }
+}
+   </pre>
+</div>
+
+Using Play!'s Scala templates, we have the ability to manage our assets in one place. These templates require a `.scala` prefix to any HTML file. It makes it really easy to pass data from the server side to the templates, but I only use them for resources **\[I'm trying to be as framework-agnostic as possible\]**. Think of them as something similar to [Mustache](http://mustage.org) or [Underscore](http://underscore.org). Create a new template file in `/app/views/` as `app.scala.html`. This is our the main application template, but is strictly a wireframe for passing resources to another template where we'll hold all our static resources, `main.scala.html` **\[a Play! standard\]**. `By doing this we can define separate applications`, if we like, inside a single Play! application - at the moment, there really isn't a way to share client-side resources between Play! apps - this was really the best way I could find to accomplish this. The whole file is displayed below:
+
+<div class="snippet">
+   <pre>
+@()
+@main(
+   css = List(),
+   headJs = List(),
+   bodyJs = List(),
+   analytics = &quot;Google Analytics ID&quot;
+) {
+   @layout(
+      // CSS
+      List(
+         // App
+         &quot;app.css&quot;,
+         // Action1
+         &quot;action1.css&quot;,
+         // Action2
+         &quot;action2.css&quot;
+      ),
+      // Javascripts
+      List(        
+         // Namespaces (window object)
+         &quot;app/namespaces.js&quot;,
+         
+         // Utils and Logging
+         &quot;utils/utils.js&quot;,
+         &quot;utils/logger.js&quot;,
+        
+         // Helpers
+         &quot;helpers/compatibility.js&quot;,
+         &quot;helpers/collections.js&quot;,
+         
+         // App
+         &quot;app/config.js&quot;,
+         &quot;app/events.js&quot;, 
+         &quot;app/state.js&quot;, 
+         &quot;app/ui.js&quot;, 
+         &quot;app/errors.js&quot;, 
+         &quot;app/routes.js&quot;, 
+         
+         // Default Region
+         &quot;views/region.js&quot;,
+        
+         // Default Layout
+         &quot;views/layout.js&quot;,
+         
+         // Models
+         // TODO
+         
+         // Collections
+         // TODO
+         
+         // Pages
+            // Action1
+            &quot;pages/action1/view.js&quot;, // Marionette Layout
+            &quot;pages/action1/events.js&quot;, // View logic
+            &quot;pages/action1/state.js&quot;, // View state, as long as the page is rendered
+            &quot;pages/action1/ui.js&quot;, // DOM manipulation
+            &quot;pages/action1/errors.js&quot;, // Error references
+            
+            // Action2
+            &quot;pages/action2/view.js&quot;,
+            &quot;pages/action2/events.js&quot;,
+            &quot;pages/action2/state.js&quot;,
+            &quot;pages/action2/ui.js&quot;,
+            &quot;pages/action2/errors.js&quot;,
+           
+         &quot;app/app.js&quot; // Start the app here
+      )
+   )
+}
+   </pre>
+</div>
+
+Next, we'll create the template file that references all the third-party libraries. Side-note - you can go ahead and delete the `index.scala.html` file and `main.css`, as they won't be used in this tutorial. It's called `main.scala.html`, and by default, will look like:
+
+<div class="snippet">
+   <pre>
+@(message: String)
+
+@main("Welcome to Play 2.0") {
+    @play20.welcome(message)
+}
+   </pre>
+</div>
+
+The `/public` folder should only be used for third-party Javascript assets and our application CSS **\[we're going to write all client-side Javascript in [CoffeeScript](http://coffeescript.org)\]**. 
+
+<div class="snippet">
+   <pre>
+@(
+   css: List[String], 
+   headJs: List[String], 
+   bodyJs: List[String], 
+   analytics: String
+)(content: Html)
+&lt;!-- 
+css: css file path
+headJs: javascript file paths DOM relevant
+bodyJs: javascript file paths loaded at the end of the page
+content: html body
+--&gt;
+&lt;!doctype html&gt;
+&lt;head&gt;
+   &lt;meta charset=&quot;utf-8&quot; /&gt;
+   &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=8&quot; /&gt;
+   &lt;title&gt;Playback&lt;/title&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;/public/javascripts/bootstrap.css&quot;&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;/public/javascripts/bootstrap-responsive.min.css&quot;&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;/public/javascripts/prettify.css&quot;&gt;
+   &lt;!-- Injected --&gt;
+   @for(cssFile &lt;- css) {
+     &lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/stylesheets/@cssFile&quot;&gt;
+   } 
+   &lt;!-- Logs http://benalman.com/code/projects/javascript-debug/docs/files/ba-debug-js.html --&gt;
+   &lt;script src=&quot;/public/javascripts/debug.min.js&quot;&gt;&lt;/script&gt;
+   &lt;!-- jQuery --&gt;
+   &lt;script src=&quot;/public/javascripts/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+   &lt;script src=&quot;/public/javascripts/augment.js&quot;&gt;&lt;/script&gt;
+   &lt;!-- Bootstrap http://twitter.com/bootstrap --&gt;
+   &lt;script src=&quot;/public/javascripts/prettify.js&quot;&gt;&lt;/script&gt; 
+   &lt;script src=&quot;/public/javascripts/less-1.3.0.min.js&quot;&gt;&lt;/script&gt;
+   &lt;!-- Backbone/Marionette http://backbonejs.org, https://github.com/derickbailey/backbone.marionette --&gt;
+   &lt;script src=&quot;/public/javascripts/json2.js&quot;&gt;&lt;/script&gt;
+   &lt;script src=&quot;/public/javascripts/underscore.min.js&quot;&gt;&lt;/script&gt;
+   &lt;script src=&quot;/public/javascripts/backbone.min.js&quot;&gt;&lt;/script&gt;
+   &lt;script src=&quot;/public/javascripts/backbone.marionette-0.8.1.min.js&quot;&gt;&lt;/script&gt;
+   &lt;!-- Injected --&gt;
+   @for(jsFile &lt;- headJs) {
+      &lt;script src=&quot;/assets/javascripts/@jsFile&quot;&gt;&lt;/script&gt;
+   } 
+&lt;/head&gt;
+&lt;body data-spy=&quot;scroll&quot; data-target=&quot;.subnav&quot; data-offset=&quot;50&quot; onload=&quot;prettyPrint();&quot;&gt;
+   @content
+   &lt;!-- Bootstrap --&gt;
+   &lt;script src=&quot;/public/javascripts/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+   &lt;!-- Injected --&gt;
+   @for(jsFile &lt;- bodyJs) {
+      &lt;script src=&quot;/assets/javascripts/@jsFile&quot;&gt;&lt;/script&gt;
+   } 
+   &lt;!-- Analytics --&gt;
+   &lt;div id=&quot;google-analytics&quot;&gt;@analytics&lt;/div&gt;
+   &lt;script type=&quot;text/javascript&quot;&gt;
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', $('div#google-analytics').html()]);
+      _gaq.push(['_trackPageview']);
+      (function () {
+         var ga = document.createElement('script');       
+         ga.type = 'text/javascript';
+         ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(ga, s);
+      })();
+   &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+   </pre>
+</div>
+
+<h2>Logging</h2>
+
+
+
+The beauty of specifying routes liek we do is that we're `planning on adding more content`, and everything is kept agnostic - want to show this page instead? you don't have to rename it to 'index' and get confused. Keeping things as modular as they can possibly be, and as stateless as they can possibly be. I've foudn it really nice to be able to pass collections around globally
+
+In order to write less code, `I'm using the **evil** _eval()_` function! It serves it's purpose well in the [Backbone Router](http://backbone.org), as _every_ view having to look like this: 
+
+<div class="snippet">
+   <pre>
+# Index page.
+# @page, String, The page being loaded.
+@trace index: (page) -&gt;
+
+  # Mormally, you'd do instantiate below.
+  # Now, we use 'eval' to do the work for you :)
+    
+  App.Pages.Views.Index = new App.Views.Index() 
+  App.Pages.Events.Index = new App.Events.Index()
+  App.Pages.UI.Index = new App.UI.Index()
+  App.Pages.State.Index = new App.State.Index()
+  App.Pages.Errors.Index = new App.Errors.Index()
+
+  @onStandardPageLoad page
+   </pre>
+</div>
+
+When we use a little feng-shued magic, it's as beautiful as:
+
+<div class="snippet">
+   <pre>
+@trace index: (page) -&gt;
+
+  @onStandardPageLoad page
+   </pre>
+</div>
+
+<h2>Template conventions</h2>
+
+1. document the shit out of referneced ids. see stack oveflow ticket.
+1. routes and button#
+
+<h2>Naming comventions</h2>
+At first I thought you couldn't name the same id in a different template that was being displayed at a different time. This doesn't matter. These can be less strict than global 
+
+<h2>ON pages</h2>
+
+aalways layouts. never know when they're going have more inline pages associated.
+pages are always numbered, which makes it easier to swap references. 
+in this example, all pages are named actions - this is because weve noticed in development that the pages are easily swapped out and nothign is named as 'index'.
+
+Things I always needed to seem to differentiate and separate out at a page and application level were objects kept in state identifiable errors.
+
+
+<h2>Namespaces</h2>
+I may have overdone it a bit, but after reading through various blogs and [StackOverflow](http://stackoverflow.com) rants, I decided that the ability to know what's in a global namespace at any given time could be useful, even if they're a bit long in this case **\[App.Pages.Views.Action1 could easily be App.P.V.A1\]**. All class files are scoped separately than their instantiated counterparts. Nothing is ever set in `window` except for `App` and `Portal`, our Backbone and Marionette applications respectively.
+
+<div class="snippet">
+   <pre>
+# Holds the Marionette application.
+window.Portal = { } 
+
+# Holds the entire application. 
+window.App = { } 
+
+# Holds class references for app/pages to all Views, Events, UI, Errors, and states.
+App.Config = { }
+App.Views = { }
+App.Events = { }
+App.UI = { }
+App.State = { }
+App.Errors = { }
+
+# Holds instantiated app references to global Config, Events, UI, Errors, and states.
+App.Global = { }
+
+# Holds instantiated page references to all Views, Events, UI, Errors, and states.
+App.Pages = { }
+App.Pages.Views = { }
+App.Pages.Events = { }
+App.Pages.UI = { }
+App.Pages.State = { }
+App.Pages.Errors = { }
+
+# Holds instantiated references to all Helpers.
+App.Helpers = { }
+
+# Holds class references to all Backbone Models (that are not considered Helpers).
+App.Models = { }
+# Holds class references to all Backbone Collections.
+App.Collections = { }
+
+# Holds class references to all Marionette Regions.
+App.Regions = { } 
+# Holds class references to all Marionette Layouts.
+App.Layouts = { }
+# Holds class references to all Marionette ItemViews.
+App.ItemViews = { } 
+# Holds class references to all Marionette CompositeViews.
+App.CompositeViews = { } 
+
+# Holds instantiated View references.
+App.Rendered = { }
+
+# Holds all global data at an application level.
+App.Data = { } 
+# Holds all global data at a page level.
+App.Data.Pages = { }
+   </pre>
+</div>
+
+<h2>Routes</h2>
+
+<div class="snippet">
+   <pre>
+debug.info 'load Routes'
+  
+class window.Routes extends Backbone.Marionette.AppRouter
+   
+  constructor: (options) -&gt;
+     
+    @on 'all', @storeRoute
+    @history = []
+    super options
+    
+  @trace initialize: () -&gt;
+    
+    debug.info 'Routes: ' + JSON.stringify @routes
+   
+  @trace storeRoute: () -&gt;
+    
+    @history.push Backbone.history.fragment
+
+  @trace getPrevious: () -&gt;
+    
+    if @history.length &gt; 1
+      @history[@history.length - 1] 
+      
+  @trace getPreviousRoute: () -&gt;
+    
+    @getPrevious().split('/')[0]
+    
+  @trace getPreviousPage: () -&gt;
+     
+    @getPrevious().split('/')[1]
+
+  @trace getFormattedWindowHash: () -&gt;
+    
+    hash = window.location.hash
+    hash = hash.substring(1, hash.length) 
+    
+    hash
+
+  @trace getCurrentRoute: () -&gt;
+    
+    current = @getFormattedWindowHash().split('/')[0]
+
+    # Allow us to not specify 'route = &lt;route&gt;' inside every routing method.
+    if !current
+      current = 'index'
+    else
+      current = current
+
+    current = current.charAt(0).toUpperCase() + current.slice(1)    
+    
+  @trace getCurrentPage: () -&gt;
+    
+    @getFormattedWindowHash().split('/')[1]
+  
+  # Before we hit a route...
+  @trace isAuthed: () -&gt;
+
+    return true
+         
+  # When we reload, we can check for auth and redirect for somewhere else. 
+  # @route, String, The page being loaded, e.g. &lt;page&gt;/1
+  @trace onStandardPageLoad: (route) -&gt;
+    
+    if !@isAuthed()
+      return
+      
+    @setupPage route
+
+  # Everytime a page is loaded, default data is cleared by instantiating new 
+  # Views, Events, UI, State, and Error classes.
+  @trace setupPage: (page) -&gt;
+    
+    route = @getCurrentRoute()
+    
+    debug.info 'current route: ' + route
+       
+    event = 'App.Pages.Events.' + route + ' = new App.Events.' + route + '()'
+    debug.info 'eval event: ' + event
+    
+    eval event
+    
+    ui = 'App.Pages.UI.' + route + ' = new App.UI.' + route + '()'
+    debug.info 'eval ui: ' + ui
+    
+    eval ui
+    
+    state = 'App.Pages.State.' + route + ' = new App.State.' + route + '()'
+    debug.info 'eval state: ' + state
+    
+    eval state
+    
+    errors = 'App.Pages.Errors.' + route + ' = new App.Errors.' + route + '()'
+    debug.info 'errors: ' + errors
+    
+    eval errors
+    
+    goTo = 'App.Pages.Events.' + route + '.router(parseInt(' + page + '))'
+    debug.info 'goTo: ' + goTo
+    
+    eval goTo
+    
+  # Place routing actions below.
+    
+  # Index page.
+  # @page, String, The page being loaded.
+  @trace index: (page) -&gt;
+
+    @onStandardPageLoad page
+
+  # Geofences page.
+  # @page, String, The page being loaded.
+  @trace geofences: (page) -&gt;
+   
+    @onStandardPageLoad page
+
+  # Default route.
+  @trace default: () -&gt;
+    
+    @index 1
+   </pre>
+</div>
+
+<h2>Application + Page Architecture</h2>
+
+<div class="snippet">
+   <pre>
+debug.info 'load Events'
+
+class window.Events extends Backbone.Model
+  
+  @trace initialize: () -&gt;
+    
+  @trace geoLocate: () -&gt;
+
+    navigator.geolocation.getCurrentPosition(
+      (position) =&gt;
+        App.Globals.setGeoLocation position.coords.latitude, position.coords.longitude
+    ) 
+   </pre>
+</div>
+
+<div class="snippet">
+   <pre>
+debug.info 'load app'
+
+# Routes
+# Specify defined method on the right from the window.Routes() class.
+ROUTES =
+  'index/:page': 'index'
+  'geofences/:page': 'geofences'
+  '*path': 'default' # Default
+  
+# Helpers.
+App.Helpers.Compatibility = new App.Helpers.Compatibility()
+App.Helpers.Maps = new App.Helpers.Maps()
+App.Helpers.Collections = new App.Helpers.Collections()
+
+# App.
+App.Global.Config = new Config()
+App.Global.Events = new Events()
+App.Global.UI = new UI()
+App.Global.State = new State()
+App.Global.Errors = new Errors()
+
+# Start Marionette.
+App.Portal = new Backbone.Marionette.Application()
+App.Portal.start { } # Don't pass it anything
+
+# Setup default Marionette Layouts/Regions.
+App.Global.State.setDefaultRegion new App.Regions.Default()
+App.Global.State.setDefaultLayout new App.Layouts.Default()
+
+# Render the application HTML wireframe.
+App.Global.State.getDefaultRegion().show App.Global.State.getDefaultLayout()
+
+# Start Backbone history.
+App.Router = new Routes(routes: ROUTES)
+Backbone.history.start()
+   </pre>
+</div>
+
+<h2>Adding a Page</h2>
+Normally in Play!
+
+<h2>Views</h2>
+
+<div class="snippet">
+   <pre>
+class App.Views.Action1 extends Backbone.Marionette.Layout
+
+  template: '#template-action1'
+  regions:
+    contentRegion: '#region-content'
+    
+  events:
+    'click button#do-test': 'test'
+    
+  @trace close: () -&gt;
+    
+    @remove()
+    @unbind()
+
+  @trace test: (event) -&gt;
+
+class App.ItemViews.Action1Page1 extends Backbone.Marionette.ItemView
+
+  template: '#template-action1-page-1'
+    
+  close: () -&gt;
+    
+    @remove()
+    @unbind()
+   </pre>
+</div>
+
+<h2>Errors</h2>
+
+<div class="snippet">
+   <pre>
+class App.Errors.Action1 extends Backbone.Model
+  
+  errors: { }
+  
+  @trace initialize: () -&gt;
+    
+    @errors = @attributes.errors
+    
+    @errors[0] = 'Something went wrong :('
+   </pre>
+</div>
+
+<h2>Events</h2>
+
+DO shit like render a model and a collection and shit after hte layout is displayed. Yea for layouts in case we want to add stuff.
+
+<div class="snippet">
+   <pre>
+class App.Events.Action1 extends Backbone.Model
+  
+  @trace initialize: () -&gt;
+      
+  # Any checks that need to be done to show page.
+  @trace continueToLoad: () -&gt;
+  
+    return true 
+  
+  # Render the page.
+  @trace doBeforeLayouts: () -&gt;
+
+    App.Pages.State.Action1.setLayout new App.Views.Action1()
+    App.Global.State.getContentRegion().show App.Pages.State.Action1.getLayout()
+
+  @trace renderPage1: () -&gt;
+  
+    # Do page 1 related shit, like render another region with a model or collection.
+                     
+  @trace router: (page) -&gt;
+
+    if !@continueToLoad()
+      return
+        
+    @doBeforeLayouts()
+    
+    switch page
+      when 1
+        
+        @renderPage1()
+   </pre>
+</div>
+
+<h2>State</h2>
+
+Depending on the application makeup, keeping various states can get fairly tedious to manage. Even for a single page. (Think lots of sensors and realtime).
+
+<div class="snippet">
+   <pre>
+class App.State.Action1 extends Backbone.Model
+  
+  @trace initialize: () -&gt;
+    
+    # Set
+    App.Data.Pages.Index = { }
+  
+  @trace setLayout: (layout) -&gt;
+
+    App.Data.Pages.Index.layout = layout
+  
+  @trace getLayout: () -&gt;
+  
+    App.Data.Pages.Index.layout  	
+   </pre>
+</div>
+
+<h2>UI
+
+<div class="snippet">
+   <pre>
+debug.info 'load App.UI.Action1'
+
+class App.UI.Action1 extends Backbone.Model
+
+  @trace initialize: () -&gt;
+   </pre>
+</div>

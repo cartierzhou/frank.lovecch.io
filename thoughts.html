@@ -63,7 +63,7 @@ back: index.html
       {% if post.status == 'completed' %}
          {% if post.category == 'thoughts' %}
             {% if post.subcategory == 'blog' %}
-               {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
+               {% capture mod_threeblog %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
                {% if mod_three == '0' %}
                   <div class="single-post-container">
                {% endif %}
@@ -78,7 +78,7 @@ back: index.html
                      </a>
                   </div>
                </div>
-               {% if mod_three == '2' or forloop.last %}
+               {% if mod_threeblog == '2' or forloop.last %}
                   </div>
                {% endif %}
             {% endif %}

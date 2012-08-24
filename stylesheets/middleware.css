@@ -68,6 +68,12 @@ a:hover {
   height: 800px;
   display: block;
 }
+.snippet {
+  width: 100%; 
+  column-span: all;
+  -moz-column-span: all;
+  -webkit-column-span: all; 
+}
 /* Override Bootstrap */
 code {
   line-height: 190%;

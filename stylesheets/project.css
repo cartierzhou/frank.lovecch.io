@@ -37,6 +37,11 @@ div.project {
     text-align: center;
     margin: 0 auto;
   }
+  div.project .scroll-content {
+    overflow: scroll;
+    height: 300px;	
+    cursor: pointer;
+  }
   div.project div.body div.columns {
 	border-top: 1px solid #eee;
 	margin-top: -20px;
@@ -95,7 +100,11 @@ img.project {
   margin-bottom: 20px;
   border: 1px solid #eee;
 }
-
+pre.terminal {
+  background: black;
+  color: white;
+  font-size: 14px;
+}	
 img.inline {
   border: 1px solid #eee;
   display: block;   
