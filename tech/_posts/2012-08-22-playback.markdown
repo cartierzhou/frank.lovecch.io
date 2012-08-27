@@ -5,7 +5,7 @@ status: completed
 category: tech
 back: tech.html
 title: playback.
-quote: An advanced front-end architecture for Play! 2.0 with Backbone.js, Marionette, &amp; _CoffeeScript_.
+quote: An advanced front-end architecture for Play! 2.0 with Backbone.js, Marionette, &amp; CoffeeScript.
 source: playback
 demo: http://franklovecchio-playback.herokuapp.com/?log=true
 ---
@@ -397,7 +397,7 @@ Backbone.history.start()
 
 The reason for following `:view/:page` is simple; it's what I could break down every URL to. If I wanted to keep state via the URL in a more complicated fashion, I'd simply override `standardRouter` and delimit the data passed through.
 
-<h2>Conventions</h2>
+<h2>[conventions]</h2>
 I think the best way to follow the _Page_ process is to show modifications necessary for adding one. Before we do that, let's look at some conventions used:
 
 1. In _Scala_ template files, always reference DOM elements that are bound to _Backbone Views_ with a `do-` prefix.
@@ -544,7 +544,7 @@ In order for the application to know about this _Scala_ template, we need to ref
    </pre>
 </div>
 
-<h2>Views</h2>
+<h2>[views]</h2>
 All pages are defined as _Marionette Layouts_, as it makes it easy to add new `Marionette Regions`, which typically hold `Collections`, `Models`, or even nested `Layouts`. A simple example creates a single, swappable content region:
 
 <div class="snippet">
@@ -614,7 +614,7 @@ class App.Views.Action3 extends Backbone.Marionette.Layout
 
 The `doSomething` method references a method of the same name in the _Events_ class related to the page; `it's a good idea to keep all logic inside the Events classes of Pages`.
 
-<h2>Events</h2>
+<h2>[events]</h2>
 Since _Page_ logic is contained in the _Events_ classes, they can grow to be quite large. Here's a brief overview of what I see happening most of the time on _Page_ render:
 
 1. Check if something is defined.
@@ -668,7 +668,7 @@ class App.Events.Action3 extends Backbone.Model
     </pre>
 </div> 
 
-<h2>UI</h2>
+<h2>[ui]</h2>
 Anytime I've used _jQuery_ to manipulate elements on a large scale, `it got messy really fast`. The best way I could think to keep this in check was to move all references of _jQuery_ manipulation to a separate helper. Because it's so prevalent, it just made sense to package this `UI` class with all _Pages_. In the constructor, single references are made to the elements being manipulated - `this works really well for managing complicated shit`:
 
 <div class="snippet">
@@ -685,7 +685,7 @@ class App.UI.Action3
     </pre>
 </div>
    
-<h2>State</h2>
+<h2>[state]</h2>
 Managing global variables has always been a pain in the ass in _Javascript_, which is probably why I went so namespace crazy above. `Every Page` has a _State_ class which holds, at the very least, its _Layout_ reference. Every time the _Backbone Router_ is called and the _Page_ is rendered, the globals are cleared. In it's most basic form:
 
 <div class="snippet">
@@ -707,4 +707,4 @@ class App.State.Action3 extends Backbone.Model
     </pre>
 </div>
 
-That's all she wrote for now. I didn't go through the _Helper_ classes much, as the code for those is well-documented in the source...and mostly self-explanatory. I'll work on making this a more exhaustive tutorial. I hope this gives you an idea of how to structure your front-end applications in a more well-formed way!
+That's all she wrote for now. I didn't go through the _Helper_ classes much, as the code for those is well-documented in the source...and mostly self-explanatory. I'll work on making this a more exhaustive tutorial. I hope this gives you an idea of how to structure your front-end applications in a more well-formed way! 
