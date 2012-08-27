@@ -5,7 +5,7 @@ status: completed
 category: tech
 back: tech.html
 title: playback.
-quote: Advanced Play! 2.0 and Backbone.js Applications with CoffeeScript.
+quote: An advanced front-end architecture for Play! 2.0 with Backbone.js, Marionette, &amp; CoffeeScript.
 source: playback
 ---
 
@@ -91,18 +91,23 @@ When decision had to be made on architecture at at [2lemetry](http://2lemetry.co
 It also had multiple features we were looking for in terms of front-end development, namely `compiled CoffeeScript, routes, and templates`.
 
 <h2>Standards</h2>
-1. All CoffeeScript, all the time. **\[yes, Jason, that means you too :)\]**.
-1. `No Javascripts inside HTMl files`.
+1. All CoffeeScript, all the time.
+1. `No Javascript inside HTMl files`.
 1. [Format HTML](http://www.freeformatter.com/html-formatter.html).
 1. Format CoffeeScript: _two_-space indents.
-1. No `""`, only `''` in Javascripts.
+1. No `""`, only `''` in Javascripts, or no double-quotes. 
 
 <h2>Open Source</h2>
-We made the decision to open-source what we've learned for a few reasons:
+I made the decision to open-source this architecture for a few reasons:
 
-1. We haven't found anything like this in the wild.
+1. I haven't found anything like this in the wild.
 1. It's a good, real-world use case of an application in production.
-1. We love open-source, and want the community to help `make it better` with their knowledge. After all, we're learning too.
+1. I love open-source, and want the community to help `make it better` with their knowledge.
+
+<h2>But really, TL;DR;</h2>
+The application does a mariade of things which seem to be prevalent in any standard application. It has _two_ pages, the first of which displays a collection, held in page state, in table form. The collection can be modified through table interaction. The second page displays a collection held in global state, which updates on WebSocket requests (for this demo, it's just an echo-server which is simulated by clicking the button). jQuery is used to manipulate the states of various dialogue notifications and display different shit when the collections are empty.
+
+There are some generic helpers that do modifications to collections, as well as handle browser compatibility. 
 
 <h2>Play! 2.0 Setup</h2>
 
@@ -178,11 +183,11 @@ play! 2.0, http://www.playframework.org
 </div>
 
 <h2>IDE</h2>
-Import the project into your editor, which is _Eclipse_ in my case. The _Scala_ plugin and _Play!_ do not always play well. Some things to be aware of:
+Import the project into your editor of choice; it's _Eclipse_ in my case. The _Scala_ plugin and _Play!_ do not always play well. Some things to be aware of:
 
-1. When adding new template files, you have to specify `Ok` in the controller, `play run` the application, then `refresh` _Eclipse_ to be able to reference the newly added template.
+1. When adding new template files, you have to specify `Ok` in the controller, `play run` the application, then `refresh` the _Eclipse_ project to be able to reference the newly added template. It's a bit silly.
 
-1. Like I said earlier, lots of CoffeeScript files slow down compiling the app when packaged Javascripts are changed, and it's quite noticeable.
+1. Lots of CoffeeScript files slow down compiling the app when packaged Javascripts are changed, and it's quite noticeable. I'm not sure why they haven't made this better. I've even tried an alternative compiler to no avail.
 
 <h2>Defaults</h2>
 The framework creates an application which expects something a little bit different then what we're doing, and leaving unused assets around can get confusing. Please delete:
@@ -191,7 +196,7 @@ The framework creates an application which expects something a little bit differ
 1. `/app/views/index.scala.html`
 
 <h2>Routing</h2>
-Rendering a single HTML file requires _two_ modifications to the _Play!_ application. Normally, we'd have to add a route to the `/conf/routes` file to point the HTTP request to the right place, but it's already done for us: 
+Rendering a single HTML file, which represents our entire _Backbone.js_ application, will require _two_ modifications to _Play!_ files. Normally, we'd have to add a route to the `/conf/routes` file to point the HTTP request to the right place, but it's already done for us: 
 
 <div class="snippet">
    <pre>
@@ -221,7 +226,9 @@ object Application extends Controller {
    </pre>
 </div>
 
-Using Play!'s Scala templates, we have the ability to manage our assets in one place. These templates require a `.scala` prefix to any HTML file. It makes it really easy to pass data from the server side to the templates, but I only use them for resources **\[I'm trying to be as framework-agnostic as possible\]**. Think of them as something similar to [Mustache](http://mustage.org) or [Underscore](http://underscore.org). Create a new template file in `/app/views/` as `app.scala.html`. This is our the main application template, but is strictly a wireframe for passing resources to another template where we'll hold all our static resources, `main.scala.html` **\[a Play! standard\]**. `By doing this we can define separate applications`, if we like, inside a single Play! application - at the moment, there really isn't a way to share client-side resources between Play! apps - this was really the best way I could find to accomplish this. The whole file is displayed below:
+Using Play!'s Scala templates, we have the ability to manage our assets in one place. These templates require a `.scala` prefix on any HTML file. It makes it really easy to pass data from the server side to the templates, but I only use them for resources **\[I'm trying to be as framework-agnostic as possible\]**. Think of them as something similar to [Mustache](mustache.github.com) or [Underscore](http://underscore.org).
+
+Create a new template file in `/app/views/` named `app.scala.html`. This is our the main application template, but is strictly a wireframe for passing resources to another template where we'll hold all our static resources, `main.scala.html` **\[a Play! standard\]**. `By doing this we can define separate applications`, if we like, inside a single Play! application, **\[think PROD, STAGING, and DEV\]**. There isn't a way to share client-side resources between _two_ separate Play! apps like there is on the server-side **\[vis-a-vis [plugins](https://github.com/playframework/Play20/wiki/Modules)\]**, and creating separate applications without using separate `git branches` seemed to work well like this. The whole file is displayed below, and references every non third-party Javascript we're using:
 
 <div class="snippet">
    <pre>
@@ -330,40 +337,54 @@ content: html body
    &lt;meta charset=&quot;utf-8&quot; /&gt;
    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=8&quot; /&gt;
    &lt;title&gt;Playback&lt;/title&gt;
-   &lt;link rel=&quot;stylesheet&quot; href=&quot;/public/javascripts/bootstrap.css&quot;&gt;
-   &lt;link rel=&quot;stylesheet&quot; href=&quot;/public/javascripts/bootstrap-responsive.min.css&quot;&gt;
-   &lt;link rel=&quot;stylesheet&quot; href=&quot;/public/javascripts/prettify.css&quot;&gt;
-   &lt;!-- Injected --&gt;
+   
+   &lt;!-- Bootstrap styles. Makes it easy to develop quickly. --&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;/public/stylesheets/third-party/bootstrap.min.css&quot;&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;/public/jstylesheets/third-party/bootstrap-responsive.min.css&quot;&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;/public/stylesheets/third-party/prettify.css&quot;&gt;
+   
+   &lt;!-- Injected head CSS from Scala templates. --&gt;
    @for(cssFile &lt;- css) {
      &lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/stylesheets/@cssFile&quot;&gt;
    } 
-   &lt;!-- Logs http://benalman.com/code/projects/javascript-debug/docs/files/ba-debug-js.html --&gt;
+   
+   &lt;!-- Logging http://benalman.com/code/projects/javascript-debug/docs/files/ba-debug-js.html --&gt;
+   &lt;!-- Takes care of IE issues with console, adds built in ability to turn on/off logs, adds various states. --&gt;
    &lt;script src=&quot;/public/javascripts/debug.min.js&quot;&gt;&lt;/script&gt;
+   
    &lt;!-- jQuery --&gt;
    &lt;script src=&quot;/public/javascripts/jquery-1.7.1.min.js&quot;&gt;&lt;/script&gt;
+   
+   &lt;!-- Takes care of IE issues with jQuery. --&gt;
    &lt;script src=&quot;/public/javascripts/augment.js&quot;&gt;&lt;/script&gt;
-   &lt;!-- Bootstrap http://twitter.com/bootstrap --&gt;
+   
+   &lt;!-- Bootstrappy --&gt;
    &lt;script src=&quot;/public/javascripts/prettify.js&quot;&gt;&lt;/script&gt; 
    &lt;script src=&quot;/public/javascripts/less-1.3.0.min.js&quot;&gt;&lt;/script&gt;
-   &lt;!-- Backbone/Marionette http://backbonejs.org, https://github.com/derickbailey/backbone.marionette --&gt;
+   
+   &lt;!-- Backbone/Underscore/Marionette --&gt;
    &lt;script src=&quot;/public/javascripts/json2.js&quot;&gt;&lt;/script&gt;
    &lt;script src=&quot;/public/javascripts/underscore.min.js&quot;&gt;&lt;/script&gt;
    &lt;script src=&quot;/public/javascripts/backbone.min.js&quot;&gt;&lt;/script&gt;
    &lt;script src=&quot;/public/javascripts/backbone.marionette-0.8.1.min.js&quot;&gt;&lt;/script&gt;
-   &lt;!-- Injected --&gt;
+   
+   &lt;!-- Injected head Javascripts from Scala templates --&gt;
    @for(jsFile &lt;- headJs) {
       &lt;script src=&quot;/assets/javascripts/@jsFile&quot;&gt;&lt;/script&gt;
    } 
+   
 &lt;/head&gt;
 &lt;body data-spy=&quot;scroll&quot; data-target=&quot;.subnav&quot; data-offset=&quot;50&quot; onload=&quot;prettyPrint();&quot;&gt;
    @content
-   &lt;!-- Bootstrap --&gt;
+   &lt;!-- Bootstrap! --&gt;
    &lt;script src=&quot;/public/javascripts/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-   &lt;!-- Injected --&gt;
+   
+   &lt;!-- Injected body Javascripts go at the end of the page for faster loading. --&gt;
    @for(jsFile &lt;- bodyJs) {
       &lt;script src=&quot;/assets/javascripts/@jsFile&quot;&gt;&lt;/script&gt;
    } 
-   &lt;!-- Analytics --&gt;
+   &lt;!-- Google Analytics --&gt;
+   &lt;!-- Allow multiple applications to be displayed with a dynamic ID --&gt;
    &lt;div id=&quot;google-analytics&quot;&gt;@analytics&lt;/div&gt;
    &lt;script type=&quot;text/javascript&quot;&gt;
       var _gaq = _gaq || [];
@@ -802,3 +823,32 @@ class App.UI.Action1 extends Backbone.Model
   @trace initialize: () -&gt;
    </pre>
 </div>
+
+
+<h2>Even more complicated</h2>
+Normally, an app might have various `Regions` associated wiht it - a menu, a top bar (bootstrappy). That's Ok. Those are pages in themselves, and the only difference between adding a standard page and adding another region to a layout is that you don't specify the route the same. Instead, in the Layout `regions` object, you add the reference to the template.
+
+<h2>templates</h2>
+obj.data so as to avoid null valuds
+
+even if verbose, i got away from sharing templates. most of the time, css tweaks made them different. so, each page ended up having a similar refercne to a collection, if not just styled differently. 
+
+<h2>models</h2>  
+
+<div class="snippet">
+   <pre>
+@trace initialize: () ->
+    
+    @id = @attributes.id
+    @data = @attributes.data
+  </pre>
+</div>
+
+This is always done so I can call something.data, instead of something.get 'data' ...normal?
+
+<h2>collections with marionette</h2>
+I consitently ran into the issue of displaying an empty collection, and formed a pattern of showing/hiding. Whether or not it works for everyone is the issue.
+
+<h2>Additions</h2>
+SASS
+socket.io 

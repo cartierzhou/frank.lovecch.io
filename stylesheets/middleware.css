@@ -73,7 +73,18 @@ a:hover {
   column-span: all;
   -moz-column-span: all;
   -webkit-column-span: all; 
+  color: rgb(69, 54, 37);
+  font-weight: bold;
+  margin-bottom: 15px;
 }
+pre.terminal {
+  background: black;
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}	
 /* Override Bootstrap */
 code {
   line-height: 190%;
