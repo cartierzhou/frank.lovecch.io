@@ -10,9 +10,9 @@ source: playback
 demo: http://franklovecchio-playback.herokuapp.com/?log=true
 ---
 
-I've been doing a lot of front-end development these past couple years, in between [bouts](http://github.com/franklovecchio/app-mq) of the complete opposite. I guess you might call it developer _pivoting_, which seems to happen frequently with startups **\[otherwise known as fighting fires\]**. I enjoy being able to push my limits every time I have the chance to revisit the same problem I encountered in the past, but always armed with a better skill-set than before; this especially applies to UI. Since the release of [Bootstrap](http://twitter.com/bootstrap), I've taken notice to the seemingly endless amount of new techniques and libraries available for solving interface problems better. The reinvention, or building upon, was no-doubt absolutely necessary - not _just_ [Hacker News](http://news.ycombinator.org) propoganda. Have you ever tried to build a large, complex web application which needed to support all browsers back to IE7, and every browser that runs on any tablet or mobile device? It's damned hard, but the tools are getting better and making development much more efficient. 
+I've been doing a lot of front-end development these past couple years, in between [bouts](http://github.com/franklovecchio/app-mq) of the complete opposite. I guess you might call it developer _pivoting_, which seems to happen frequently with startups **\[otherwise known as fighting fires\]**. I enjoy being able to push my limits every time I have the chance to revisit the same problem I encountered in the past, but always armed with a better skill-set than before; this especially applies to UI. Since the release of [Bootstrap](http://twitter.com/bootstrap), I've taken notice to the seemingly endless amount of new techniques and libraries available for solving interface problems better. The reinvention, or building upon, was no-doubt absolutely necessary - not _just_ [Hacker News](http://news.ycombinator.org) propoganda. Building large, complex web applications **\[which need to support all browsers back to _Internet Explorer 7_\]** can be difficult, especially now that there's mobile and tablets to account for. I set out to learn these new tools, and in the process, had a little bit more fun building UI than I normally do.
 
-<h2>Why Play! 2.0 &amp; Backbone.js?</h2>
+<h2>[play 2.0 &amp; backbone.js]</h2>
 
 Let's let history tell the story. _Two_ years ago, I would have written a PHP-based application in [CodeIgniter](http://codeigniter.com), and `heavily mixed Javascript and PHP`, using a library like [YUI](http://yuilibrary.com/) as the AJAX wrapper for building UI elements from data sets:
 
@@ -59,7 +59,7 @@ YAHOO.util.Event.addListener(window, &quot;load&quot;, function () {
   </pre>
 </div>
 
-_One_ year ago, I would have been writing a Java-based application in [Play! 1.2.4](http://www.playframework.org/documentation/1.2.4/home), and `echoing HTML inside Javascript`. I remember re-rendering the headers of _ul_ blocks and having to create my own `repaint` methods **\[because of CSS issues\]** when building UI elements from data sets, and the same went for tables:
+_One_ year ago, I would have been writing a Java-based application in [Play! 1.2.4](http://www.playframework.org/documentation/1.2.4/home), and `echoing HTML inside Javascript`. I remember re-rendering the headers of `ul` blocks and having to create my own `repaint` methods **\[because of CSS issues\]** when building UI elements from data sets:
 
 <div class="snippet">
    <pre>
@@ -83,26 +83,26 @@ function HTMLCreator() {
   </pre>
 </div>
 
-It makes me want to cry/pout when looking back. Building sustainable, reusable features like that took forever. I didn't know any better, and the learning curve on the shiny new frameworks like [Backbone.js](http://backbonejs.org) was rather steep; especially when you wanted to throw in learning _true_ _CoffeeScript_ at the same time **\[because it just seemed like the thing to do\]**.
+It makes me want to cry/pout when looking back. Building sustainable, reusable features like that took forever. I didn't know any better, and the learning curve of the shiny new frameworks like [Backbone.js](http://backbonejs.org) was rather steep; especially when you wanted to throw in learning _true_ _CoffeeScript_ at the same time **\[because it just seemed like the thing to do\]**.
 
 When decision had to be made on architecture at at [2lemetry](http://2lemetry.com), we chose [Play! 2.0](http://playframework.org) and [Scala](http://scala-lang.org) as our web application back-end/language; it supports the massive amounts of Java libraries out there, _and_ works with [AKKA](http://akka.io). We adopted the framework before it was even released, and that only caused a few headaches :) 
 
-It also had multiple features we were looking for in terms of front-end development, namely `compiled _CoffeeScript_, routes, and templates`. Something I think is especially important to note: `do not use Scala templates to render data to the page`; it makes it much harder to manipulate.
+It also had multiple features we were looking for in terms of front-end development, namely `compiled CoffeeScript, routes, and templates`. Something I think is especially important to note: `do not use Scala templates to render collections of data to the page`; it makes it much harder to manipulate.
 
-<h2>Pre-Requisistes</h2>
+<h2>[pre-reqs]</h2>
 1. [Play! 2.0](http://playframework.org)
 1. [Backbone.js](http://backbonejs.org)
 1. [Marionette](https://github.com/derickbailey/backbone.marionette)
 
-<h2>Standards</h2>
+<h2>[standards]</h2>
 1. All _CoffeeScript_, all the time.
 1. `No Javascript inside HTMl files`.
 1. [Format HTML](http://www.freeformatter.com/html-formatter.html).
 1. Format _CoffeeScript_: _two_-space indents.
 1. No `""`, only `''` in _Javascripts_, or no double-quotes. 
 
-<h2>Functionality</h2>
-The application does a few things that seem to be standard across any web application, but standardizes a workflow using a concept of _Pages_ **\[more on that later\]**. It starts with _two_ arbitrarily named pages; we all know how quickly what needs to show up first on a dashboard can change in development cycles. The first page displays a _Collection_ in `table` form. _Models_ can be added to the _Collection_, or removed from it, and DOM elements are manipulated in the process. The second page displays a _Collection_ in `div` form, and updates when a WebSocket server running locally **\[a message is triggered by button-click\]**, pushes a new _Model_ to the page.
+<h2>[functionality]</h2>
+The application takes into account things I ran into on a regular basic across any application, but standardizes a workflow using the concept of _Pages_ **\[more on that later\]**. It starts with _two_ arbitrarily named _Pages_, named as _Actions_; we all know how quickly what needs to show up first on a dashboard can change in development cycles. The first page displays a _Collection_ in `table` form. _Models_ can be added to the _Collection_, or removed from it, and DOM elements are manipulated in the process. The second page displays a _Collection_ in `div` form, and updates when a WebSocket server running locally **\[a message is triggered by button-click\]**, pushes a new _Model_ to the page.
 
 There are some generic helpers that do some nice modifications to _Collections_, as well as handle browser compatibility - geographic location is pulled when not using _Internet Explorer_.
 
@@ -111,13 +111,12 @@ On a _Backbone.js_ level, nothing is assumed as working out of the box - all _Co
 Other features that came from real-world use-cases:
 
 1. A _WebSocket Model_ which opens connection when then second page is viewed; the connection is than closed when the page changes.
-1. A generic implementation of a _Model_**[\how I would build breadcrumbs\]**, and one that pulls from a local API.
+1. A generic implementation of a _Model_ **\[how I would build breadcrumbs\]**, and one that pulls from a local API.
 
-<h2>Why Marionette?</h2>
+<h2>[marionette]</h2>
 When initially exploring _Backbone_ and _CoffeeScript_ together, _Views_ confused me; there was way too much DOM referencing inside the Javascript - I'm still not OK with [double-references](http://stackoverflow.com/questions/12055038/global-references-b-t-templates-and-views), but at least there's some transparency in the way I approach it. _Marionette_ provides a very modular approach to building UI with it's _Regions_ and _Layouts_, and even though the learning-curve was doubly-steep, it makes the Javascript files more readable.
 
-<h2>Run</h2>
-
+<h2>[run]</h2>
 In order to run the application, you'll need to download _Play!_, have Java installed, and generally know how to do stuff. 
 
 <div class="snippet">
@@ -134,17 +133,17 @@ Franks-MacBook-Pro:playback franklovecchio$ sudo play run
   </pre>
 </div>
 
-<h2>IDE</h2>
+<h2>[ide]</h2>
 Import the project into your editor of choice; if it's _Eclipse_, like in my case, the _Scala_ plugin and _Play!_ do not always play well. Some things to be aware of:
 
 1. When adding new template files, you have to specify `Ok` in the controller, `play run` the application, then `refresh` the _Eclipse_ project to be able to reference the newly added template. It's a bit silly. `You won't need to do this for the demo application, just if you're creating a new one`.
 
 1. Lots of _CoffeeScript_ files slow down the app compile-time, but only when packaged _Javascripts_ are changed, and it's quite noticeable. I'm not sure why they haven't made this better. I've even tried an alternative compiler to no avail.
 
-<h2>Templating</h2>
+<h2>[templating]</h2>
 Using _Play!_'s Scala templates, we have the ability to manage our assets in one place. These templates require a `.scala` prefix on any HTML file you wish to make a template. It makes it really easy to pass data from the server side to the templates, but I only use them for resources **\[I'm trying to be as framework-agnostic as possible\]**. Think of them as something similar to [Mustache](mustache.github.com) or [Underscore](http://underscore.org).
 
-Our main application template is located at `/app/views/app.scala.html`. It is strictly a dependency management tool for passing resources to another template, `main.scala.html`, where we'll hold all our static resources. `By doing this we can define separate applications`, if we like, inside a single _Play!_ app, **\[think PROD, STAGING, and DEV\]**. There isn't a way to share client-side resources between _two_ separate _Play!_ apps like there is on the server-side **\[vis-a-vis [plugins](https://github.com/playframework/Play20/wiki/Modules)\]**, and creating separate apps without using separate `git branches` seemed to work well like this. The whole file is displayed below, and references every non third-party _Javascript_ we're using **\[typically everything we wrote\]**.
+Our main application template is located at `/app/views/app.scala.html`. It is strictly a dependency management tool for passing resources to another template, `main.scala.html`, where we'll hold all our static resources. `By doing this we can define separate applications`, if we like, inside a single _Play!_ app, **\[think PROD, STAGING, and DEV\]**. There isn't a way to share client-side resources between _two_ separate _Play!_ apps like there is on the server-side **\[vis-a-vis [plugins](https://github.com/playframework/Play20/wiki/Modules)\]**, and creating separate apps without using separate `git branches` seemed to work well like this. The whole file is displayed below, and references every non third-party _Javascript_ we're using **\[typically everything we wrote\]**:
 
 <div class="snippet">
    <pre>
@@ -222,7 +221,7 @@ Our main application template is located at `/app/views/app.scala.html`. It is s
 
 It's pretty self-explanatory, and everything at bottom of the _List_ is dependent on the files described above it. _Pages_ are displayed in blocks, and are an agnostic concept that came from developing these applications. A _Page_ is simply an _Eclipse_ package and has _four_ class files associated with it **\[UI isn't always used\]**.
 
-The `main.scala.html` reference holds all references to the third-party libraries we are using to make the application browser compatible back to _Internet Explorer 7_; there's nothing like `building on the shoulders of giants`:
+The `main.scala.html` template holds all references to the third-party libraries we are using to make the application browser compatible back to _Internet Explorer 7_; there's nothing like `building on the shoulders of giants`:
 
 <div class="snippet">
    <pre>
@@ -310,7 +309,7 @@ content: html body
    </pre>
 </div>
 
-<h2>Namespaces</h2>
+<h2>[namespaces]</h2>
 I may have overdone it a bit, but after reading through various blogs and [StackOverflow](http://stackoverflow.com) rants, I decided that the ability to know what's in a global namespace at any given time could be useful, even if they're a bit long in this case **\[App.Pages.Views.Action1 could easily be App.P.V.A1\]**. All class files are scoped separately than their instantiated counterparts - I'm not sure if this is good practice or not, but it works. Nothing is ever set in `window` except for `App`, `Portal`, and `Helpers`:
 
 <div class="snippet">
@@ -369,15 +368,15 @@ App.Data.Pages = { }
    </pre>
 </div>
 
-<h2>Logging</h2>
-By appending a _GET_ parameter of `?log=true`, we have the ability to urn on logging to the application, and it's _Internet Explorer_ safe! `By default, logging is turned off`.
+<h2>[logging]</h2>
+By appending a _GET_ parameter of `?log=true`, we have the ability to turn on logging to the application, and it's _Internet Explorer_ safe! `By default, logging is turned off`.
 
-For application logging, I got tired of writing `debug.info 'MyClass.myMethod()` [really quickly](http://stackoverflow.com/questions/11973181/log-every-method). The solution is to prepend every method but `constructor` with `@trace` to make `debug.info` happen on every method automatically. **Note:** one minor issue is that `App.SomeSpace.MyClass` logs as `MyClass`.
+For application logging, I got tired of writing `debug.info 'MyClass.myMethod()` [really quickly](http://stackoverflow.com/questions/11973181/log-every-method). The solution is to prepend every method but `constructor` with `@trace` to make `debug.info` happen automatically when the method is called. **Note:** one minor issue is that `App.SomeSpace.MyClass` logs as `MyClass`.
 
-<h2>Routes</h2>
+<h2>[routes]</h2>
 In `/app/assets/javascripts/app/app.coffee`, where the application is started from a _Backbone_ perspective, I made it so that creating a page does **not** require modification of the `Routes` class; instead, you'd simply follow the convention for creating a _Page_, and you can set the default route programatically: 
 
-1. Using some Googled trickery, routes are not case sensitive!
+**Note**: using some Googled trickery, routes are not case sensitive!
 
 <div class="snippet">
    <pre>
@@ -396,7 +395,7 @@ Backbone.history.start()
    </pre>
 </div>
 
-The reason for following `:view/:page` is simple; it's what I could break down every url to. If I wanted to keep state via the URL in a more complicated fashion, I'd simply override `standardRouter` and delimit the data passed through.
+The reason for following `:view/:page` is simple; it's what I could break down every URL to. If I wanted to keep state via the URL in a more complicated fashion, I'd simply override `standardRouter` and delimit the data passed through.
 
 <h2>Conventions</h2>
 I think the best way to follow the _Page_ process is to show modifications necessary for adding one. Before we do that, let's look at some conventions used:
@@ -405,12 +404,12 @@ I think the best way to follow the _Page_ process is to show modifications neces
 1. In _Scala_ template files, always reference DOM elements that are bound to our _UI_ classes, so we don't go on a renaming spree and break shit.
 1. _Pages_ are **always** _Marionette Layouts_; it makes it easy to add new features by just adding more _Regions_
 1. _Pages_ are **always** numbered; it makes it easier to swap references, placement, and makes routing simpler. Most of the time, this works really well.
-1. _Pages_ are generic references to actions, as when developing an application, the page functionality - and it's name - might change on completion.
+1. _Pages_ are generic references to _Actions_, as when developing an application, the page functionality - and it's name - might change on completion.
 1. States for _Pages_ are cleared when the view changes. If you need to keep something in state globally, you can use the _App.State_ class.
-1. Templates have `obj.someId` to avoid breaking when an attribute is undefined, even if it prints undefined.
-1. All _Pages_ have their own CSS files and classes inside them are prefixed based on their name; this makes it easier to track down, at a glance, issues.
+1. Templates reference data via `obj.someId` to avoid breaking when an attribute is undefined, even if it _does_ render as `undefined`.
+1. All _Pages_ have their own CSS files, and classes inside them are prefixed based on their name; this makes it easier to track down issues at-a-glance.
 
-<h2>Application Core</h2>
+<h2>[application core]</h2>
 The entire _Backbone_ application instantiation can be summed up by _42_ lines of _CoffeeScript_:
 
 <div class="snippet">
@@ -458,23 +457,23 @@ Backbone.history.start()
 The process, on each page reload:
 
 1. Declare routes.
-1. Instantiate application classes **[\these are equivalent to _Pages_ \]**.
+1. Instantiate application classes **\[these are equivalent to _Pages_ \]**.
 1. Geo-locate.
 1. Setup/render the default application template with _Marionette_.
 1. Start the _Backbone Router_.
 
-<h2>Adding a Page</h2>
-To create a third page in this app, we'll call it `Action3`, we'd start off by adding an _Eclipse_ package called `/app/assets/Javascripts/pages/action3`. _Pages_ require _four_ new Javascript files:
+<h2>[adding a page]</h2>
+To create a third page in this app, we'll call it `Action3`, we'd start off by adding an _Eclipse_ package called `/app/assets/javascripts/pages/action3`. _Pages_ require _four_ new Javascript files:
 
-1. `/app/assets/javscripts/pages/action3/events.coffee`
+1. `/app/assets/javascripts/pages/action3/events.coffee`
 
-1. `/app/assets/javscripts/pages/action3/state.coffee`
+1. `/app/assets/javascripts/pages/action3/state.coffee`
 
-1. `/app/assets/javscripts/pages/action3/ui.coffee`
+1. `/app/assets/javascripts/pages/action3/ui.coffee`
 
-1. `/app/assets/javscripts/pages/action3/view.coffee`
+1. `/app/assets/javascripts/pages/action3/view.coffee`
 
-In order to simplify pages, I'm using the `eval()` function to instantiate _Page_ classes from a single defined route object inside `/app/assets/javscripts/app/app.coffee` **\[view the source of the Routes class, it's pretty cool\**]/. We need to a reference to our new route:
+In order to simplify pages, I'm using the `eval()` function to instantiate _Page_ classes from a single defined route object inside `/app/assets/javscripts/app/app.coffee` **\[view the source of the Routes class, it's pretty cool\]**. We need a reference to our new route, now:
 
 <div class="snippet">
    <pre>
@@ -613,18 +612,18 @@ class App.Views.Action3 extends Backbone.Marionette.Layout
     </pre>
 </div> 
 
-The `doSomething` method references a method of the same name in the _Events_ class related to the page; `it's a good idea to keep all logic inside the _Events_ classes of pages`.
+The `doSomething` method references a method of the same name in the _Events_ class related to the page; `it's a good idea to keep all logic inside the Events classes of Pages`.
 
 <h2>Events</h2>
-Since _Page_ logic is contained the _Events_ classes, they can grow to be quite large. Here's a brief overview of what I see happening most of the time on _Page_ render:
+Since _Page_ logic is contained in the _Events_ classes, they can grow to be quite large. Here's a brief overview of what I see happening most of the time on _Page_ render:
 
-1. Check if something is defined, and it's possibly kept in global state.
+1. Check if something is defined.
 1. If not defined, go somewhere else.
 1. If defined, request some data, render it to the _Page_.
 
 In the code, this boils down to:
 
-1. Check if something is defined in `continueToLoad`, return `false` if it's not, and reference `App.Router.navigate toMyPage` if ti's not.
+1. Check if something is defined in `continueToLoad`, return `false` if it's not, and reference `App.Router.navigate 'action/1', true` as the redirect tool. `Always uses the Backbone Router to navigate`. 
 1. Swap the global content _Region_ out with our _Layout_ in `doBeforeLayouts`.
 1. `renderPage1` renders the _Layout_, and could swap in requested data.
 
@@ -670,7 +669,7 @@ class App.Events.Action3 extends Backbone.Model
 </div> 
 
 <h2>UI</h2>
-Anytime I've used _jQuery_ to manipulate elements on a large scale, `it got messy really fast`. The best way I could think to keep this in check was to move all references to this to a separate helper, essentially. Because it's so prevalent, it just made sense to package this `UI` class with all _Pages_. In the constructor, single references are made to the elements being manipulated - `this works really well for managing complicated shit`:
+Anytime I've used _jQuery_ to manipulate elements on a large scale, `it got messy really fast`. The best way I could think to keep this in check was to move all references of _jQuery_ manipulation to a separate helper. Because it's so prevalent, it just made sense to package this `UI` class with all _Pages_. In the constructor, single references are made to the elements being manipulated - `this works really well for managing complicated shit`:
 
 <div class="snippet">
    <pre>
@@ -687,7 +686,7 @@ class App.UI.Action3
 </div>
    
 <h2>State</h2>
-Managing global variables has always been a pain in the ass in _Javascript_, which is probably why I went so namespace crazy above. `Every _Page_` has a _State_ class to hold, at the very least, it's _Layout_ reference. Every time the _Backbone Router_ is called and the _Page_ is rendered, the globals are cleared. In it's most basic form:
+Managing global variables has always been a pain in the ass in _Javascript_, which is probably why I went so namespace crazy above. `Every Page` has a _State_ class which holds, at the very least, its _Layout_ reference. Every time the _Backbone Router_ is called and the _Page_ is rendered, the globals are cleared. In it's most basic form:
 
 <div class="snippet">
    <pre>
@@ -708,4 +707,4 @@ class App.State.Action3 extends Backbone.Model
     </pre>
 </div>
 
-That's all she wrote for now. I didn't go through the _Helper_ classes much, as the code for those is well-documented and self-explanatory. I'll work on making this a more exhaustive tutorial.
+That's all she wrote for now. I didn't go through the _Helper_ classes much, as the code for those is well-documented in the source...and mostly self-explanatory. I'll work on making this a more exhaustive tutorial. I hope this gives you an idea of how to structure your front-end applications in a more well-formed way!
