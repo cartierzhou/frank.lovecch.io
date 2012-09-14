@@ -48,3 +48,13 @@ p {
   color: #6691be;
   line-height: 100%;
 }
+div.project p {
+  line-height: 1.5em;
+  font-family: Verdana;
+  color: rgb(69, 54, 37);
+}
+p.img-caption {
+  font-size: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #eee;
+}

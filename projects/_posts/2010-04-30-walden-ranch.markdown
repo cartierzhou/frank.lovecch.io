@@ -24,20 +24,26 @@ I've wanted to build a house my entire life, and can recall drawing mansions on 
 
 Since then, my perceptions on what a house should be have changed **\[at least the one I would build with my bare hands\]**. The concept of _Walden Ranch_ started simply: it had to be _off-the-grid_ and something I could build in blocks, without the help of anyone else. Read: no cement foundation, a single story, and no fancy woodwork. 
 
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0186.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0187.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0188.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0189.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0190.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0191.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0192.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0193.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0194.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0195.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0196.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0197.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0198.jpg"/>
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/IMG_0199.jpg"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-01.png"/>
+<p class="img-caption">Sketching out floor joists with my deck-like frame.</p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-02.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-03.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-04.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-05.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-06.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-07.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-08.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-09.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-10.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-11.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-12.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-13.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-14.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-15.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-16.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-17.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-18.png"/>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/walden_ranch-19.png"/>
 <img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/140879020450467515.jpg"/>
 <img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/140879020450577431.jpg"/>
 <img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/140879020455837088.jpg"/>

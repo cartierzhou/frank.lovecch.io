@@ -38,3 +38,9 @@ header.header-container {
 	    color: gray;
 	  }
 }
+div#page-footer {
+  height: 50px;
+  background: black;
+  width: 100%;
+  border: 1px solid black;
+}
