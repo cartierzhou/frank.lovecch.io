@@ -1,16 +1,114 @@
 ---
-layout: rodsandricers_post
+layout: image_post
 main: false
 status: completed
 category: rodsandricers
 back: rodsandricers.html
-title: 1993 Jeep Wrangler
-quote: Rebuilding Big Red.
-image: images/jeep.jpg
-when: 16 August 2010
+title: 1993 jeep wrangler.
+quote: Big Red.
+image: /images/rodsandricers_map.png
 ---
 
+
 This Midwest rust-bucket was the first automobile I ever officially purchased, at the ripe age of twenty-three.  I found it on <a href="http://craigslist.org">Craigslist</a> for nineteen-hundred dollars shortly after my ninety-five Civic blew up (<a href="">that</a> is a story in itself). A friend and I traveled to a ruly southern suburb of Chicago called Midloathian to pick her up. We gave it a quick test drive around the block, signed the paperwork over some awkward conversation, and traveled back in separate vehicles. Our destination was the UIC <a href="">SAE</a> automotive lab. On arrival, we drove it up the <a href="">Jerry-rigged</a> ramps for a more thorough inspection under better light. Our first modifications to the Jeep <b>[that would affectionately become known as Big Red]</b> included ripping off the tubular bumpers <b>[rusted through a long time ago]</b>, and an attempted fix of the <i>doors which would not unlock</i>.  
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler_insp-01.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler_insp-02.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler_insp-03.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler_insp-04.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler_insp-05.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler_insp-06.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler_insp-07.jpg"/>
+<p class="img-caption"></p>
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-01.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-02.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-02.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-04.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-05.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-06.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-07.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-08.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-09.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-10.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-11.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-12.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-13.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-14.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-15.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-16.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-17.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-18.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-19.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-20.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-21.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-22.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-23.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-24.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-25.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-26.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-27.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-28.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-29.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-30.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-31.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-32.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-33.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-34.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-35.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-36.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-37.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-38.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-39.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-40.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1993_jeep_wrangler-41.jpg"/>
+<p class="img-caption"></p>
 
 <h2>Rebuild</h2>
 

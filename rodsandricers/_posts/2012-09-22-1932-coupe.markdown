@@ -1,0 +1,262 @@
+---
+layout: image_post
+main: false
+status: completed
+category: rodsandricers
+back: rodsandricers.html
+title: 1932 Coupe.
+quote: Life's all about lines.
+image: /images/rodsandricers_graffiti.jpg
+---
+
+I first saw _American Graffit_i when I was in high school. `Where were you in '62? still echoes in my head`; the venerable words of the great Wolfman Jack.
+
+The yellow-bodied, five-windowed coupe inspired many a hot rodder from my parents era, but somehow failed to touch the hearts of the now aged "ricer" turned "tuner" generation of mine. Hot-rodding was always thrifting, and farm-found parts from the Deuce's era were hard to come by. 
+
+Aside from Japanese cars being plentiful and cheap - they are the rat rods of the the new millenium - cars had become a status symbol, and the younger generation seemed to think that just by having a car that looked like it was fast mattered. While my love affair with Milner's '32 started in high school, it wasn't until quite a few years later that my subconscious ideas about how to build a Deuce "the correct way" really blossomed, and then started to kick my conscious' ass into gear.  This moment of inspiration came during the opening sequence of the fourth Indiana Jones installment, where a beautiful matte-black roadster races through the desert, white walls a-gleaming.  It had me at 'hello'.  
+
+It's been two years since I started heavily researching my options, and I came to the realization this project was easily going to be a five year build with its associated costs <b>[sigh]</b>.  Thank god Johnny Tsunami embedded 'Go big or go home' into my head as a kid.  
+
+<h2>[inspriation]</h2>
+
+<h2>[on building a hot rod]</h2>
+
+<h2>[chassis &amp; powertrain]</h2>
+
+1. Carbon fiber/steel frame 
+
+<img class="story" src="images/frame_rails.jpg" alt="frame" /> 
+
+Since the rod is going to be driven by an electric motor, weight reduction is of utmost importance. The stock kit frames you can buy are too heavy, so I needed to find a way to lighten it without losing daily driver, pot-hole handling abilities.  Because I'm not using a typical engine, transmission, or body <b>[more on that later]</b>, I could reduce the torsional stress requirements and still have a rigid frame.
+
+At first I explored making magnesium frame rails. <img class="external" src="images/external.gif" /><a class="external" href="http://usmagnesium.com">US Magnesium</a> supplies most <b>[if not all?]</b> of the magnesium in the states.  After talking with one of their sales reps around August 2008, I discovered the company was backed up on orders for at least a year, and that these orders all filled truck loads <b>[by the millions of $$$]</b>.  I was told that once in a while they would pull an ingot off the line for prototype work, though.  A twenty-five pound ingot of magnesium would run me $3,500, and then I would have to deal with storing it.  Magnesium was out.
+
+I had been looking into carbon fiber for various other projects, so that was the next obvious direction.  At this point in time, I had never actually done any lay-up of the fabric and epoxy myself.  At the very least, I wanted to use the steel frame rails boxed with square carbon fiber tubing from <img class="external" src="images/external.gif" /><a class="external" href="http://dragonplate.com">DragonPlate</a>.  Since I was a pro at epoxy usage from my years of body work, this combination of metal and carbon fiber seemed right up my alley.  Still, I considered my other options.
+
+I looked heavily into making pure carbon fiber rails, but eventually ruled it out.  I talked with a company whose name I can't remember; they were on the Discovery Channel for making some giant, carbon fiber spider legs...or something.  For a $5,000 one-time setup fee, plus an additional $1,500-$2,000 a pair, they could produce pre-preg, auto-claved carbon fiber frame rails <b>[like the world has never seen!]</b>.  They would also insert steel reinforcements near the points of most stress, and this would be where the suspension mounts would be.  The moulds would be maintained there, and I could sell them to others - possibly designating them as "prototype" rails. 
+
+<b>Update:</b> I finally decided on a solution.  I am going to use the original steel rails as a base, and they will be drilled for weight. 
+
+<img class="story" src="images/drilled_frame.jpg" alt="frame" /> 
+
+There will then be a laminated carbon fiber sheet placed on the inside of the rails, showing through on the drill points.  An inner, mating channel of carbon fiber will be placed inside that, allowing the frame to be boxed with carbon fiber.  The inner, mating channel could be auto-claved if I deemed necessary.  It is attached to the steel through epoxy and bolts.  It sounds complicated, but it's the most practical, and strong, solution for doing a frame this way.
+ 
+
+2) Front i-beam suspension
+
+Since I wanted a sound ride, but a classic look, front IFS was out <b>[too Bob Villa-looking for me]</b> and the 'ol i-beam and 4-bar was in.  This one from Pete and Jake's has a drilled aluminum i-beam, which is lighter and matches the frame perfectly.  It's also reasonably priced when not chromed, and I'm mostly anti-chrome - and more brushed-nickel - on this vehicle.
+
+<img class="story" src="images/front_suspension.gif" alt="suspension" /> 
+
+The only problem with this setup is the leaf-spring, and the struts.  I probably will replace the struts with something coil-based, and since it's hard to differentiate between all the things said about leaf-spring ride quality in the forums, I have chosen to try the above setup, minus the leaf spring.  In it's place will be a product from <img class="external" src="images/external.gif" /><a class="external" href="http://rodandcustommagazine.com/hotnews/135_0410_traditional_air_cen_pen_speed_shop/index.html">CEN-PEN</a>.
+
+<img class="story" src="images/cen_pen.jpg" alt="suspension" /> 
+
+<img class="story" src="images/cen_pen2.jpg" alt="suspension" />
+
+Air bags replace the springs, along with a new boxed steel cross-member, which I will weld to the rails.   Since I also decided to make the car FWD, it's going to require some hub and spindle modification as well.
+
+
+3) Perimeter rotors
+
+
+After seeing perimeter rotors on bikes, I semi-wondered why they had never been put on any cars.  By lowering the unsprung <b>[rotating]</b> parts, I could lower the energy use of the motor, and prolong battery life.  Coupled with extremely light-weight rims, there would be nothing to move besides the tires!  While I'm not sure of the stopping distance of these on a three-thousand pound car, the goal weight of my hot rod is less than half that, so I would be fine.
+
+
+<img class="story" src="images/buell_rotor.jpg" alt="rotor" />
+
+
+I called up a local Harley dealer, asked for parts, and found that an entire Buell system - rim, caliper, rotor - cost somewhere around $650.  I obviously didn't need the rim - the rotor itself was $125.  This would be something I could replace easily, and I bought one to see how it would fit a rim.  Since I had fifteen inch rims laying around, they became the mule.  The rotor sat perfectly on the inner rear lip!
+
+
+It literally took me one month of Google searching to come across this one-off Volvo rod that, at the very least, was a proof-of-concept.  Thank goodness that Pete and Jake's will sell their suspensions without rotors, calipers, and leaf springs!
+
+
+<img class="story" src="images/volvo.jpg" alt="volvo" />
+
+
+3) Forged racing rims
+
+The lightest and most easily replaceable rims I could find come from <img class="external" src="images/external.gif" /><a class="external" href="http://www.mackinindustries.com/md/rays/te37.html">Ray's Engineering</a>, in the product form of Volk Racing TE37 rims.  
+
+
+<img class="story" src="images/volk_rim.jpg" alt="rim" />
+
+
+The fifteen by six-and-a-half inch rims weigh an incredible nine pounds, but they cost about $500 each.  I can't picture how these will look with white-wall tires and on a hot-rod, but if they don't fit the car, then I will make hub-caps that appear more condusive to a vintage rod.  They would probably look something like the rims on this Deuce, but again - not chrome.
+
+
+<img class="storyresize" src="images/hubcaps.jpg" alt="hubcaps" />
+
+
+If I went through with hub-caps, it would also make the vehicle more aerodynamic!
+
+
+4) Coker white wall tires
+
+
+White wall tires are an essential part of a hot rod.  I am still semi-debating on using BF Goodrich Radial T/A's, but I have them on almost every car I own - you have to draw the line at some point. Regular tires are heavy, though - weighing in between twenty and twenty-five pounds each. 
+
+
+<img class="story" src="images/white_wall.jpg" alt="tire" />
+
+
+I decided on the <img class="external" src="images/external.gif" /><a class="external" href="http://store.cokertire.com/p235-75r15-american-classic-3-1-8-whitewall.html">Coker American Classics</a>, at about $200 each.  
+
+
+5) Motor and powerhouse
+
+
+I am undecided on a configuration.  I know I want the vehicle to be electric, but Volvo had a prototype powertrain that instilled another option in my head.  
+
+
+A) Electric motor 
+
+The amount of sites selling EV conversion kits is overwhelming.  I am still debating an AC or DC or motor, but it <img class="external" src="images/external.gif" /><a class="external" href="http://www.electric-cars-are-for-girls.com/electric-car-motors.html">seems like</a> AC is the way to go, especially if I want a more versatile car.  The problem: the initial cost of the AC motor kit is about <img class="external" src="images/external.gif" /><a class="external" href="http://www.electroauto.com/catalog/price-pts.shtml#ackits">$3,000</a> more!
+
+
+<img class="external" src="images/external.gif" /><a class="external" href="http://e-volks.com/kit3.html?
+">E-Volks</a>
+
+<img class="external" src="images/external.gif" /><a class="external" href="http://www.evamerica.com/evcomponentpackages.html
+">EVAmerica</a>
+
+<img class="external" src="images/external.gif" /><a class="external" href="http://www.electricmotorsport.com/store/ems_ev_parts_motors_ac-induction.php">ElectricMotorsport</a>
+
+
+B) Electric hub motors
+
+
+I have been thinking of using two smaller AC hub motors at each front wheel, and eliminating a transmission completely.  <img class="external" src="images/external.gif" /><a class="external" href="http://www.electricmotorsport.com/store/ems_ev_parts_motors_evthub.php">These</a>   hub motors are meant for a scooter, but are extremely efficient and can hit highway speeds.  If I use two motors<b>[or even four!]</b>, it should provide more than enough power at a better cost than a typical AC motor.  Besides providing regenerative braking, I may be able to eliminate front brakes.  The only problem I foresee with a pair of these is replicating a differential with two motor controllers.  I know it's possible!
+
+
+C) Inline generator
+
+
+While this is supplemental to the electric propulsion, Volvo's prototype chassis had an efficient diesel generator supplying power to four wheel-based, electric motors.  Eliminating the transmission and axles made this transfer of energy more efficient than a traditional drive-train. <img class="external" src="images/external.gif" /><a class="external" href="http://www.electric-cars-are-for-girls.com/portable-generator.html">Electric Cars are for Girls</a> proved the concept of range extension at minimal cost using a regular gas generator.   
+
+With the advent of the <img class="external" src="images/external.gif" /><a class="external" href="http://www.scuderigroup.com/">Scuderi</a> diesel engine, I may be able to add a small, efficient generator that would extend the range of the vehicle, or at the very least be used as a back-up power source - I just don't know if it's available yet.  Otherwise, you can pick up a decent used generator online for $2,500.  
+
+   
+6) Transmission
+
+I think a CVT transmission would be a perfect fit for a DC electric vehicle that needs to reach highway speeds, handle mountain driving, and unlike a manual - wouldn't hinder someone from driving me home if I had a few too many.  
+
+
+<img class="story" src="images/cvt.jpg" alt="cvt" />
+
+
+It doesn't need the motor to be constantly idling like a regular automatic transmission does <b>[hydraulics]</b>, and you can pick up a JDM one from a Civic HX for a couple hundred bucks.  <img class="external" src="images/external.gif" /><a class="external" href="http://www.electroauto.com/catalog/adaptors.shtml">ElectroAuto</a> - if they don't have a pattern that already fits - will make an adaptor for the electric motor to properly mount and couple to the transmission. 
+
+
+7) Indepenent rear suspension
+
+Most hot rods are solid rear axles, and rightfully so - this is where all the power goes to.  If I go with DC propulsion and a CVT FWD transmission, I will have to find a way to modify a rear suspension setup for no differential.  I have decided on the rear indepenent suspension made by Kugel:
+
+
+<img class="story" src="images/rear_irs.jpg" alt="suspension" />
+
+
+I can replace the differential with solid supports, and remove the standard braking system and rotating axles entirely.  I'm convinced this would be much simpler than designing something from the ground up, and I think I can find a way to put a parking brake on the rear of the hub.
+<br>
+
+8) Batteries
+
+
+I haven't decided wether or not I will use 8V or 6V lead-acid batteries, and whether I choose AC or DC will depend on what model - Trojan t105, t125, or US125 - I choose.  Decisions decisions.  I don't feel like explaing batteries to you, these guys do a good job:
+
+
+<img class="external" src="images/external.gif" /><a class="external" href="http://www.evconvert.com/eve/ev-batteries">Battery Explanation</a>
+
+<img class="external" src="images/external.gif" /><a class="external" href="http://www.electric-cars-are-for-girls.com/8-volt-golf-cart-battery.html">8V Batteries</a>
+
+
+9) Steering
+
+
+I haven't decided what kind of manual rack I will be using, but I have always longed for a right-hand drive conversion like the Brit rodders do.  More on this later.
+
+
+<div id="buildcenter">
+<b>Body</b>
+</div>
+
+
+First and foremost, I want a 5-window coupe.  Because of the daily-driver changes I want to make to the body, this may take a while.  In the meantime, I will be using a fiberglass roadster body.  More details on both:
+
+
+1) 5-Window coupe body
+
+
+A) Plastic composition
+B) Replaceable panels
+C) Aluminum insertable inner structure
+D) Changed nurb grill supports
+E) Hood panel body lines changed
+
+
+<img class="storyresize" src="images/curve.jpg" alt="curve" />
+
+
+The picture is not the best representation of what changes need to be made, but it helps illustrate what I'm aiming for.  The reason the Deuce looks so good without a hood is because it allows people to imagine a more shaped, curving body line in between the cowl and the grill.  While the change is slight, it vastly changes the appearance. To modify the curve of the hood is going to mean changing the entire shape of the panel, probably through CAD modeling.  
+
+
+2) Fiberglass roadster body 
+
+
+I can get this body on EBAY for $2,800.  The doors and deck lid are not mounted - it's the perfect base for something very custom.
+
+
+<img class="story" src="images/fiberglass_body.jpg" alt="fiberglass body" />
+
+
+A) Sealed doors 
+
+I like the idea of hopping into my Deuce, it just seems more 'summery'.  From a build perspective, it eliminates hinges, and makes it much easier to built a lightweight protective structure around me.
+
+
+B) Aluminum insertable inner structure
+
+Typically, a fiberglass Deuce has some sort of support and safety structure built on the inside of it.  
+
+
+<img class="story" src="images/framing.jpg" alt="framing" />
+
+
+Certain companies sell stamped metal configurations for their particular moulded bodies, but those won't work since I'm buying a generic body.  Since the doors don't open, I have the luxury of creating a stronger, lighter structure out of aluminum - much like an aftermarked Jeep tub.  I will probably have <img class="external" src="images/external.gif" /><a class="external" href="http://www.aqualu.com/">Aqualu</a> make an inner tub structure for me.  The tub will not only function as a body reinforcement and safety element, but it will be incorporated into the waterproof interior.  
+
+
+D) Audi style roll bar and protrusion beams
+
+
+While the functionality of the Audi TT roll bar is up for debate, I plan to tie the bar<b>[s]</b> into the frame and door protrusion beams.  Ideally, I would like to be able to fold the passenger one behind the seat, allowing the use of a tonneu cover when driving alone. And this way, there is at least some protection in a roll-over accident, and plenty of protection in a side-impact collision.  
+
+
+<img class="storyresize" src="images/audi_tt_rollbar.jpg" alt="rollbar" />
+
+
+C) Custom tonneau cover
+
+
+One of my goals in life: take my rod to the salt flats.  Not only will the seldom seen tonneau cover help with aerodynamics, it's sure to keep the sand out.  I couldn't find a picture of the vintage cover that covered the entire interior, but you can get an idea of what it looks like.   The one I imagine has only a small hole for the lone driver <b>[wearing driving goggles]</b>, and keeps out the elements.
+
+
+<img class="story" src="images/tonneau_cover.jpg" alt="cover" />
+
+
+<img class="story" src="images/tonneau_cover_detail.jpg" alt="cover detail" />
+
+
+D) Louvred deck lid
+
+
+I don't like the idea of having too many louvres, especially if I store batteries in the trunk.
+
+
+<img class="story" src="images/louvred_decklid.jpg" alt="louvres" />
+
+
+I plan on putting 2 rows of them on each side of the deck lid, and using these louvres as battery vents and intakes. 
+
+ 
+<img class="story" src="images/louvred_decklid_detail.jpg" alt="louvres" />

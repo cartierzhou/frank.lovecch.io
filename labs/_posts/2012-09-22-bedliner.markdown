@@ -1,0 +1,25 @@
+---
+layout: post
+main: false
+status: completed
+category: labs
+back: labs.html
+title: Bedliner.
+quote: Truth, beauty, and two-part epoxy.
+---
+
+There are a few things in life which I swear by:  Truth, Beauty, and _bed-liner_.  Industrial epoxy coatings are used everywhere - floors, exterior surfaces, and yes - truck beds. There are so many applications in which it could be used cost effectively, so what's stopping us?  Follow me in my journey as I apply bedliner to everything I can think of.
+
+<h2>[things i've bedlines]</h2>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/labs/bedliner-01.jpg"/>
+<p class="img-caption">1993 Jeep Wrangler rims, before.</p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/labs/bedliner-02.jpg"/>
+<p class="img-caption">1993 Jeep Wrangler rims, after.</p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/labs/bedliner-03.jpg"/>
+<p class="img-caption">Old snowboard, before.</p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/labs/bedliner-04.jpg"/>
+<p class="img-caption">Old snowboard, after.</p>
+
+<h2>[things to bedline]</h2>
+1. Back of laptop
+1. Vintage portable camping stove
