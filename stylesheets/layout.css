@@ -26,6 +26,17 @@ header.header-container {
     border-radius: 10px;
     cursor: pointer;
   }
+  div.header-image-in-progress {
+    background: url(../images/header_in_progress.jpg) no-repeat;
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
     div.header-text {
       margin-right: 20px;
       padding-top: 60px;

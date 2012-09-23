@@ -4,7 +4,7 @@ main: false
 status: wip
 category: rodsandricers
 back: rodsandricers.html
-title: 1995 honda civic.
-quote: Free.
+title: good design.
+quote: Silence is a good thing.
 image: /images/rodsandricers_map.png
 ---

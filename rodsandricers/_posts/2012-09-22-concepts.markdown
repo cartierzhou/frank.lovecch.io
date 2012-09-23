@@ -1,0 +1,18 @@
+---
+layout: image_post
+main: false
+status: wip
+category: rodsandricers
+back: rodsandricers.html
+title: concepts.
+quote: Ideas and such.
+image: /images/rodsandricers_map.png
+---
+
+<h2>[city gp]</h2>
+<h2>[cor-ten rat rods]</h2>
+<h2>[old car smell]</h2>
+<h2>[retro jeep dash]</h2>
+<h2>[smart film]</h2>
+<h2>[vw bus shells]</h2>
+<h2>[wireless cars]</h2>

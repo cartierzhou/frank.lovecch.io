@@ -1,11 +1,11 @@
 ---
 layout: image_post
 main: false
-status: completed
+status: wip
 category: rodsandricers
 back: rodsandricers.html
 title: 1993 jeep wrangler.
-quote: Big Red.
+quote: Eighteen-hundred dollars.
 image: /images/rodsandricers_map.png
 ---
 

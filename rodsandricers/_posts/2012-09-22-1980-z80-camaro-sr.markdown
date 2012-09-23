@@ -1,0 +1,10 @@
+---
+layout: image_post
+main: false
+status: wip
+category: rodsandricers
+back: rodsandricers.html
+title: sr's 1980 z28 camaro.
+quote: Just like in the catalogue.
+image: /images/rodsandricers_map.png
+---

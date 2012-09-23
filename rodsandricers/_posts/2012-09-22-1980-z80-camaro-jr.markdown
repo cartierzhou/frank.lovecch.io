@@ -1,0 +1,10 @@
+---
+layout: image_post
+main: false
+status: wip
+category: rodsandricers
+back: rodsandricers.html
+title: jr's 1980 z28 camaro.
+quote: Thirty-five hundred dollars.
+image: /images/rodsandricers_map.png
+---

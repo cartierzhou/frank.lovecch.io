@@ -25,7 +25,7 @@ back: index.html
       </div>
    </div>
    {% for post in site.posts %}
-      {% if post.status == 'completed' %}
+      {% if post.status == 'completed' or post.status == 'wip' %}
       {% if post.category == 'projects' %}
          {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
          {% if mod_three == '0' %}

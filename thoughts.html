@@ -27,7 +27,7 @@ back: index.html
    </div>
    <h3>[writing]</h3>
    {% for post in site.posts %}
-      {% if post.status == 'completed' %}
+      {% if post.status == 'completed' or post.status == 'wip' %}
          {% if post.category == 'thoughts' %}
             {% if post.subcategory == 'writing' %}
                {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
@@ -60,7 +60,7 @@ back: index.html
 <div class="project">
    <h3>[blog]</h3>
    {% for post in site.posts %}
-      {% if post.status == 'completed' %}
+      {% if post.status == 'completed' or post.status == 'wip' %}
          {% if post.category == 'thoughts' %}
             {% if post.subcategory == 'blog' %}
                {% capture mod_threeblog %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
@@ -93,7 +93,7 @@ back: index.html
 <div class="project">
    <h3>[letters]</h3>
    {% for post in site.posts %}
-      {% if post.status == 'completed' %}
+      {% if post.status == 'completed' or post.status or 'wip' %}
          {% if post.category == 'thoughts' %}
             {% if post.subcategory == 'letters' %}
                {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}

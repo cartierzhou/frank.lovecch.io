@@ -1,0 +1,10 @@
+---
+layout: image_post
+main: false
+status: wip
+category: rodsandricers
+back: rodsandricers.html
+title: 1989 Volvo Wagon.
+quote: Eight-hundred dollar.s
+image: /images/rodsandricers_map.png
+---

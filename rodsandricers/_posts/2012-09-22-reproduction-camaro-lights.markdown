@@ -4,7 +4,7 @@ main: false
 status: wip
 category: rodsandricers
 back: rodsandricers.html
-title: 1995 honda civic.
-quote: Free.
+title: repro camaro tail lights.
+quote: New is better.
 image: /images/rodsandricers_map.png
 ---

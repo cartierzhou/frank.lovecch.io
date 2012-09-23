@@ -1,0 +1,10 @@
+---
+layout: image_post
+main: false
+status: wip
+category: rodsandricers
+back: rodsandricers.html
+title: 1980 camaro, via ebay.
+quote: 53 dollars.
+image: /images/rodsandricers_map.png
+---

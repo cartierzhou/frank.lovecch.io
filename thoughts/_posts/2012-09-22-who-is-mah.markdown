@@ -1,0 +1,43 @@
+---
+layout: post
+main: false
+status: wip
+category: thoughts
+subcategory: blog
+back: thoughts.html
+title: who is m.a.h.?
+quote:  Everyone's got a story to tell. 
+---
+
+Nearly a year ago, I purchased a set of vintage luggage from a suburban Denver consignment shop, [ModMood](http://modmood.com). For years I had dreamed of non-wheeled travel baggage, and I had finally begun to travel enough to warrant a purchase. My particularities surrounding design were outlined by the luggage needing to bare resemblance to both Jimmy Stewart's gifted, never-used suitcase in _It's a Wonderful Life_, and Wes Anderson's more boisterous, metaphor-holding [Darjeeling Limited](/projects/modern-luggage) set.
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/who_is_mah-02.jpg"/>
+<p class="img-caption">A close-up of the Samsonite tag and M.A.H. initials.</p>
+
+<h2>[what i know]</h2>
+
+1. TODO: Call ModMood
+
+1. TODO: Call Samsonite
+
+1. TODO: Inspect Luggage
+
+1. TODO: list the stickers
+
+1. I found slight mould gripping the wood casing after ripping out the daft smelling liners **\[which I never replaced\]**. Based on the climate difference between here and anywhere, I'd say they didn't spend most of their life in Denver.
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/who_is_mah-01.png"/>
+<p class="img-caption">The luggage, as seen from the ModMood website.</p>
+
+<h2>[a brief modern history]</h2>
+
+The luggage, as depicted resembling the traveling gnome from Amelie:
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/who_is_mah-03.jpg"/>
+<p class="img-caption">The luggage in the basement.</p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/who_is_mah-04.jpg"/>
+<p class="img-caption">The luggage with cowboy boots on top.</p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/who_is_mah-05.jpg"/>
+<p class="img-caption">The luggage overlooking the San Luis Valley.</p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/who_is_mah-06.jpg"/>
+<p class="img-caption">The luggage preparing for a road trip.</p>
