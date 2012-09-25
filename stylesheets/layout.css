@@ -1,3 +1,11 @@
+body,html{
+  height: 100%;
+  width: 100%;
+}
+.container{
+  min-height: 100%;
+  width: 100%;
+}
 header.header-container {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1, rgb(3, 16, 32)), color-stop(0.56, rgb(30, 72, 121)));
   background: -moz-linear-gradient(top, rgb(3, 16, 32) 0%, rgb(30, 72, 121) 100%);
@@ -49,9 +57,9 @@ header.header-container {
 	    color: gray;
 	  }
 }
-div#page-footer {
-  height: 50px;
-  background: black;
-  width: 100%;
-  border: 1px solid black;
+.page-footer {
+  height: 40px;
+  margin-top: -40px;
+  border-top: 1px solid black;
+  margin-left: 20%;
 }

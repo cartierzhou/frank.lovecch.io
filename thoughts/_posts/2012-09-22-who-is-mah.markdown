@@ -9,28 +9,50 @@ title: who is m.a.h.?
 quote:  Everyone's got a story to tell. 
 ---
 
-Nearly a year ago, I purchased a set of vintage luggage from a suburban Denver consignment shop, [ModMood](http://modmood.com). For years I had dreamed of non-wheeled travel baggage, and I had finally begun to travel enough to warrant a purchase. My particularities surrounding design were outlined by the luggage needing to bare resemblance to both Jimmy Stewart's gifted, never-used suitcase in _It's a Wonderful Life_, and Wes Anderson's more boisterous, metaphor-holding [Darjeeling Limited](/projects/modern-luggage) set.
+Nearly a year ago, I purchased a set of vintage luggage from a suburban Denver consignment shop, [ModMood](http://modmood.com). For years I had dreamed of non-wheeled baggage, and I had finally begun to travel enough to warrant a purchase. My particularities surrounding design were outlined by the luggage needing to bare resemblance to both Jimmy Stewart's gifted, never-used suitcase in _It's a Wonderful Life_, and Wes Anderson's more boisterous, metaphor-holding [Darjeeling Limited](/projects/modern-luggage) set.
+
+We all have a little Hardy Boy in us; everyone should happen upon a lost [child's safety deposit box]() at least once in their lifetime **\[or a [key inside a vase](), depending on your story preference\]**.
 
 <img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/who_is_mah-02.jpg"/>
 <p class="img-caption">A close-up of the Samsonite tag and M.A.H. initials.</p>
 
+<h2>[blocks]</h2>
+1. I've e-mailed the consignment shop, in hopes that they might have some information regarding how they obtained the luggage:
+
+```
+Dear ModMood,
+I was hoping you could help with an odd-cause. I purchased a set of vintage luggage from the store a little less than year ago now, and was hoping you might have some knowledge surrounding the history of the items. Specifically, I'm curious as to whom the initials M.A.H. belong to, as they are on every piece in the set.
+If you can provide any insight, I'd very much appreciate it!
+I have an (unfinished) blog post up which holds pictures of the set; please refer to http://franklovecchio.herokuapp.com/thoughts/who-is-mah.html for memory jogging :)
+Thanks,
+Frank
+```
+
+1. I've e-mailed Samsonite hoping to get some information on the model, where it was sold, things of that nature.
+
+```
+Dear Samsung,
+I was hoping you could help with an odd-cause. I purchased a set of vintage luggage from you a while back (refer to the link for a detailed synopsis!), and even though I'm sure you happen  of this kind of thing coming through the shop.
+```
+
 <h2>[what i know]</h2>
+1. The _three_ pieces of luggage hold roughly the same stickers, as if the owner purchased _three_ at a time and slapped them on each member.  
 
-1. TODO: Call ModMood
+1. I see only Midwestern/Western destinations represented by the stickers: Nebraska, Kansas, Colorado, California, and Hawaii. 
 
-1. TODO: Call Samsonite
-
-1. TODO: Inspect Luggage
-
-1. TODO: list the stickers
+1. I know that there are relatively large military stations in _four_ of _five_ of these destinations.
 
 1. I found slight mould gripping the wood casing after ripping out the daft smelling liners **\[which I never replaced\]**. Based on the climate difference between here and anywhere, I'd say they didn't spend most of their life in Denver.
+
+1. Based on the Chicago/Denver embossed into the _Samsonite_ button, I had assumed the Midwest was the only possibility; little did I know that the company was founded in [Denver](http://en.wikipedia.org/wiki/Samsonite)
 
 <img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/who_is_mah-01.png"/>
 <p class="img-caption">The luggage, as seen from the ModMood website.</p>
 
-<h2>[a brief modern history]</h2>
+<h2>[speculation]</h2>
+I'm not sure of how the luggage was configured, e.g. if a _three_ piece set such as this would have been used by a man, woman, or family **\[I'd guess the first\]**. Ideally, the interwebs will help unveil the  converse with elders about past customs, yet. The interwebs should help with this :)
 
+<h2>[a brief modern history]</h2>
 The luggage, as depicted resembling the traveling gnome from Amelie:
 
 <img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/who_is_mah-03.jpg"/>
@@ -41,3 +63,5 @@ The luggage, as depicted resembling the traveling gnome from Amelie:
 <p class="img-caption">The luggage overlooking the San Luis Valley.</p>
 <img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/who_is_mah-06.jpg"/>
 <p class="img-caption">The luggage preparing for a road trip.</p>
+
+Won't you help me discover the uncover the story? 

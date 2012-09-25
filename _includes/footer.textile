@@ -1,4 +1,5 @@
-<div id="page-footer">
+<div class="page-footer">
+   footers
 </div>
 
 <script type="text/javascript">
