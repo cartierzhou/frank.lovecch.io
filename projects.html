@@ -27,19 +27,17 @@ back: index.html
    <div class="container-fluid">
 	  <div class="posts">
 		 <div class="post-count">
-	        <h2>37.</h2>
+	        <h2>{% for post in site.categories.projects %}{% if post.status == 'completed' or post.status == 'wip' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{{ post_count }}</h2>
 	     <div>
-         {% for post in site.posts %}
+         {% for post in site.categories.projects %}
             {% if post.status == 'completed' or post.status == 'wip' %}
-               {% if post.category == 'projects' %}
-                  <div class="row-fluid">
-                     <a href="{{ post.url }}">
-                        <div class="well">
-	                       {{ post.title }}<span>{{ post.date | date_to_string }}</span>
-	                    </div>
-                     </a>
-                  </div>
-               {% endif %}
+               <div class="row-fluid">
+                  <a href="{{ post.url }}">
+                     <div class="well">
+	                    {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+	                 </div>
+                  </a>
+               </div>
             {% endif %}
          {% endfor %}
       </div>
