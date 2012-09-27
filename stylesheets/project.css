@@ -94,7 +94,40 @@ div.project {
     display: block;
     padding-top: 0.5em;
     margin-top: 2em;
-  }
+  }/*
+.container-fluid {
+  height: 350px;
+}
+*/
+.posts {
+  /*height: 250px; 
+  overflow: scroll;*/ 
+  border-bottom: 10px solid #eee; 
+}
+.post-count {
+  height: 20px;
+  width: 100%;
+  border-bottom: 10px solid #eee; 	
+}
+.well {
+  border: none;
+  height: 30px;
+  color: #0b3a6e;
+  background-color: white;
+  letter-spacing: 4px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.well span {
+  display: block;
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  padding-top: 4px;
+  font-size: 80%;
+}
+.well:hover {
+  cursor: pointer;
+}
 img.project {
   margin-top: 20px;
   margin-bottom: 20px;

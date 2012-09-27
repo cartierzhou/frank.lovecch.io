@@ -3,9 +3,8 @@ layout: post
 main: false
 status: wip
 category: thoughts
-subcategory: writing
+subcategory: blog
 back: thoughts.html
-title: modern-day grifter.
-quote: A film memoir.
+title: lines.
+quote: Life is all about lines.
 ---
-

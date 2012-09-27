@@ -5,7 +5,7 @@ status: completed
 category: thoughts
 subcategory: blog
 back: thoughts.html
-title: Dev life.
+title: dev life.
 quote:  My So-Called Developer Life.
 ---
 

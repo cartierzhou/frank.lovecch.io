@@ -1,0 +1,95 @@
+---
+layout: tech_post
+main: false
+status: wip
+category: tech
+back: tech.html
+title: pinmarks.
+quote: Pinterest and Bookmarks for devs.
+source: pinmarks
+---
+
+1. Fetch bookmarks from Chrome.
+
+
+<div class="snippet">
+   <pre>
+cat ~/Library/Application\ Support/Google/Chrome/Profile\ 1/Bookmarks
+  </pre>
+</div>
+
+1. Download webkit2png
+
+I was conversing with a female about [Pinterest](http://pinterest.com) and how/why she uses it, being that I didn't. Her answer was astoundingly simple: `It's easy to visualize and manage everything I'm interested in and want to remember; books, films, fashion, travel, etc.`. While the [demographic data](http://www.searchenginejournal.com/pinterestingly-enough-interesting-pinterest-stats/45328/) on _Pinterest_ is noticeably female, I think they're onto something - I haven't really visualized my bookmarks since I started storing them in the cloud on the [xmarks](http:)
+
+<h2>[how to]</h2>
+I didn't find any [Google Chrome](http://google.com/chrome) applications that existed for analyzing bookmarks, so I did it the old fashioned way: [Bash](http://bash.org). Luckily, the browser had some built-in exporting functions for bookmarks:
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/tech/bookmarks-01.png"/>
+<p class="img-caption"></p>
+
+Upon viewing the file, I noticed a tag I hadn't seen before at the very beginning of the document - `<!DOCTYPE NETSCAPE-Bookmark-file-1>` - so I did a little digging. The [Netscape Bookmark File Format](http://www.netstrider.com/tutorials/netscape/1.2/bookmarks/) from _nineteen ninety-six_; wow. 
+
+<div class="snippet">
+   <pre>
+cat bookmarks_9_25_12.html | grep DT | wc -l
+  </pre>
+</div>
+
+<div class="snippet">
+   <pre>
+#!/bin/bash
+
+for line in $(cat mylinks); do
+  echo "===== $line ====";  
+  resp=`curl "$line" -o /dev/null -sL -w "%{http_code}"`
+  echo "RESP: $resp"
+  if [ "$resp" == "200" ]; then
+    echo "$resp $line" >> good_links
+  else
+    echo "$resp $line" >> bad_links
+  fi
+  sleep 5
+done;
+  </pre>
+</div>
+
+The `-o` option sends HTML output to a bitter, cold place and will never see the dark of terminal day again. Via '-w' We format the output of the response in such a way that only the [HTTP Response Code](http://www.x.com) is returned, appending that to either a `good` or `bad` file.
+
+<div class="snippet">
+   <pre>
+cat bad_links | wc -l
+  </pre>
+</div>
+
+_One-hundred seventy-eight_ **\[178\]** bad links in total.
+
+<div class="snippet">
+   <pre>
+cat good_links | wc -l
+  </pre>
+</div>
+
+_One-thousand seventy-eight_ good **\[1078\]** links in total.
+
+<div class="snippet">
+   <pre>
+cat bad_links | grep 000 | wc -l 34
+cat bad_links | grep 301 | wc -l 2
+cat bad_links | grep 400 | wc -l 1
+cat bad_links | grep 403 | wc -l 14
+cat bad_links | grep 404 | wc -l 117
+cat bad_links | grep 406 | wc -l 9
+cat bad_links | grep 410 | wc -l 3
+cat bad_links | grep 500 | wc -l 3
+  </pre>
+</div>
+
+paparazzi? 
+sed "s/200 //g" good_links > just_good_links
+
+<h2>[flat stats]</h2>
+amount?
+oldest?
+categories?
+bookmarks per year?

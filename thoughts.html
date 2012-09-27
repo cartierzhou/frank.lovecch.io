@@ -1,7 +1,7 @@
 ---
 layout: layout
 subheader: thoughts.
-header: but never greater,<br/> than a good amount.
+header: but never greater,</br>than a good amount.
 back: index.html
 ---
 
@@ -17,7 +17,7 @@ back: index.html
                <div class="columns">
 	              <p>{{ post.content }}</p>
 	           </div>
-               <p class="header-text-date">{{ post.date | date_to_string}}</p>
+               <p class="header-text-date">{{ post.date | date_to_string }}</p>
             {% endif %}
 	     {% endfor %}
 	     <img src="images/palm_tree.png" alt="" />
@@ -25,97 +25,24 @@ back: index.html
          </div>
       </div>
    </div>
-   <h3>[blog]</h3>
-   {% for post in site.posts %}
-      {% if post.status == 'completed' or post.status == 'wip' %}
-         {% if post.category == 'thoughts' %}
-            {% if post.subcategory == 'blog' %}
-               {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
-               {% if mod_three == '0' %}
-                  <div class="single-post-container">
-               {% endif %}
-               <div class="single-post-item">
-                  <div class="single-post-head">
+   <div class="container-fluid">
+	  <div class="posts">
+		 <div class="post-count">
+	        <h2>37.</h2>
+	     <div>
+         {% for post in site.posts %}
+            {% if post.status == 'completed' or post.status == 'wip' %}
+               {% if post.category == 'thoughts' %}
+                  <div class="row-fluid">
                      <a href="{{ post.url }}">
-                     {% if post.short %}
-                        <h6>{{ post.short }}</h6>
-                     {% else %}
-                        <h6>{{ post.title }}</h6>
-                     {% endif %}
+                        <div class="well">
+	                       {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+	                    </div>
                      </a>
-                  </div>
-               </div>
-               {% if mod_three == '2' or forloop.last %}
                   </div>
                {% endif %}
             {% endif %}
-         {% endif %}
-      {% endif %}
-   {% endfor %}
-</div>
-<div class="clear">
-</div>
-<div class="subcategory">
-</div>
-<div class="project">
-   <h3>[writing]</h3>
-   {% for post in site.posts %}
-      {% if post.status == 'completed' or post.status == 'wip' %}
-         {% if post.category == 'thoughts' %}
-            {% if post.subcategory == 'writing' %}
-               {% capture mod_threeblog %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
-               {% if mod_three == '0' %}
-                  <div class="single-post-container">
-               {% endif %}
-               <div class="single-post-item">
-                  <div class="single-post-head">
-                     <a href="{{ post.url }}">
-                     {% if post.short %}
-                        <h6>{{ post.short }}</h6>
-                     {% else %}
-                        <h6>{{ post.title }}</h6>
-                     {% endif %}
-                     </a>
-                  </div>
-               </div>
-               {% if mod_threeblog == '2' or forloop.last %}
-                  </div>
-               {% endif %}
-            {% endif %}
-         {% endif %}
-      {% endif %}
-   {% endfor %}
-</div>
-<div class="clear">
-</div>
-<div class="subcategory">
-</div>
-<div class="project">
-   <h3>[letters]</h3>
-   {% for post in site.posts %}
-      {% if post.status == 'completed' or post.status or 'wip' %}
-         {% if post.category == 'thoughts' %}
-            {% if post.subcategory == 'letters' %}
-               {% capture mod_three %}{{ forloop.index0 | modulo: 3 }}{% endcapture %}
-               {% if mod_three == '0' %}
-                  <div class="single-post-container">
-               {% endif %}
-               <div class="single-post-item">
-                  <div class="single-post-head">
-                     <a href="{{ post.url }}">
-                     {% if post.short %}
-                        <h6>{{ post.short }}</h6>
-                     {% else %}
-                        <h6>{{ post.title }}</h6>
-                     {% endif %}
-                     </a>
-                  </div>
-               </div>
-               {% if mod_three == '2' or forloop.last %}
-                  </div>
-               {% endif %}
-            {% endif %}
-         {% endif %}
-      {% endif %}
-   {% endfor %}
+         {% endfor %}
+      </div>
+   </div>
 </div>

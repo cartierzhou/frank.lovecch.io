@@ -57,9 +57,3 @@ header.header-container {
 	    color: gray;
 	  }
 }
-.page-footer {
-  height: 40px;
-  margin-top: -40px;
-  border-top: 1px solid black;
-  margin-left: 20%;
-}
