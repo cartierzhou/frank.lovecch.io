@@ -77,7 +77,7 @@ It was nearing Christmas in _two-thousand and ten_, and I was walking from my pa
 <h2>[open-source]</h2>
 For almost _two_ years now, I've held onto a drawing of the animals **\[and the associated CAD files for stamps\]** without plans to share. I've never really planned on mass-producing the luggage I'm attempting to create, though; reflecting on why that is so, it seems there may be a motticum of hipster inside me keeping the beauty inside him. Since it just seems to be hypocritical to my lifestyle, I've chosen to share the files, albeit in an unconventional way**\[to most people\]**. 
 
-The files are shared on `Github` under the [GPL] license. What does this mean?
+The files are shared on `Github` under the \[GPL\] license. What does this mean?
 
 1. Versioning. You can modify the files all you want, and keep this history (plus access to all the original files).
 1. GPL - Don't be evil and such. Don't mass produce them, ya know?

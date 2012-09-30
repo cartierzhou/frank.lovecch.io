@@ -1,0 +1,12 @@
+---
+layout: post
+main: false
+status: wip
+category: thoughts
+subcategory: blog
+back: thoughts.html
+title: redesign
+quote: My slow web movement. 
+---
+
+I've had some outlet for creating my entire life, but that venting only became digital when I was a sophomore in college. 

@@ -1,0 +1,10 @@
+---
+main: true
+quote: Labs of sorts.
+---
+
+Monthly problems.
+Heat Exchanger.
+Pizza.
+Luggage.
+Color changing car.
