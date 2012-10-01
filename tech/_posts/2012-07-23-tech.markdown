@@ -3,8 +3,10 @@ main: tech
 quote: On Getting the Gist of it.
 ---
 
-When I was seventeen, I moved into the SRH freshman dormitory situated upon the West Campus of The University of Illinois-Chicago. My lifetime streak of never receiving less than a B grade on a report card ended shortly thereafter. As it happened, an XBOX t-shirt wearing, Linux preaching computer nerd moved into the room next to us (and I say that with the highest of regard). Steve wore a purple robe around the mixed-sex dorm, and I dubbed him 'Hef'; the name sticks to this day. 
+At _seventeen_ years old, I moved into the SRH freshman dormitory situated upon the West Campus at [The University of Illinois-Chicago](http://uic.edu). `My lifetime streak of never receiving less than a B grade on a report card ended shortly thereafter`. Through happenstance, a robe-wearing, [Linux](http://linux.org) preaching computer nerd **\[and I say that with the highest of regard\]** moved into the room adjacent to me. Since Steve consistently wore a purple robe around the mixed-sex housing **\[presumably because he was too preoccupied with IP tables\]**, `I dubbed him Hef`, and the name stuck. 
 
-I fell into computers via upgrades to the 'box my parents bought me for Christmas' (yea, that was a <i>Hackers</i> reference), and web development came when our newly formed hockey club needed a website. Hef guided me through using telnet, SSH, and an emacs terminal (all on a gross PC); my own personal <i>Introduction to Computer Science</i> had begun.
+I fell into the world of bits and bytes ever so slowly via simple upgrades and vandalization to the brand-new Windows box my parents had bought me as a graduation gift **\[this was a time not privy to netbooks, smartphones, iPads, or stellar MackBook Pros\]**. When web development came in the form of our newly created Division II hockey club needing an online presence, `Hef graciously guided me through using telnet, SSH, and emacs`; my own personal _Introduction to Computer Science_ had begun.
 
-Six years later, I was hired on as a Junior Developer at a cloud-based machine-to-machine company. Per usual, I was in over my head. Things started to 'click' after about six months of sixty-hour work weeks, and I never looked back. These are my trials and tribulations as a daily developer; snippets of smidgens.
+_Six_ years and basic working knowledge of the interwebs later, I was hired on for a Junior Developer position at a cloud-based machine-to-machine company. `Per usual, I was in over my head`. Things started to click after about _six_ months of _seventy_ hour work weeks, and I never looked back. 
+
+`These are my trials and tribulations as a daily developer`.

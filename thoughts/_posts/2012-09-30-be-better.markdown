@@ -1,0 +1,11 @@
+---
+layout: post
+main: false
+status: wip
+category: thoughts
+subcategory: blog
+back: thoughts.html
+title: be better.
+quote: A New Year's Resolution.
+---
+

@@ -54,6 +54,19 @@ a:visited {
 a:hover {
   text-decoration: none;
 }
+.columns a {
+  color: #0b3a6e; 
+  text-decoration: underline;
+  font-size: 12px;
+}
+.columns a:visited {
+  color: #0b3a6e; 
+  text-decoration: underline;
+}
+.columns a:hover {
+  text-decoration: none;
+  text-shadow: 0 0 2px #999;
+}
 .gist {
   width: 100%; 
   column-span: all;

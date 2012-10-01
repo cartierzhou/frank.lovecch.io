@@ -1,0 +1,68 @@
+---
+layout: post
+main: false
+status: wip
+category: thoughts
+subcategory: blog
+back: thoughts.html
+title: resume.
+quote: A short history of work.
+---
+
+My parents, in their sub-consciously Protestant ways, `forced` a job on me at _fifteen_ years old; consequently, I picked up a lot of skills **\[and interests\]** along the way. I felt it important, for nostalgia's sake, to pen the aggregate workforce experiences unique to me in the past _twelve_ years. A look back at what I've done for a dollar.
+
+<h2>[jerry's hockey warehouse]</h2>
+`Schaumburg, IL | Retail Associate | September 2000 - August 2003`
+
+I'm sure my signature and/or initials still reside in many parts of rafters.
+
+<h2>[patrick bmw collision center]</h2>
+`Schaumburg, IL | Painter/R&amp;I Tech Apprentice | June 2001 - July 2009`
+
+Wet on wet.
+
+<h2>[baker's square]</h2>
+`Bloomingdale, IL | Server | June 2002 - August 2002`	
+
+Free pie.
+
+<h2>[steamin p's carpet &amp; cleaning]</h2>
+`Bartlett, IL | Carpet Cleaner | June 2002 - July 2002`
+
+I worked for a high school girlfriend's dad.  Lesson learned.	
+
+<h2>[bartlett park district]</h2>
+`Bartlett, IL | Field Supervisor | April 2003 - August 2003`
+
+
+We may have drawn funny things with the chalk machine.
+	
+<h2>[johnny's ice house]</h2>
+`Chicago, IL | Bitch | September 2003 - April 2004`
+
+I just wanted to drive the zamboni.
+
+<h2>[mastercraft automotive/ ardmore auto sales]</h2>
+`Villa Park, IL | Detailer/Transporter | May 2004 - December 2004`
+
+Used cars, or junkers for clunkers.
+
+<h2>[aurelio's pizza]</h2>
+`Chicago, IL | Pizza Delivery | June 2004 - July 2004`
+
+I drove a Chevrolet Baretta.
+
+<h2>[uic police department]</h2>
+`Chicago, IL | IT consultant | July 2004 - July 2004`
+	
+I was arrested.  Woops.
+	
+<h2>[accc uic]</h2>
+`Chicago, IL | IT Consultant | May 2005 - December 2007`
+
+Listen, I'm in big trouble...do you know anything about computers?
+
+<h2>[woodward mpc]</h2>
+`Skokie, IL | Production Engineer | May 2008 - April 2009`
+	
+I got to touch something that was IN SPACE.

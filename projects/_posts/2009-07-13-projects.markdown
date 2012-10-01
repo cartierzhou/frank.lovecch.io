@@ -2,8 +2,8 @@
 main: projects
 quote: If your life's work can be accomplished in your lifetime, you're not thinking big enough.
 ---
-I received a phone call one summer's afternoon in _two-thousand and eight_ from a friend eating at _Chipoltle_; `I just read something on the back of my drink, and it reminded me of you`. What he then read to me was the quotation above **\[in bold\]**, and I couldn't have said it better myself! My projects are plentiful, costly, and broader than the scope of my lifetime. The never-ending list of interests comes from my quest to conquer the world in its entirety **\[or die trying, as the saying goes\]**. I live by Ms. Frizzle's mantra, `Take chances, make mistakes, get messy!`, and find greatness in failure - I hope you can too. 
+I received a phone call one summer's afternoon in _two-thousand and eight_ from a friend eating at _Chipoltle_; `I just read something on the back of my drink, and it reminded me of you`. What he then read to me was the quotation above **\[in bold\]**, and I couldn't have said it better myself! My projects are plentiful, costly, and broader than the scope of my lifetime. The never-ending list of interests comes from my quest to conquer the world in its entirety **\[or die trying, as the saying goes\]**; time rarely seems to be on my side, and I always find myself `chasing daylight`. I live by Ms. Frizzle's mantra, `Take chances, make mistakes, get messy!`, and find greatness in failure - I hope you can too. 
 
-I've found that my niche lies not just in bits and bytes, but rather somewhere in between, or as a combination of, both the digital and physical worlds. My belief in open access to information resonates deeply, and this is why I choose to share my world with you.
+I've found that my niche lies not just in bits and bytes, but rather somewhere in between, or as a combination of, both the digital and physical worlds. My belief in open access to information resonates deeply, and this is why I choose to share my world with you. 
 
 Enjoy exploring. It's a magical world.
