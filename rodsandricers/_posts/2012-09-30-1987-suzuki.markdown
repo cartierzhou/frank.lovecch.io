@@ -1,0 +1,41 @@
+---
+layout: image_post
+main: false
+status: wip
+category: rodsandricers
+back: rodsandricers.html
+title: 1987 suzuki.
+quote: Free ninety-nine.
+image: http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-02.jpg
+---
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-01.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-03.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-04.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-05.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-06.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-07.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-08.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-09.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-10.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-11.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-12.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-13.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-14.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-15.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1987_suzuki-16.jpg"/>
+<p class="img-caption"></p>

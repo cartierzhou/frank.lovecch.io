@@ -6,5 +6,44 @@ category: rodsandricers
 back: rodsandricers.html
 title: jr's 1980 z28 camaro.
 quote: Thirty-five hundred dollars.
-image: /images/rodsandricers_map.png
+image: http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-30.jpg
 ---
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-01.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-02.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-03.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-04.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-05.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-06.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-07.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-08.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-09.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-10.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-11.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-12.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-13.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-14.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-15.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-16.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-17.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-18.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1980_z80_camaro_jr-19.jpg"/>
+<p class="img-caption"></p>

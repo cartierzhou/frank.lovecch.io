@@ -8,3 +8,8 @@ title: 1995 dodge shadow.
 quote: Three-hundred dollars.
 image: /images/rodsandricers_map.png
 ---
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1995_dodge_shadow-01.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1995_dodge_shadow-02.jpg"/>
+<p class="img-caption"></p>

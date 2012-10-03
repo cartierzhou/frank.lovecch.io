@@ -1,0 +1,27 @@
+---
+layout: image_post
+main: false
+status: wip
+category: rodsandricers
+back: rodsandricers.html
+title: 1928 model a ford.
+quote: Free ninety-nine.
+image: http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1928_model_a-01.jpg
+---
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1928_model_a-02.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1928_model_a-03.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1928_model_a-04.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1928_model_a-05.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1928_model_a-06.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1928_model_a-07.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1928_model_a-08.jpg"/>
+<p class="img-caption"></p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1928_model_a-09.jpg"/>
+<p class="img-caption"></p>

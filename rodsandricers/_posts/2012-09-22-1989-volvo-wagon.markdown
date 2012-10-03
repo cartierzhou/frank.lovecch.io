@@ -8,3 +8,6 @@ title: 1989 Volvo Wagon.
 quote: Eight-hundred dollar.s
 image: /images/rodsandricers_map.png
 ---
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/rodsandricers/1989_volvo_wagon-01.jpg"/>
+<p class="img-caption"></p>
