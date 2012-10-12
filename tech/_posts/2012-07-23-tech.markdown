@@ -3,10 +3,12 @@ main: tech
 quote: On Getting the Gist of it.
 ---
 
-At _seventeen_ years old, I moved into the SRH freshman dormitory situated upon the West Campus at [The University of Illinois-Chicago](http://uic.edu). `My lifetime streak of never receiving less than a B grade on a report card ended shortly thereafter`. Through happenstance, a robe-wearing, [Linux](http://linux.org) preaching computer nerd **\[and I say that with the highest of regard\]** moved into the room adjacent to me. Since Steve consistently wore a purple robe around the mixed-sex housing **\[presumably because he was too preoccupied with IP tables\]**, `I dubbed him Hef`, and the name stuck. 
+At _seventeen_ years old, I moved into the SRH freshman dormitory situated upon the West Campus at [The University of Illinois-Chicago](http://uic.edu). `My lifetime streak of never receiving less than a B grade on a report card ended shortly thereafter`. Through happenstance, a [Linux](http://linux.org) preaching computer nerd **\[and I say that with the highest of regard\]** moved into the room adjacent to me. Since Steve consistently wore a purple robe around the mixed-sex housing **\[presumably because he was too preoccupied with IP tables\]**, `I dubbed him Hef`, and the name stuck. 
 
-I fell into the world of bits and bytes ever so slowly via simple upgrades and vandalization to the brand-new Windows box my parents had bought me as a graduation gift **\[this was a time not privy to netbooks, smartphones, iPads, or stellar MackBook Pros\]**. When web development came in the form of our newly created Division II hockey club needing an online presence, `Hef graciously guided me through using telnet, SSH, and emacs`; my own personal _Introduction to Computer Science_ had begun.
+I fell into the world of bits and bytes ever so slowly via simple upgrades and vandalization to the brand-new Windows box my parents had bought me as a graduation gift **\[this was a time not privy to netbooks, smartphones, or well-conceived tablets\]**. When web development came in the form of our newly created Division II hockey club needing an online presence, `Hef graciously guided me through using telnet, SSH, and emacs`; my own personal _Introduction to Computer Science_ had begun.
 
-_Six_ years and basic working knowledge of the interwebs later, I was hired on for a Junior Developer position at a cloud-based machine-to-machine company. `Per usual, I was in over my head`. Things started to click after about _six_ months of _seventy_ hour work weeks, and I never looked back. 
+_Six_ years and a basic working knowledge of the interwebs later, I was hired on for a Junior Developer position at a cloud-based machine-to-machine company. `Per usual, I was in over my head`. 
 
-`These are my trials and tribulations as a daily developer`.
+The _Internet of Things_ was something I had always practiced through hobby, I just never knew the terminology surrounding it. `It was dumb-luck that I fell into my calling`. After a rough patch of about _six_ months of _seventy_ hour work weeks **\[there's that 'ol Ameerican work ethich\]**, `things started to click`. I never looked back. 
+
+These are my trials and tribulations as a daily developer.
