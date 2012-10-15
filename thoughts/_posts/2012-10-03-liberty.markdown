@@ -1,13 +1,12 @@
 ---
-layout: test_post
+layout: thoughts_post
 main: false
-status: in-progress
+status: wip
 category: thoughts
 subcategory: blog
 back: thoughts.html
 title: An Office Divided.
 quote: Give me your tired, your poor, your huddled masses yearning to breathe free.
-block: It should go without saying that anything I've linked to on the interwebs amidst my vast sea of e-ink is pertinent and worthwhile; if at all possible, please take the time to read and reflect on it, as The [Slow-Web Movement](http://sloweb.com) applies to consumers just as fervently as its creators. Apologies in advance for the multitude of quotations placed in my profile; just as photos and films, they are important to me because of the raw emotion invoked when taken in.
 ---
 
 The human condition is complicated - but understood - and yet, its mostly misconstrued by a myriad of sources. My small, [Mad-Men](http://madmen.com)-esque office space on the _ninth_ floor of the `Daniels & Fischer Tower` is no different; a tiny entity (BETTER WORD things in body...) comprised of the same triteness abundant in society **\[at least American\]**. 
