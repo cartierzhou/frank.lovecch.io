@@ -1,0 +1,81 @@
+[0.000][INFO]:      ChromeDriver 23.0.1240.0 /Users/franklovecchio/Desktop/dev/frank.lovecch.io/ci/./chromedriver
+[0.982][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chromeOptions": {
+      "args": [  ],
+      "binary": "",
+      "extensions": [  ]
+   },
+   "javascriptEnabled": true,
+   "platform": "ANY",
+   "version": ""
+}
+
+[0.983][INFO]:      Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --use-mock-keychain --ignore-certificate-errors about:blank
+[1.554][INFO]:      Connected to Chrome successfully. Version: 22.0.1229.94
+[1.579][FINE]:      Command received (/session/0526d08827f1814ed986695c1d0a7bba)
+[1.579][FINE]:      Command finished (/session/0526d08827f1814ed986695c1d0a7bba) with response {
+   "sessionId": "0526d08827f1814ed986695c1d0a7bba",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "mac",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "22.0.1229.94",
+      "webStorageEnabled": true
+   }
+}
+
+[1.599][FINE]:      Command received (/session/0526d08827f1814ed986695c1d0a7bba/url) with params {
+   "sessionId": "0526d08827f1814ed986695c1d0a7bba",
+   "url": "http://frank.lovecch.io"
+}
+
+[1.599][FINER]:     Waiting for all views to stop loading...
+[1.600][FINER]:     Done waiting for all views to stop loading
+[9.152][FINER]:     Waiting for all views to stop loading...
+[9.170][FINER]:     Done waiting for all views to stop loading
+[9.170][FINE]:      Command finished (/session/0526d08827f1814ed986695c1d0a7bba/url) with response {
+   "sessionId": "0526d08827f1814ed986695c1d0a7bba",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[9.172][FINE]:      Command received (/session/0526d08827f1814ed986695c1d0a7bba/title)
+[9.172][FINER]:     Waiting for all views to stop loading...
+[9.186][FINER]:     Done waiting for all views to stop loading
+[9.193][FINER]:     Waiting for all views to stop loading...
+[9.193][FINER]:     Done waiting for all views to stop loading
+[9.193][FINE]:      Command finished (/session/0526d08827f1814ed986695c1d0a7bba/title) with response {
+   "sessionId": "0526d08827f1814ed986695c1d0a7bba",
+   "status": 0,
+   "value": "LOVECCH.IO"
+}
+
+[9.195][FINE]:      Command received (/session/0526d08827f1814ed986695c1d0a7bba/title)
+[9.195][FINER]:     Waiting for all views to stop loading...
+[9.195][FINER]:     Done waiting for all views to stop loading
+[9.197][FINER]:     Waiting for all views to stop loading...
+[9.197][FINER]:     Done waiting for all views to stop loading
+[9.197][FINE]:      Command finished (/session/0526d08827f1814ed986695c1d0a7bba/title) with response {
+   "sessionId": "0526d08827f1814ed986695c1d0a7bba",
+   "status": 0,
+   "value": "LOVECCH.IO"
+}
+
+[9.199][FINE]:      Command received (/session/0526d08827f1814ed986695c1d0a7bba)
+[9.281][INFO]:      Chrome shutdown
