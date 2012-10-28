@@ -1,5 +1,5 @@
 [0.000][INFO]:      ChromeDriver 23.0.1240.0 /Users/franklovecchio/Desktop/dev/frank.lovecch.io/ci/./chromedriver
-[0.982][FINE]:      Initializing session with capabilities {
+[0.981][FINE]:      Initializing session with capabilities {
    "browserName": "chrome",
    "chromeOptions": {
       "args": [  ],
@@ -11,11 +11,11 @@
    "version": ""
 }
 
-[0.983][INFO]:      Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --use-mock-keychain --ignore-certificate-errors about:blank
-[1.554][INFO]:      Connected to Chrome successfully. Version: 22.0.1229.94
-[1.579][FINE]:      Command received (/session/0526d08827f1814ed986695c1d0a7bba)
-[1.579][FINE]:      Command finished (/session/0526d08827f1814ed986695c1d0a7bba) with response {
-   "sessionId": "0526d08827f1814ed986695c1d0a7bba",
+[0.982][INFO]:      Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --use-mock-keychain --ignore-certificate-errors about:blank
+[1.589][INFO]:      Connected to Chrome successfully. Version: 22.0.1229.94
+[1.678][FINE]:      Command received (/session/ce475de79c1efde40ca6a6685888db42)
+[1.678][FINE]:      Command finished (/session/ce475de79c1efde40ca6a6685888db42) with response {
+   "sessionId": "ce475de79c1efde40ca6a6685888db42",
    "status": 0,
    "value": {
       "acceptSslCerts": false,
@@ -38,44 +38,60 @@
    }
 }
 
-[1.599][FINE]:      Command received (/session/0526d08827f1814ed986695c1d0a7bba/url) with params {
-   "sessionId": "0526d08827f1814ed986695c1d0a7bba",
+[1.701][FINE]:      Command received (/session/ce475de79c1efde40ca6a6685888db42/url) with params {
+   "sessionId": "ce475de79c1efde40ca6a6685888db42",
    "url": "http://frank.lovecch.io"
 }
 
-[1.599][FINER]:     Waiting for all views to stop loading...
-[1.600][FINER]:     Done waiting for all views to stop loading
-[9.152][FINER]:     Waiting for all views to stop loading...
-[9.170][FINER]:     Done waiting for all views to stop loading
-[9.170][FINE]:      Command finished (/session/0526d08827f1814ed986695c1d0a7bba/url) with response {
-   "sessionId": "0526d08827f1814ed986695c1d0a7bba",
+[1.701][FINER]:     Waiting for all views to stop loading...
+[1.702][FINER]:     Done waiting for all views to stop loading
+[3.503][FINER]:     Waiting for all views to stop loading...
+[3.518][FINER]:     Done waiting for all views to stop loading
+[3.518][FINE]:      Command finished (/session/ce475de79c1efde40ca6a6685888db42/url) with response {
+   "sessionId": "ce475de79c1efde40ca6a6685888db42",
    "status": 0,
    "value": {
 
    }
 }
 
-[9.172][FINE]:      Command received (/session/0526d08827f1814ed986695c1d0a7bba/title)
-[9.172][FINER]:     Waiting for all views to stop loading...
-[9.186][FINER]:     Done waiting for all views to stop loading
-[9.193][FINER]:     Waiting for all views to stop loading...
-[9.193][FINER]:     Done waiting for all views to stop loading
-[9.193][FINE]:      Command finished (/session/0526d08827f1814ed986695c1d0a7bba/title) with response {
-   "sessionId": "0526d08827f1814ed986695c1d0a7bba",
+[3.520][FINE]:      Command received (/session/ce475de79c1efde40ca6a6685888db42/title)
+[3.520][FINER]:     Waiting for all views to stop loading...
+[3.537][FINER]:     Done waiting for all views to stop loading
+[3.545][FINER]:     Waiting for all views to stop loading...
+[3.545][FINER]:     Done waiting for all views to stop loading
+[3.545][FINE]:      Command finished (/session/ce475de79c1efde40ca6a6685888db42/title) with response {
+   "sessionId": "ce475de79c1efde40ca6a6685888db42",
    "status": 0,
    "value": "LOVECCH.IO"
 }
 
-[9.195][FINE]:      Command received (/session/0526d08827f1814ed986695c1d0a7bba/title)
-[9.195][FINER]:     Waiting for all views to stop loading...
-[9.195][FINER]:     Done waiting for all views to stop loading
-[9.197][FINER]:     Waiting for all views to stop loading...
-[9.197][FINER]:     Done waiting for all views to stop loading
-[9.197][FINE]:      Command finished (/session/0526d08827f1814ed986695c1d0a7bba/title) with response {
-   "sessionId": "0526d08827f1814ed986695c1d0a7bba",
+[3.547][FINE]:      Command received (/session/ce475de79c1efde40ca6a6685888db42/title)
+[3.547][FINER]:     Waiting for all views to stop loading...
+[3.548][FINER]:     Done waiting for all views to stop loading
+[3.549][FINER]:     Waiting for all views to stop loading...
+[3.550][FINER]:     Done waiting for all views to stop loading
+[3.550][FINE]:      Command finished (/session/ce475de79c1efde40ca6a6685888db42/title) with response {
+   "sessionId": "ce475de79c1efde40ca6a6685888db42",
    "status": 0,
    "value": "LOVECCH.IO"
 }
 
-[9.199][FINE]:      Command received (/session/0526d08827f1814ed986695c1d0a7bba)
-[9.281][INFO]:      Chrome shutdown
+[3.552][FINE]:      Command received (/session/ce475de79c1efde40ca6a6685888db42/elements) with params {
+   "sessionId": "ce475de79c1efde40ca6a6685888db42",
+   "using": "xpath",
+   "value": "//a"
+}
+
+[3.552][FINER]:     Waiting for all views to stop loading...
+[3.552][FINER]:     Done waiting for all views to stop loading
+[3.568][FINER]:     Waiting for all views to stop loading...
+[3.568][FINER]:     Done waiting for all views to stop loading
+[3.568][FINE]:      Command finished (/session/ce475de79c1efde40ca6a6685888db42/elements) with response {
+   "sessionId": "ce475de79c1efde40ca6a6685888db42",
+   "status": 0,
+   "value": [  ]
+}
+
+[3.571][FINE]:      Command received (/session/ce475de79c1efde40ca6a6685888db42)
+[3.672][INFO]:      Chrome shutdown
