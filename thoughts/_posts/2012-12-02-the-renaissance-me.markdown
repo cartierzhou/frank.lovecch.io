@@ -5,30 +5,33 @@ status: in-progress
 category: thoughts
 subcategory: blog
 back: thoughts.html
-title: be better.
-quote: A New Year's Resolution.
+title: renaissance me.
+quote: Be better
 ---
 
-There exists such a white board placed an arm's length above a walkway in my home - between the kitchen and living room - whose sole purpose, for better or worse, is to provide inspiration from insightful quotations..or a grocery list. On New Year's Day _2012_, I tediously erased long-standing prior art and scripted the words `BE BETTER` in all capital letters across it; the taste of fresh ink wetting the back of my mouth as the smell made its way through my nasal passage and down. As I sometimes forget, these kinds of soul nourishing statements aren't necessarily relatable to the cynical - as such, my roommate proceeded to jest.
+It is 7 AM; I have already showered, eaten a banana, read a snippet of [Madame Bovary](https://en.wikipedia.org/wiki/Madame_Bovary), and I sit here now at a wonderful cafe in Denver sipping on a capuccino. If you were to ask _sixteen_ year-old me, asleep on the bathroom floor before school **\[with the shower running to fool his parents\]**, if I were ever able to be capable of this routine, the answer would have been a profane profound `No`.
 
-`These two simple words ended up being so entirely beneficial I decided to incorporate them into my life mantra`. 
+`As the New Year approaches, I felt it necessary to explain how I got here.`
+
+<h2>[the white board]</h2>
+There existed such a white board, placed an arm's length above a walkway in my last residence - between the kitchen and living room - whose sole purpose, for better or worse, was to provide inspiration in the form of grocery lists. `Buy the good orange juice!`, `Get to the store, motherfucker!`, and `Cleaning supplies, do you think we live in a barn?!` **\[+1 for the interrobang\]** were among the least insensitive. On New Year's Day of last year, _2012_, I tediously erased long-standing priors and scripted the words `BE BETTER` in all capital letters across it; the taste of fresh ink wetting the back of my mouth as the smell made its way through my nasal passage and down. As I sometimes forget, these kinds of soul nourishing statements aren't necessarily relatable to the [cynical](http://conan) on the surface, where they are treated as material for ridicule, of which I had much.
+
+`These two simple words ended up being so entirely beneficial I decided to incorporate them into my life mantra.` 
 
 <h2>[inspiration]</h2>
-http://leostartsup.com/2012/08/the-myth-of-doing-%E2%80%9Cthat-one-thing%E2%80%9D/
-
-I have read [one]() [blog]() [after]() [another]() **\[most sourced from [Hacker New](http://news.ycombinator.com)\]** analyzing the startup developer's life; the good, the bad, and mostly the ugly. We all seem to chase this **\[somewhat imaginary\]** [fortune and glory](http://youtube.com), but over the course of the past _two_ years since I became a non-degreed, full-time software developer, I've come to realize that it's never been about destitute monetary wealth **\[or maybe this is just the lie I tell myself\]**. When I took a moment for introspection, it was apparent the lifestyle choice I made had affected me in various interceding aspects; most digitally apparent was that I hadn't published anything significant since starting. `That perflecty articulates the problem, though`. Mostly, I forgot about [what originally brought me out West](http://frank.lovecch.io/projects/walden-ranch.html), and even though I tried, the [more basic fundamentals](http://www.paulgraham.com/todo.html) of how to live escaped me. As amateur hockey coaches throughout life said countless times **\[usually while drilling us to pieces\]**, `Sometimes, you just have to go back to the basics` **\[That's possibly a Jerry Maguire reference\]**. And that's just what I did.
+I have read blog upon post analyzing the startup developer's life; the good, the bad, the Linux-Desktop-preaching ugly. We all seem to chase this **\[somewhat imaginary\]** [fortune and glory](http://leostartsup.com/2012/08/the-myth-of-doing-%E2%80%9Cthat-one-thing%E2%80%9D/), but over the course of the past _two_ years since I became a non-degreed, full-time software developer, I've come to realize that it's never been about destitute monetary wealth **\[or maybe this is just the lie I tell myself\]**. When I took a moment for introspection, it was apparent the lifestyle choice I made had affected me in various interceding aspects; most digitally apparent was that I hadn't written anything significant - read non-tech - since becoming a software developer. `That perflecty articulates the problem that faced me, though`. Mostly, I forgot about [what originally brought me out West](http://frank.lovecch.io/projects/walden-ranch.html), and even though I tried, the [more basic fundamentals](http://www.paulgraham.com/todo.html) of what to live for escaped me. As amateur hockey coaches throughout life said countless times **\[usually while drilling us to pieces\]**, `Sometimes, you just have to go back to the basics`. And that's just what I did.
 
 <h2>[relationships]</h2>
 As it turns out, [Facebook](http://facebook.com) makes it far too easy to manage close personal relationships; instead of fostering health, it destroys the bond with a triteness. There are so many things inherently wrong with the digital forms of communication available to us, but the most notable could best be described by the words `on the surface`. The `Like` button holds so much more than it represents, but the message it sends is hardly quantified by the person receiving it, and only so quite fleetingly. 
 
 I can count the number of funerals and death services I've attended on both of my hands, a blessing no doubt. But from these events I was never able to grasp a lesson in relationships such a part of these events **\[at least the disfunctial ones I've attended\]**; `maintenance`. Granted, there are some special friends whom I could not talk to or see for years, and we always pick right up where we left off. Only certain types of people are capable of this. `The only time we see each other is in death`.
 
-I turned off the social service for a month **\[including removing the app from my phone for good\]** and actually started picking up the phone and calling the people closest to me. Knowing me meant knowing `I despised the device`, so for some, it was a shocker. As it turns out, it's  liked phones in any form up until this year, and they still suckl. I found them awkward for many years. This contributed to my slower dive into the smart-phone 
+I turned off the social service for a month **\[including removing the app from my phone for good\]** and actually started picking up the phone and calling the people closest to me. Knowing me meant knowing `I despised the device`, so for some, it was a shocker. As it turns out, it's liked phones in any form up until this year, and they still suckl. I found them awkward for many years. This contributed to my slower dive into the smart-phone 
 I used to hate cell phones. 
 
 Honesty.
 
-didn't want to be the guy at the funeral saying we only see eachother then.
+`I never want to be the guy at the funeral saying we should see each other more often`. Maybe it's out of politeness, but perhaps not. 
 
 <h2>[technology]</h2>
 I removed cable from my home, and enforced the decision by removing internet as well. I hadn't payed for television service since college, but the more-than-basic channels had been pushed to us freely by purchasing an internet-only service package **\[funny how that works\]**. I understand the allure of cable, but find far superior the time which replaces vegetable mode.
@@ -50,12 +53,24 @@ Software can be monotanous. Real things test your patience even more so.
 <h2>[work]</h2>
 When you make a gradual change in your lifestyle over the course of a time period, it generally gets disregarded by the people you spend time with unless you, the changer, explicitly announce these changes. In man-land, this provokes fun-poking. As I've grown as a developer, I've noticed that the negative stipulations associated with my earlier career **\[bugs\]** continually are thrown in my face. 
 
-<h2>[movement]</h2>
-A friend of mine once told me that she became a distance runner because she didn't have an athletic bone in her body; it made perfect sense. She is a engineer of all kinds, and a very detail-oriented person at that. It was easy to set a course to become good. `I have never enjoyed distance running as a form of exercise`, unless I was jogging somewhere with a purpose, e.g. work. Growing up in the Midwest suburbs of Chicago, the mentality I grew up with was drive everywhere. Everything was placed too far apart for any current form of public transportation to be practical, or even slightly practical. `Even when I lived in Chicago I drove everywhere`. 
-
 <h2>[food]</h2>
-I haven't eaten a drop of fast food since I took the oath. Growing up in the Midwest is a hard mindset to get away from, as all there is to do is eat. I consisently take a verbal reaping for `eating organic`; the truth of the matter is that I don't necessarily do, but I do eat as healthy as someone who enjoys meat can. 
+Fast food has been accosted from my diet, and I have not eaten a drop of it since I took the oath. Growing up in the Midwest - specifically Chicago - you can find a _McDonald's_ or _Walgreens_ on nearly every corner. It has been overwhelmingly easy to stop myself from helping proliferate these places, the hardest part was ridding the habit which existed as normal., as all there is to do is eat. I consisently take a verbal reaping for `eating organic`; the truth of the matter is that I don't necessarily do, but I do eat as healthy as someone who enjoys meat can. 
 swearing off fast foot
+
+<h2>[exercise &amp; movement]</h2>
+I have a strong aversion to gyms. For me, there is a zen-ness associated with the kind of exercise that is had at these places, and it's meant to be partaken in alone. I lived _two_ miles from our downtown Denver office location, and started biking there continuously mid-year. I could never seem to keep the pressure up in my tires, and blowouts were a commonality. I started walking, the distance taking about _30_ minutes each way, with a coffee stop on the way there and a tea stop on the way home. The city opened up to me.
+
+<h2>[repetition]</h2>
+When I introduce freshness in my life - a new food at the grocery store, a visit to a cafe I haven't been, or even a system uprising (trying this way as opposed to that) - burnout is kept at bay. Part of what I love about occasional bouts with vagabondness is being forced into exploring! 
+
+
+`Who are you really? And where did you come from?`
+
+basically, small places vs. starbucks.
+
+new places people and what they inspire. the ruts in between. keep moving foward to get that inspiration.
+
+ I forgot about "The Renassannce Me". All those things and people that have led to the culmination of you and your interests, well, when they were happenin
 
 
 on booze
@@ -122,3 +137,8 @@ I had never physically pressed keys in the way you would form a sentance on a ty
 
 <h2>Moving On</h2>
 Our startup is a small mix of who's here and who's not; our Eastern European resources being the latter. Everybody knows who's on the line for what, transparency is inflicted without thought. I thought about writing something [Jerry Maguire-esque](https://www.youtube.com/watch?v=VH64hzWqnFk) at first, just to the older founders - internally - just to sort of put myself out there more than I have in the past. It's interesting being younger and less knowldeable when it comes to various, if not most, aspects of the business; it reminds me of sitting in the back of the classroom **\[my first choice in any new environment\]**. The back of the classroom, just like being a young developer - a young anything - allows you to take in not just the things being taught to you, but more of a global knowledege of what is happening. `I found I learned more in the back of the classroom about the environment and people in it then I ever could have at the front`. 
+
+
+<h2>[on coming &amp; going]</h2>
+It laughingly dawned on me that I will leave Denver the same way I came - homeless and living in a Jeep **\[this is a long story\]**. I jest with myself, as the time I've spent in Colorado **\[or any drastically new place\]** has been well-accomplished.
+

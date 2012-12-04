@@ -9,9 +9,9 @@ quote: Clear eyes, full stomachs.
 image: http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/limoncello-02.png
 ---
 
-A dual Italian-Scottish wedding I attended took place over colored, punchy leaves, friends of yore, and the only brisk weather that Midwestern Fall season had been privy to. The reception which followed invoked memories of the fictional grandeur displayed in _Father of the Bride_; `just admiring the stature of the white, canvasy tent invoked happiness`, as sometimes places which hold joyous events do. I had felt very inspired sitting inside there while dinner, dancing, and drinks occurred; my loved ones surrounded me, and `an ambiance held light and aromatic in the air` **\[the _two_-piece jazz band had something to do with this, no doubt\]**. I can't remember my thought process entirely, but recall a moment of reflection where a forgotten memory was shotgunned to the forefront of my mind. 
+I attended a Midwest wedding which took place just before all the punch-colored leaves had succeeded from their branches. A crispness had fallen upon Wisconsin it had not been privy to as of yet; as such, hot cider was served as the vows were read, tales of love regaled. The reception which followed resurrected memories of fictional grandeur displayed in _Father of the Bride_. `Just admiring the stature and prowess of the white, canvasy tent invoked happiness`, as sometimes places which hold joyous events do. My loved ones surrounded me over the course of dinner, and the air held `a light aromatic ambiance` which dusted my skin; I felt warm, a combination of the alcohol and inspiration **\[the _two_-piece jazz band probably had something to do with this as well\]**. I can't remember my thought process entirely, but instead recall a moment of introspection where a forgotten memory had reintroduced to my conscious, `a Hail Mary of the mind`.
 
-`My Uncle Joe used to make limoconello`. Technically, he wasn't _really_ my Uncle. Joe was just a relative on the Italian side of my family, where everyone is called something or than what they're supposed to be. Spending holidays at his house was consistently one thing; full of live, love, and food. Food! Mosticolli with ridges, canolis so fresh they should have been eaten the day after, and always, after dessert, limoncello. `The funny thing about it is, I can't even remember how it tasted`. 
+`My Uncle Joe used to make limoconello`. Technically, he isn't _really_ my Uncle - just a relative on the Italian side of my family, where everyone is called something other than what they're supposed to be. Spending holidays at Honor and Joe's house was consistently one thing - full of boisterous life, love, and food...food! It didn't matter what the dishes of the day were, because it was always followed with desert sided with limoncello. `The funny thing about it is, I can't even remembr how it tasted`. 
 
 And so I was inspired to continue down the path of tradition.
 
@@ -24,6 +24,10 @@ As per my attention span, only a minute amount of research was had before the in
 
 1. I gave the bottle a shake once a day. Live a little, ya know?
 
+1. Serve warm. Nom nom.
+
+1. Filter as necessary
+
 <h2>[on lemons]</h2>
 Ideally, I'd like to get lemons from Grand Junction.
 
@@ -34,6 +38,13 @@ My original intentions were to bottle the limoncello in mason jars. Who doesn't 
 
 <h2>[on labels]</h2>
 
+
+
+Hello,
+
+Somebody there was aware and thoughtful enough to remove the imposed character limit and added proper spacing to my labels. It didn't go unnoticed. "So shines a good deed in a weary world". Thanks :)
+
+Frank
 
 <img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/projects/limoncello-04.png"/>
 <p class="img-caption">Label, first iteration.</p>
