@@ -10,7 +10,7 @@ short: on death.
 quote: I probably owe taxes.
 ---
 
-I will die. In the event that I die:
+I will die. In the event that I do:
 
 <h2>[obituary]</h2>
 I don't want my obituary to read dully. I was hoping that a group of my friends and loved ones might get together **\[any that might wish to volunteer\]**, along with someone who actually knows how to write, and hash something out. If they are not capable of producing something of caliber, I should like it to read:
