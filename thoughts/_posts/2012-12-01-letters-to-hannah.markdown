@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: post_single_column
 main: false
-status: in-progress
+status: wip
 category: thoughts
 subcategory: blog
 back: thoughts.html
@@ -9,49 +9,54 @@ title: letters with hannah.
 quote: A collection.
 ---
 
-A **\[continuously evolving\]** series of letters to the woman, and from the woman, who inspires me, inspired in part by [Letters of Note](http://lettersofnote.com). I will replace her inquiries with paraphrasing.
+A **\[continuously evolving\]** series of letters to the woman, and from the woman, who inspires me, inspired in part by [Letters of Note](http://lettersofnote.com). I will replace her inquiries with paraphrasing. I should probably ask her permission to republish some of these thoughts, but nobody reads this anyways :)
 
 <h2>[to hannah: december 2, 2012]</h2>
 
 I received a series of angst-ridden texts questioning the doldrums of society.
 
-```
+<div class="snippet">
+   <pre>
 I've been thinking about some positive aspects of repetition in response to your SMS musings.
 
 Studies have been undertaken that ask the question, "How does one become a master at something?". The answer is generally accepted to be somewhere around the equivalent of 5,000 hours of nothing other than...repetition...in one's area of to-be expertise. For me, this reiteration - in most cases - also correlates with productivity. And those combined equal mastery.
 
 While the above seems relatively simplistic by definition, there are a few caveats:
 
-1. The spark
+The spark
 
 I've found that when I'm "in the zone" (a transcendental work mode? Jim McMahon, 1985 Bears QB of all people, described this best, but I can't remember how), new ideas come forth and are born out of making the motions easier. Humans are constantly creating, perfecting, or destroying systems. 
 
-1. The burnout
+The burnout
 
 Too much repetitiveness causes extreme languish and dissipates simpler joys, as the mind is overwhelmed with angst. 
 
 When I introduce freshness in my life - a new food at the grocery store, a visit to a cafe I haven't been, or even a system uprising (trying this way as opposed to that) - burnout is kept at bay.
 
 I call it "The Renaissance Me", and this way, I am always gaslighting my mind into perceiving it's moving forward, even if not physically.
-```
+  </pre>
+</div>
 
 <h2>[to frank: november 30, 2012]</h2>
 
 We were going back and forth about traveling to Europe, and it spiraled into this observation.
 
-```
+<div class="snippet">
+   <pre>
 Essentially, American culture values perfection. Take a look at any magazine. The French, however, value uniqueness, even if that means flaws or imperfections. A recent French actress straightened a front tooth of hers, which was considered very "unchic" or "unfrench." I had many comments while I was over there about my "perfect, white American" teeth, and they are right. As I was over there longer, it became easier to pick out an American from a mile away. Bad makeup job, too much eyeliner, jeans and a t-sshirt, hair manipulated by their good friend the flat iron. Another French actress said, "The most beautiful makeup a woman can wear is passion." Spot on :)
 
 They also value aging! Older women are considered more wise, but also more sensual and in touch with their feminine nature. French women always contain some sort of existential mystery. They don't work out, yet stay attractively slim (hallelujah, if nothing else, I want to be like the french in this regard.) Muscle is unfeminine. They walk everywhere and eat real food. Not reduced calorie snackbars, or sugar free nonfat lattes ;). "Un cafe, s'il vous plait".
 
 Natural. Classy. Timeless. I love the French :). Albeit their snobby attitudes.
-```
+  </pre>
+</div>
 
 <h2>[to hannah: november 27, 2012]</h2>
 
 I received a passionate e-mail regarding Hannah's constant fight battle with religion. She grew up in the bible belt, and receives continuous opposing influence to the things she's coming to believe.
 
-```
+<div class="snippet">
+   <pre>
 My parents were married in a non-denominational church in the 1970's because their ancestral religious practices clashed; my father Catholic, my mother New Apostolic. My very existence is based on religious discordance, a fact which has never escaped me. 
 
 Throughout my life, I've attended various religious ceremonies, most of which were based around sects of the Christian faith. On joyous and dark terms, in birth, marriage, and death. My presence at these ceremonies was never due to religious practice, but out of Love for family or friends. Always an outsider, I found it difficult to be respectful of tradition and not actively participate in practices I didn't believe in (or was not fully aware of). I was present none-the-less.
@@ -94,13 +99,15 @@ The descendants of the religiously persecuted, then, would be the founding fathe
 - Thomas Jefferson
 
 If you find a God, let it be on your own terms. Listen to others, learn from others, but don't let the pulp of the masses sway your viewpoint face-value, especially if what's preached has been. When things feel right, most of the time, well, they are :)
-```
+  </pre>
+</div>
 
 <h2>[to hannah: november 11, 2012]</h2>
 
 The letter I wrote in response to my feelings. Since it changed as I transposed into non-digital, paper form **\[hers being the only particular copy in existence\]**, this draft will have to do. I don't think it as eloquent, but there's some biased romanticism at work here.
 
-```
+<div class="snippet">
+   <pre>
 Dearest Hannah,
 
 At the very beginning of this year, I made a simple New Year's Resolution to "Be Better". I had a proclivity for failure near the beginning; this was to be expected. I now attribute that struggle to my ongoing fight with the energies at be, and for explanation, have recently pondered the Overview Effect: a quantifiable notion of _small_ which all astronauts reported having felt upon return from space. Jim Lovell said it best: "Just from the distance of the Moon, you can put your thumb up, and you can hide the Earth behind your thumb. Everything that you have ever known, your loved ones, your business, the problems of the Earth itself, all behind your thumb. How insignificant we really all are". 
@@ -122,5 +129,5 @@ Logistically, my thoughts come to this: "Don't worry about losing. If it is righ
 P.P.S.
 
 Sometimes, when ya know, ya just know.
-```
-
+  </pre>
+</div>

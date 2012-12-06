@@ -45,6 +45,7 @@ div.project {
   span.tldr {
     font-weight: bold;
   }
+  /* TODO refactor */
   div.project div.body div.columns {
 	margin-top: -20px;
 	padding-top: 10px;
@@ -61,12 +62,37 @@ div.project {
     -moz-column-rule: 1px solid #eee;
     column-rule: 1px solid #eee;
   }
+  div.project div.body div.single_column {
+	margin-top: -20px;
+	padding-top: 10px;
+	/*
+	-webkit-column-width: 48%;
+	-webkit-column-gap: 2%;
+	-webkit-column-count: 2;
+	-moz-column-width: 48%;
+	-moz-column-gap: 2%;
+	-moz-column-count: 2;*/
+	width: 80%;
+	margin: 0 auto;
+	
+    text-align: justify;
+    /*-webkit-column-rule: 1px solid #eee;
+    -moz-column-rule: 1px solid #eee;
+    column-rule: 1px solid #eee;*/
+  }
   div.subcategory {
     margin-top: 20px;
     height: 30px;	
     width: 100px;
   }
   div.project div.body div.columns h2 {
+    font-size: 14px;	
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-variant: uppercase;
+  }
+  div.project div.body div.single_column h2 {
     font-size: 18px;	
     border-top: 1px solid #eee;
     padding-top: 10px;

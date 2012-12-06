@@ -1,12 +1,12 @@
 ---
 layout: post
 main: false
-status: in-progress
+status: wip
 category: thoughts
 subcategory: blog
 back: thoughts.html
-title: renaissance me.
-quote: Be better
+title: the renaissance me.
+quote: Be better.
 ---
 
 It is 7 AM; I have already showered, eaten a banana, read a snippet of [Madame Bovary](https://en.wikipedia.org/wiki/Madame_Bovary), and I sit here now at a wonderful cafe in Denver sipping on a capuccino. If you were to ask _sixteen_ year-old me, asleep on the bathroom floor before school **\[with the shower running to fool his parents\]**, if I were ever able to be capable of this routine, the answer would have been a profane profound `No`.

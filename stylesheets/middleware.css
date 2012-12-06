@@ -54,6 +54,20 @@ a:visited {
 a:hover {
   text-decoration: none;
 }
+/* TODO refactor */
+.single_column a {
+  color: #0b3a6e; 
+  text-decoration: underline;
+  font-size: 12px;
+}
+.single_column a:visited {
+  color: #0b3a6e; 
+  text-decoration: underline;
+}
+.single_column a:hover {
+  text-decoration: none;
+  text-shadow: 0 0 2px #999;
+}
 .columns a {
   color: #0b3a6e; 
   text-decoration: underline;
