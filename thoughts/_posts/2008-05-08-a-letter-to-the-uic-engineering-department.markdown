@@ -10,7 +10,7 @@ short: to uic.
 quote: Just let me use my calculator.
 ---
 
-I had a couple weeks off between graduation and my entrance into a salaried position, and I spent it trying to formulate the beginning of a letter to the Engineering Department at UIC, for betterment of the program. My intial thoughts on (somewhat) completing it were correct; I withheld the letter until I had experienced the corporate world, and I plan to add and edit from my current perspective when the inspiration comes about.
+_Four_ years ago, in the measly vacation weeks between college graduation and and my entrance into a salaried position, I spent a good deal of time trying to formulate a letter to the Engineering Department at [UIC](http://uic.org) **\[the one which graduated me\]**, in hopes of betterment of the program. My intial thoughts on (somewhat) completing it were correct; I withheld the letter until I had experienced the corporate world, and I plan to add and edit from my current perspective when the inspiration comes about.
 
 To the staff of the UIC College of Engineering,
 

@@ -6,25 +6,38 @@ category: thoughts
 subcategory: blog
 back: thoughts.html
 title: revolution.
-quote: Of the modern kind.
+quote: And what it means to be an American.
 ---
 
 ```
-I would rather live fully, bound by no physical patriotisms, with a moral code imposed on my own terms - and taken subjectively from all religions, using my personal feelings and thoughts as a guide - than wager with Pascal about the after-life.
+I would rather live fully, bound by no physical patriotisms, with a moral code imposed on my own terms - taken subjectively from all religions, using my personal feelings and thoughts as a guide - than wager with Pascal about the after-life.
 ```
 
-I consider the writings bequeated to us by the founding forefathers of this country the culmination of knowledge and ethics regarding political institutions up to to that point. I think the ideals represented in _The Declaration of Independence_, _The Consitutation_, and _[The Bill of Rights](http://www.archives.gov/exhibits/charters/bill_of_rights_transcript.html)_ are truly great gifts to the mind and spirit; they were born of a people who had dreams to spare and realities which killed. `This is how I know there is good in them`. 
+I consider the writings bequeated to us by the founding forefathers of this country the culmination of knowledge and ethics regarding political institutions up to to that point. I think the ideals represented in _The Declaration of Independence_, _The Consititution_, and _[The Bill of Rights](http://www.archives.gov/exhibits/charters/bill_of_rights_transcript.html)_ are generous gifts to the mind and spirit, `being crafted from a people whom had dreams to spare and realities which killed - this is how I know there is good in them`. 
 
 ```
 And this I believe: that the free, exploring mind of the individual human is the most valuable thing in the world. And this I would fight for: the freedom of the mind to take any direction it wishes, undirected. And this I must fight against: any idea, religion, or government which limits or destroys the individual. This is what I am and what I am about.
 ```
 
-All systems implmented by man are infallible, and as such, we've continually missed the most important aspects of the documents at hand; just as the inky-text has faded, I blame both the passing of time and systematic degredation by _graft_ and _greed_ and men who never understood anything but principles and dreams of _phooey_.
+All systems implmented by man are infallible, and as such, we've continually missed the most important aspects of the documents at hand. Just as the once inky-text has faded, the passing of time has led to the systematic degredation of rights through _graft_ and _greed_ and men who never understood anything but power and dreams of _phooey_.
+
+The multitude of settings establishing America are full of so many people, born here and not. 
+
+As an American, I can tell you I don't care if you were born here or not. You and I seek the same things.
+
+```
+There is no conflict of interest between rationale men.
+```
+
+As an American, it is my choice to live how I like - visidely, religiously, healhilhty, outdoorsy. I do not need a degree to be better.
+
+
+Having an understanding of the people 
 
 TODO To be clear...discuss doctrines and give examples of the bible and how those are followed to closely.
 
 <h2>[patriotism]</h2>
-I am certain I was given no choice on the matter of where I would be born unto **\[this isn't a _Non-Sequitur comic\]**; as things stand, my hospital-issued birth certificate retains a stamped address bearing _The United States of America_.
+I am certain I was given no choice on the matter of where I would be born unto **\[this isn't a _Non-Sequitur_ comic\]**; as things stand, my hospital-issued birth certificate retains a stamped address bearing _The United States of America_.
 
 TODO
 
@@ -64,7 +77,7 @@ There are no conflicts of interest between rationale men.
 
 we've missed the utopian ideal of place where the only patriotism exists in the form of causes.
 
-This is a place where men - _a single mind - is allowed to thrive, where 
+This is a place where men - _a single mind_ - is allowed to thrive, where 
 
 I am of the stance that disallowances in freedom of speech sit on the end of a board, while the entire concept resides on the other. Slowly, revisions occur - yelling "fire" in a theatre becomes illegal - 
 

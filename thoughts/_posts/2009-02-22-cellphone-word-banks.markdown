@@ -9,231 +9,386 @@ title: word banks.
 quote: Before auto-correct.
 ---
 
-The purposeful non-integration of words like 'cunt' in cell phone text-messaging word banks angers me.
+I've always been interested in data and analytics. In _2009_, before I had switched over to a _smart_ phone, I was still having to input words into my cell phone's word bank. I, of course, kept the list **\[and some annotations\]**
 
-Below is a list compiled of all the words I had to add into my cell phone, not including common names. I have also tried to include a (parenthesized) reference as to what in the hell I was thinking. It's close to being in alphabetical order, but i can't figure out how to 'sort alphabetically' in google docs, so deal with it.
+- 4340 
 
-4340 (the working name of the auto bar)
+```
+The previous working-title of the automated bar I wanted to open.
+```
 
-ahh
+- ahh
 
-a/s/l? (almost positive this was from a texting conversation i had with jimmy)
+- a/s/l? 
 
-akira (i think it was in regards to the store)
+```
+I probably texted this to my friend Jimmy at some point, clearly referencing the yesteryear of the chat-room.
+```
 
-aksing (i wish i could remember why i used ebonics)
+- akira 
 
-akward (because i can't spell it the right way)
+```
+A store.
+```
 
-alamosa (a town near me and jimmy's land in colorado!)
+- aksing
 
-alberquerque (cleary a high school musical reference)
+```
+Ebonics.
+```
 
-atv
+- akward
 
-bartlett 
+```
+Consistently used to misspel this word.
+```
 
-bummer
+- alamosa 
 
-bmw
+```
+The town near the Walden Ranch.
+```
 
-bobs (office space)
+- alberquerque 
 
-brotha
+```
+High School Musical reference.
+```
 
-coccacino (zack and miri make a porno)
+- atv
 
-co2 (probably in regards to the auto bar)
+```
+I had a slew of ATV projects at the time.
+```
 
-bentley
+- bartlett 
 
-bannermans (a bartlett bar)
-berteau
+```
+The town in which I grew up.
+```
 
-beater
+- bummer
 
-biter
+- bmw
 
-bitches
-blockers
+```
+Place of employment.
+```
 
-cetus (zenon)
+- bobs
 
-carbureted
+- brotha
 
-cunt
+- coccacino
 
-casanova
+```
+Zack and Miri Make a Porno reference.
+```
 
-camaro
+- co2
 
-doogie (neil patrick=god)
-dooh (homer simpson)
+- bentley
 
-douche bag
-doodling (my favorite past time)
+- bannermans
 
-ditzes
-dempster
+```
+The name of a bar in the town in which I grew up.
+```
 
-dekalb
-elgin
+- berteau
 
-eiffel (i wish this was in regards to a sexual position)
+- beater
 
-flader
+- biter
 
-facebook
-fantasize (dirty texts?)
+- bitches
 
-fucking
+- blockers
 
-fuck
+- cetus
 
-fucker
-goob
+```
+Zenon reference.
+```
 
-grabbage
+- carbureted
 
-goonies (hey you guys!)
-goner
+- cunt
 
-goners
+- casanova
 
-geez
-gasket
+- camaro
 
-gages
+- doogie
 
-hosses (a bartlett bar)
+- dooh
 
-honda
-hollitosis (i call holly this. it's really a reference to 'all i want for christmas', my second favorite christmas movie. ethan embry calls his little sister (hally) 'halitosis')
-hobbes
-hella
+- douche bag
 
-hinkley<br>hasta
+- doodling
 
-hawthorne
+- ditzes
 
-hahaha
-hollister
+- dempster
 
-jigly
+- dekalb
 
-jdm (in reference to my honda motor...japanese domestic market)
-kawasaki
+- elgin
 
-kedzie
-k?
-looney
+- eiffel
 
-lapetus (zenon)
+- flader
 
-lefty
+- facebook
 
-laflin
-lovecchio
-mojitos
-meh
+- fantasize
 
-mccmorick (like the place)
-misconstrued
+- fucking
 
-malnati's (restaurant)
+- fuck
 
-macys
+- fucker
 
-mcdonalds
-mcfly (back to the future)
+- goob
 
-muahaha
+- grabbage
 
-missy
-minx (picture hugh grant saying this to a photograph in 'love actually')
-ninja (or pirate?)
-nelly
-naperville
-okey
+- goonies
 
-penis
+- goner
 
-pheromones
-pissed
-payday
-piss
-pooper
+- goners
 
-poop
+- geez
 
-ridic
-skated
+- gasket
 
-shushing
-shrivelage
+- gages
 
-shorty
+- hosses 
 
-shitty
-shit
+```
+The name of a bar in the town which I grew up.
+```
 
-shite (johnny lee miller pronounces "shite" perfectly in trainspotting)
+- honda
 
-scum
-schaumburg
+- hollitosis 
 
-salida (town in colorado)
+```
+I called my friend Holly this.
+```
 
-slush
+- hobbes
 
-shush
+- hella
 
-sweetness
+- hinkley
 
-see you next tuesday
+- hasta
 
-slut
-shanks
+- hawthorne
 
-tuscany (restaurant)
+- hahaha
 
-tufanos (restaurant)
+- hollister
 
-tequila
+- jigly
 
-tamales
+- jdm
 
-teneo (shawshank)
+```
+A Japanese Domestic Market motor I had purchased for the Honda.
+```
 
-tabby (gob the cat)
+- kawasaki
 
-trike
+- kedzie
 
-ubuntu (i heart open source)
-uic
+- k?
 
-vtec (honda motor)
+- looney
 
-wtf
+- lapetus
 
-wii
+```
+A Zenon reference.
+```
 
-wrigleyville
+- lefty
 
-wawaweewa (borat)
+- laflin
 
-weirdo
+- lovecchio
 
-woops
+- mojitos
 
-zoned
+- meh
 
-woo
+- mccmorick
 
-xkcd (a web comic)
+```
+An exposition center in Chicago.
+```
 
-xamal (a proxy server)
+- misconstrued
 
-zac (probably a high school musical reference)
+- malnati's
 
-clearly, i must text about human excretion all the time :)"
+```
+An Italian restaurant.
+```
+
+- macys
+
+- mcdonalds
+
+- mcfly
+
+```
+A Back to the Future reference.
+```
+
+- muahaha
+
+- missy
+
+- minx 
+
+```
+Hugh Grant utters this to a picture frame in Love Actually.
+```
+
+- ninja
+
+- nelly
+
+- naperville
+
+- okey
+
+- penis
+
+- pheromones
+
+- pissed
+
+- payday
+
+- piss
+
+- pooper
+
+- poop
+
+- ridic
+
+- skated
+
+- shushing
+
+- shrivelage
+
+- shorty
+
+- shitty
+
+- shit
+
+- shite
+
+- scum
+
+- schaumburg
+
+- salida
+
+```
+A small town in Colorado.
+```
+
+- slush
+
+- shush
+
+- sweetness
+
+- see you next tuesday
+
+- slut
+
+- shanks
+
+- tuscany
+
+```
+A restaurant in Chicago's Little Italy.
+```
+
+- tufanos
+
+```
+A restaurant in Chicago's Little Italy.
+```
+
+- tequila
+
+- tamales
+
+- teneo
+
+```
+Part of the name of a town in The Shawkshank Redemption.
+```
+
+- tabby
+
+```
+In reference to my old roommate's cat, Gob.
+```
+
+- trike
+
+- ubuntu
+
+- uic
+
+- vtec 
+
+```
+Honda motor.
+```
+
+- wtf
+
+- wii
+
+- wrigleyville
+
+- wawaweewa 
+
+```
+A Borat reference.
+```
+
+- weirdo
+
+- woops
+
+- zoned
+
+- woo
+
+- xkcd
+
+```
+A web comic.
+```
+
+- xamal
+
+```
+An old proxy server.
+```
+
+- zac
