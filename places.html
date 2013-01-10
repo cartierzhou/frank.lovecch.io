@@ -1,0 +1,125 @@
+<!doctype html> 
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="chrome=1">
+      <title>modern-day grifter | frank.lovecch.io</title>
+      <script src="javascripts/jquery.js" type="text/javascript"></script>
+   	  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.css" />
+   	  <!--[if lte IE 8]>
+         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.ie.css" />
+      <![endif]-->
+	  <script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
+   </head>
+   <body>
+   	  <div id="map" style="height: 800px; width: 100%;"></div>
+	    <script type="text/javascript">
+var map = L.map('map').setView([39.50, -98.35], 4);
+L.tileLayer('http://{s}.tile.cloudmade.com/{key}/22677/256/{z}/{x}/{y}.png', {
+  key: 'ff1208562ff24f099656141805b32027'
+}).addTo(map);
+
+var places = {
+  // Lived
+  // IL
+  'Chicago, IL, USA': {
+    loc: [41.878114,-87.629798],
+    desc: 'Lived.'
+  },
+  // CO
+  'San Luis, CO, USA': {
+    loc: [37.200848,-105.423901],
+    desc: 'Lived.'
+  },
+  'Denver, CO, USA': {
+    loc: [39.737567,-104.984718],
+    desc: 'Lived.'
+  },
+  // MO
+  'Kansas City, MO, USA': {
+    loc: [39.099727,-94.578567],
+    desc: 'Lived.'
+  },
+  // CO
+  'Boulder, CO, USA': {
+    loc: [34.014986,-105.270546],
+    when: '',
+    desc: ''
+  },
+  'Silverthorne, CO, USA': {
+    loc: [39.629619,-106.071294],
+    when: '',
+    desc: ''
+  },
+  'Vail, CO, USA': {
+    loc: [39.640264,-106.374195],
+    when: '',
+    desc: ''
+  },
+  'Salida, CO, USA': {
+    loc: [38.534719,-105.998902],
+    when: '',
+    desc: ''
+  },
+  'Colorado Springs, CO, USA': {
+    loc: [38.833882,-104.821363],
+    when: '',
+    desc: ''
+  },
+  'Pueblo, CO, USA': {
+    loc: [38.254447,-104.609141],
+    when: '',
+    desc: ''
+  },
+  'Fort Collins, CO, USA': {
+    loc: [40.58526,-105.084423],
+    when: '',
+    desc: 'New Belgium Brewery tour.'
+  },
+  'Fort Garland, CO, USA': {
+    loc: [37.428897,-105.4339],
+    when: '',
+    desc: ''
+  },
+  'Alamosa, CO, USA': {
+    loc: [37.469449,-105.870021],
+    when: '',
+    desc: ''
+  },
+  'Pagosa Springs, CO, USA': {
+    loc: [37.26945,-107.009762],
+    when: 'August, 2011',
+    desc: 'Visit Jennifer.'
+  },
+  'Sand Dunes, CO, USA': {
+    loc: [37.833566,-105.496676],
+    when: '',
+    desc: ''
+  },
+  // Visits
+  'Mazatlan, Mexico': {
+    loc: [23.236111, -106.415278],
+    when: 'March, 2006',
+    desc: 'College junior year spring break trip.'
+  }
+};
+
+$.each(places, function(place, data) {
+  var circle = L.circle(data.loc, 2000, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 1.0
+  }).addTo(map);
+  var text = '';
+  if (data.when) {
+    text = '<center><b>' + place + '</b><br/>' + data.when + '<br/>' + data.desc + '</center>';
+  } else {
+    text = '<center><b>' + place + '</b><br/>' + data.desc + '</center>';
+  }
+  //circle.bindPopup(text).openPopup();
+  var popup = L.popup().setLatLng(data.loc).setContent(text);
+  //map.addLayer(popup);
+});
+	    </script>
+   </body>
+</html>
