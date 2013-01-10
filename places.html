@@ -14,32 +14,78 @@
    <body>
    	  <div id="map" style="height: 800px; width: 100%;"></div>
 	    <script type="text/javascript">
-var map = L.map('map').setView([39.50, -98.35], 4);
+var map = L.map('map').setView([39.50, -98.35], 3);
 L.tileLayer('http://{s}.tile.cloudmade.com/{key}/22677/256/{z}/{x}/{y}.png', {
   key: 'ff1208562ff24f099656141805b32027'
 }).addTo(map);
 
 var places = {
   // Lived
+
   // IL
   'Chicago, IL, USA': {
     loc: [41.878114,-87.629798],
-    desc: 'Lived.'
+    desc: '',
+    tag: 'lived'
   },
   // CO
   'San Luis, CO, USA': {
     loc: [37.200848,-105.423901],
-    desc: 'Lived.'
+    desc: '',
+    tag: 'lived'
   },
   'Denver, CO, USA': {
     loc: [39.737567,-104.984718],
-    desc: 'Lived.'
+    desc: '',
+    tag: 'lived'
   },
   // MO
   'Kansas City, MO, USA': {
     loc: [39.099727,-94.578567],
-    desc: 'Lived.'
+    desc: '',
+    tag: 'lived'
   },
+
+  // Want to 
+
+  // AS
+
+  'Anchorage, AS, USA': {
+    loc: [61.218056,-149.900278],
+    when: '',
+    desc: '',
+    tag: 'want'
+  },
+
+  // CA
+
+  'San Diego, CA, USA': {
+    loc: [32.715329,-117.157255],
+    when: '',
+    desc: '',
+    tag: 'want'
+  },
+  'San Francisco, CA, USA': {
+    loc: [37.77493,-122.419415],
+    when: '',
+    desc: '',
+    tag: 'want'
+  },
+
+  // Europe
+
+  // Italy
+  'Sicily, Italy, USA': {
+    loc: [37.599994,14.015356],
+    when: '',
+    desc: '',
+    tag: 'want'
+  },
+  
+  // Visits
+
+  // CA
+  
   // CO
   'Boulder, CO, USA': {
     loc: [34.014986,-105.270546],
@@ -71,10 +117,25 @@ var places = {
     when: '',
     desc: ''
   },
+  'Idaho Springs, CO, USA': {
+    loc: [39.742488,-105.513608],
+    when: '',
+    desc: ''
+  },
+  'Georgetown, CO, USA': {
+    loc: [39.706098,-105.697504],
+    when: '',
+    desc: ''
+  },
   'Fort Collins, CO, USA': {
     loc: [40.58526,-105.084423],
     when: '',
     desc: 'New Belgium Brewery tour.'
+  },
+  'Canon City, CO, USA': {
+    loc: [38.439949,-105.226097],
+    when: '',
+    desc: 'Picked up roofing from Home Depot.'
   },
   'Fort Garland, CO, USA': {
     loc: [37.428897,-105.4339],
@@ -96,7 +157,6 @@ var places = {
     when: '',
     desc: ''
   },
-  // Visits
   'Mazatlan, Mexico': {
     loc: [23.236111, -106.415278],
     when: 'March, 2006',
@@ -105,18 +165,30 @@ var places = {
 };
 
 $.each(places, function(place, data) {
-  var circle = L.circle(data.loc, 2000, {
-    color: 'red',
-    fillColor: '#f03',
+  var color = 'red';
+  var size = 2000;
+
+  if (data.tag === 'lived') {
+    color = 'blue';
+    size = 5000;
+  }
+  if (data.tag === 'want') {
+    color = 'black';
+    size = 8000;
+  }
+  var circle = L.circle(data.loc, size, {
+    color: color,
+    fillColor: color,
     fillOpacity: 1.0
   }).addTo(map);
+
   var text = '';
   if (data.when) {
     text = '<center><b>' + place + '</b><br/>' + data.when + '<br/>' + data.desc + '</center>';
   } else {
     text = '<center><b>' + place + '</b><br/>' + data.desc + '</center>';
   }
-  //circle.bindPopup(text).openPopup();
+
   var popup = L.popup().setLatLng(data.loc).setContent(text);
   //map.addLayer(popup);
 });
