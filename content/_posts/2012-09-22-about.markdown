@@ -1,6 +1,0 @@
----
-main: about
-quote: Thou mayest.
----
-
-Two pictures of me. Jesus.

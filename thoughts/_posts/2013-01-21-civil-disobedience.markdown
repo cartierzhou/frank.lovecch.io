@@ -54,13 +54,13 @@ The cult of individuals is always, in my view, unjustified. To be sure, nature d
 ```
 
 <h2>[patriotisms]</h2>
-Nearly the [entirety](http://jacquesmattheij.com/life-as-a-service) of who you are is derived from the location in which you were birthed. Religious zealots are amazingly good at ignoring this fact. I, for one, am certain there was no choice given to me on the matter of where I would be born unto **\[this is not a [Non Sequitir](http://www.gocomics.com/nonsequitur) comic, after all...or is it?\]**. As things stand, my hospital-issued birth certificate retains a stamped address located in _The United States of America_. Lucky me.
+Nearly the [entirety](http://jacquesmattheij.com/life-as-a-service) of your influences are derived from the location in which you were born. Religious zealots are amazingly good at ignoring this fact. I, for one, am certain there was no choice given to me on the matter **\[this is not a [Non Sequitir](http://www.gocomics.com/nonsequitur) comic, after all...or is it?\]**. As things stand, my hospital-issued birth certificate retains a stamped address located in _The United States of America_. Lucky me.
 
 ```
 Give me your tired, your poor, Your huddled masses yearning to breathe free.
 ```
 
-Growing up in here meant growing up cowboy; we've all got an inkling of John Wayne in us. It is noticeable when comparing myself to _every_ European I have _ever_ encountered: I find myself to be more direct, but less frigid. Casual is as casual does. More wasteful. More impermeable. 
+Growing up here meant growing up cowboy; we've all got an inkling of John Wayne in us. It is noticeable when comparing myself to _every_ European I have _ever_ encountered: I find myself to be more direct, but less frigid. Casual is as casual does. More wasteful. More impermeable. 
 
 I understand stereotypes of Americans aren't far off, physically, from much of the population - sneakers, jeans, and an XL t-shirt, but the real beauty of living here is that we are all vastly, distinctly, different. Of course we can't come to an agreement on anything. **But that's the point of this place.** It's a safe haven for the world's different. The very principles we founded ourselves upon _should_ have made this apparent, but the words inscribed in the stanzas on our Lady of Liberty somehow went out of fashion.
 

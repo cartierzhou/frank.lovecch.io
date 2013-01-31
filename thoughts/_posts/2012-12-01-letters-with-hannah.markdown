@@ -1,7 +1,7 @@
 ---
 layout: post_single_column
 main: false
-status: wip
+status: completed
 category: thoughts
 subcategory: blog
 back: thoughts.html
@@ -12,7 +12,6 @@ quote: A collection.
 A **\[continuously evolving\]** series of letters to the woman, and from the woman, who inspires me, inspired in part by [Letters of Note](http://lettersofnote.com). I will replace her inquiries with paraphrasing. I should probably ask her permission to republish some of these thoughts, but nobody reads this anyways :)
 
 <h2>[to hannah: december 2, 2012]</h2>
-
 I received a series of angst-ridden texts questioning the doldrums of society.
 
 <div class="snippet">

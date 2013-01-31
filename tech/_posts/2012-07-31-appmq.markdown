@@ -7,11 +7,11 @@ back: tech.html
 title: appmq.
 quote: Open-source PAAS with AWS, Github, and MQTT.
 source: app-mq
-when: 4 August 2012
+demo: http://franklovecchio-app-mq.herokuapp.com
 ---
 
 The idea behind <i>AppMQ</i> stemmed from my discontent with how Heroku handles security; you have to give their entire AWS account incoming access to the opened port in your AWS Security Group. Plus, I had this burning desire see how difficult it would be to build a similar platform. The framework, as it stands, was thrown together in a few nights for a <i>CloudSpokes</i> competition entry - it only works with <a href="">Express</a> <a href="">Node.js</a> applications. 
 
 <h1 style="font-variant: small-caps;">Architecture &amp; Scaling</h1>
 
-I have no  
+I have no 

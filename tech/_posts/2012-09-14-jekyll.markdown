@@ -1,13 +1,12 @@
 ---
 layout: tech_post
 main: false
-status: in-progress
+status: wip
 category: tech
 back: tech.html
 title: jekyll.
 quote: On revamping my blog-o-sphere and writing in Markdown.
 source: frank.lovecch.io
-when: 14 September 2012
 ---
 
 TODO

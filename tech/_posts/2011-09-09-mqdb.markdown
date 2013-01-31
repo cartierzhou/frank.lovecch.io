@@ -1,13 +1,13 @@
 ---
 layout: tech_post
 main: false
-status: completed
+status: wip
 category: tech
 back: tech.html
 title: mqdb.
 quote: Distributing databases with MQTT.
 source: mqdb
-when: 9 September 2011
+demo: http://franklovecchio-mqdb.herokuapp.com
 ---
 
 Lately (as in the past 6 months), I’ve had a lot of “oddball” ideas regarding pubsub protocols and what can be done with them.  Aside from this blog, I’m working on a Cassandra pubsub implementation using MQtt and websockets, as well as a basic Twilio Client demo that uses pubsub via VOIP/SMS (in case you were wondering, the platform we just introduced last week - m2m.io - already has this packaged up and authenticated!).  I’ve found the possibilites for any of the MQ protocols to be (nearly) limitless!  After all, isn’t real life much like MQ in terms of exchanges? (that was rhetorical…it is, bitches).

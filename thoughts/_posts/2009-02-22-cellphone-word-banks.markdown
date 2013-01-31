@@ -5,12 +5,13 @@ status: completed
 category: thoughts
 subcategory: blog
 back: thoughts.html
-title: word banks.
+title: cellphone<br/>word banks.
 quote: Before auto-correct.
 ---
 
-I've always been interested in data and analytics. In _2009_, before I had switched over to a _smart_ phone, I was still having to input words into my cell phone's word bank. I, of course, kept the list **\[and some annotations\]**
+I've always been interested in data and analytics. In _2009_, before I had switched over to a _smart_ phone, I was still having to input words into my cellphone's word bank manually. By pressing keys! I, of course, kept them for laughs **\[along with some annotations\]**.
 
+<h2>[the list]</h2>
 - 4340 
 
 ```
@@ -22,7 +23,7 @@ The previous working-title of the automated bar I wanted to open.
 - a/s/l? 
 
 ```
-I probably texted this to my friend Jimmy at some point, clearly referencing the yesteryear of the chat-room.
+Probably texted this to my friend James at some point, clearly referencing standard chat-room protocol.
 ```
 
 - akira 
@@ -40,7 +41,7 @@ Ebonics.
 - akward
 
 ```
-Consistently used to misspel this word.
+Consistently used to misspell this word.
 ```
 
 - alamosa 
@@ -58,7 +59,7 @@ High School Musical reference.
 - atv
 
 ```
-I had a slew of ATV projects at the time.
+Purchased some of these in Indiana.
 ```
 
 - bartlett 
@@ -131,6 +132,10 @@ Zenon reference.
 
 - dempster
 
+```
+Worst traffic imagineable.
+```
+
 - dekalb
 
 - elgin
@@ -139,7 +144,15 @@ Zenon reference.
 
 - flader
 
+```
+The last name of a friend.
+```
+
 - facebook
+
+```
+There was a time when Facebook was new.
+```
 
 - fantasize
 
@@ -155,6 +168,10 @@ Zenon reference.
 
 - goonies
 
+```
+Hey. You. Guys?
+```
+
 - goner
 
 - goners
@@ -168,7 +185,7 @@ Zenon reference.
 - hosses 
 
 ```
-The name of a bar in the town which I grew up.
+The name of an old bar in the town which I grew up.
 ```
 
 - honda
@@ -315,7 +332,15 @@ A small town in Colorado.
 
 - see you next tuesday
 
+```
+The nice way of putting it.
+```
+
 - slut
+
+```
+I was an SMS potty-mouth.
+```
 
 - shanks
 
@@ -338,7 +363,7 @@ A restaurant in Chicago's Little Italy.
 - teneo
 
 ```
-Part of the name of a town in The Shawkshank Redemption.
+Part of the name of a town in The Shawshank Redemption.
 ```
 
 - tabby

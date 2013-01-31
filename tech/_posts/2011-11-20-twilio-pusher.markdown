@@ -1,13 +1,13 @@
 ---
 layout: tech_post
 main: false
-status: completed
+status: wip
 category: tech
 back: tech.html
-title: Twiliocal
+title: twilio pusher.
 quote: Non SSH-tunnel development with 0MQ &amp; Twilio.
-source: frank.lovecch.io
-when: 20 September 2011
+source: twilio-pusher
+demo: http://franklovecchio-twilio-pusher.herokuapp.com
 ---
 
 Recently, while building out a web application for RingDNA, we ran into a couple issues regarding websockets:

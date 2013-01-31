@@ -9,78 +9,202 @@ title: my buried-life list.
 quote: Wnat do you want to do, before you die?
 ---
 
-These are the things left to do before I die. I was extremely inspired by the guys on the upcoming MTV show The Buried Life, especially since I have been pursuing one of the major items below. My list is a little bit different than theirs, as I've left out having a family, falling in love, etc (They're on a list, but not this one!). I've also left out the college-ruled, multi-page list of cars I want to own/restore and the business ideas I want to pursue; we don't have all day here. Some of the items seem trivial, but all reflect a moment in time I can recall saying, 'I want to do that!'. You might not get some of the references, but oh well :) Dream big.
+I feel a non-existant bond between myself and the fellows of [The Buried Life](http://a.com). Because the [Heisenburg Principle](http://a.com) applies to both particles and myself, I felt it necessary to measure the results of my life. My list is a little bit different than theirs; `I've left out having a family, falling in love, etc`, as those are defacto, standard. `This list is not about standard`, it's about strange, exciting, creation, adventure. _Some_ of the items _may_ seem trivial, but all reflect a moment of time in which I can recall saying **\[inwardly\]**, `I want to do that!`.
 
-Sports/Fitness/Adventure
-Skate the river in Alaska
-Play rat hockey in Canada
-Play King of the Mountain Mountain Mountain at a large resort
-Get a portrait of me kissing the ice at the Lake Placid rink
-Successfully complete a half-pipe on a skateboard/snowboard
-Have 6-pack abs for one summer
-(X)Get first tracks in fresh powder - April 22, 2010. 
-Skateboard/BMX Venice Beach
-Fly in a helicopter
-Skydive
-Basejump
-Build a house
-Say 'Yukon, Ho!' in the actual Canadian Yukon
-Say 'Texas forever!' while making a toast in Texas
-Go snowmobiling in the UP
-Icefish
-Surf one of South African 'Endless Summer' beaches
-Play in sand dunes with a Jeep
-Surf sand dunes
-Go paintballing
-Scuba dive
-Take a train trip through India
-Drive a hot rod across the salt flats
-Race in the Gumball 3000
-Go drifting in Tokyo
-Attend Burning Man
-Run through the Louvre
-Be in one of those improv musical/dance numbers staged in public places
-Ride a horse in full gallop
-Learn to sail on a legitimate yacht
-White water raft
-Kayak
-Business/Charity
-Give back to the open source community
-Write a useful application/script
-Make Dade Industries successful (lots of ground is covered here, including the 'Change the World' aspect missing from the list)
-Write a script/book that gets produced/published
-Write something that influences and inspires
-Volunteer for something in a third world country
-Leisure/Love
-Take a girl, in a vintage car, to a drive-in
-Go on a date with a cute, normal celebrity
-Perform a song in a random lobby with a grand piano
-Get a quarter-sleeve tattoo that focalizes on 'Hack the Planet'
-Attend a Jewish wedding
-Wear a suit, tie, and fedora everywhere for a week - suit up!
-Be photographed, unexpectedly, by The Sartorialist
-Attend a party at the Playboy Mansion
-As an online Reverend, administer one of my friend's weddings
-Learn Forever on the piano so I can play it at my wedding
-Sketch/paint the most beautiful scene I can find
-Make love in a ball pit(X)Walk on crutches - Jan. 15, 2010. John Archer lends me his crutches at a bar.
-Learn (really learn) another language
-Be backstage/VIP at a concert
-Slow dance to the original Auld Lang Syne at midnight on NYE (just like in the black and whites!)
-Be Wild Thing for Halloween
-Re-create the 'Last Kiss' train station photo
-Work as a bartender and perform the 'Cocktail' speech
-Travel
-Live in Alaska
-Live in Europe
-Live in California
-Live in New York City
-Backpack Europe
-Wear an Indiana Jones Hat in the outback or on a safari
-Go on a cruise
-Gamble in Vegas
-Visit all of the continents and US states
-Machines/Etc 
-Get a pilot's license (possibly LSA)
-Build a flying machine - light sport aircraft most likely
-Get a motorcycle license
+<h2>[the list]</h2>
+<p>[sporty]</p>
+- skate a river in Alaska
+
+```
+Reference: Miracle.
+```
+
+- play rat hockey in canada
+
+```
+Who doesn't want to play with people whom live and breathe the sport?
+```
+
+- a portrait of myself kissing the ice at lake placid
+
+```
+Reference:
+```
+
+- retain 6-pack abs for one summer
+
+```
+I have always wanted to be in peak physical shape.
+```
+
+- X **first tracks** _April twenty-second, 2010._
+
+```
+Fresh pow pow. It's a magical world.
+```
+
+- longboard Venice Beach
+
+```
+Reference: that video of those kids.
+```
+
+- surf a beach in south africa
+
+```
+Reference: The Endless Summer
+```
+
+- X **surf sand dunes** _July, 2012_
+
+```
+The sleds killed it!
+```
+
+- ice fish
+
+- fly in a helicopter
+ 
+- skydive
+
+- snowmobile
+
+- go jeepin' in sand dunes
+
+- paintball for real
+
+```
+Not in Dave's backyard, not shooting each other as we run from tree to tree.
+```
+
+- scuba dive
+
+- ride a horse in full gallop
+
+- sail
+
+- white water raft
+
+<p>[creative]</p>
+- build a house
+
+```
+Well, I'm [almost](/projects/test.html) there.
+```
+
+<p>[quirky]</p>
+- say 'Yukon, Ho!' in the actual Canadian Yukon
+- say 'Texas forever!' while making a toast in Texas
+
+<p>[adventure]</p>
+
+- india train trip
+
+```
+Reference: The Darjeeling Limited.
+```
+
+- live in alaska
+
+- live in europe
+
+- backpack europe
+
+- go on a cruise
+
+- burning man
+
+```
+Without the drugs.
+```
+
+- run through the louvre
+
+```
+Reference:
+```
+
+- race a hot rod across the salt flats
+
+```
+Gosh, I yearn for this...in the hot rod I build.
+```
+
+- race in the gumball 3000
+
+- drift
+
+```
+It would be nice if this took place in Tokyo.
+```
+
+- flash mob
+
+- X **gamble in vegas** _April, 2012_
+
+```
+Niccum's bachelor party. I gambled twenty dollars. I got free drinks. I walked away with two dollars.
+```
+
+<p>[misc]</p>
+- find a way to give back to the open source community
+
+```
+I think I [have](https://github.com/franklovecchio)
+```
+
+- write a script/book
+
+```
+Modern. Day. Grifter. I have about 50 pages. I can't tell what is is at this point.
+```
+
+- help a third world country without direct monetary influence
+
+- drive-in movie with a vintage convertible
+
+```
+1964 Lincoln Continental.
+```
+
+- play a song on a piano in a department store
+
+- attend a jewish wedding
+
+- be photographed, unexpectedly, by the [sartorialist](http://sartory.com)
+
+- administer one of my friend's weddings
+
+```
+After all, I am an online minister!
+```
+
+- learn _forever_ on the piano, so i can play it at my wedding
+
+```
+Reference:
+```
+
+- make love in a ball pit
+
+- make love in water
+
+- X **walk on crutches** _Janurary fith, 2010_
+
+```
+John Archer lends me his crutches at a bar. It was epic.
+```
+
+- learn italian
+
+- learn french
+
+- vip / backstage at a concert
+
+- X **slow dance to the original auld lang syne at midnight on new years eve** _January first, 2013_
+
+```
+Kansas City NYE party at Union Station on my cell phone...the band was awful.
+```
+
+- be wild thing for halloween

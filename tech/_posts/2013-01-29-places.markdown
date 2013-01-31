@@ -4,9 +4,7 @@ main: false
 status: in-progress
 category: tech
 back: tech.html
-title: node-monitor.
-quote: A Node.js cloud-monitoring suite.
-source: mqdb
+title: places.
+quote: A Leaflet map of everywhere I've ever been.
+source: na
 ---
-
-dfd

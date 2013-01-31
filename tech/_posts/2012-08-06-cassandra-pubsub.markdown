@@ -1,13 +1,12 @@
 ---
 layout: tech_post
 main: false
-status: in-progress
+status: wip
 category: tech
 back: tech.html
 title: c* pubsub.
 quote: Cassandra as a realtime application.
 source: cassandra-pubsub
-when: 6 August 2012
 ---
 
 Let's not going to talk about <a href="">Cassandra</a> as just a datastore, because it does that part increasingly well on large scale. Instead, we're going to talk about Cassandra as an integral part of a realtime, modern application framework.

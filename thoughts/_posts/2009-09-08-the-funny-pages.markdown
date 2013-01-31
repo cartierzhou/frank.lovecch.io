@@ -6,10 +6,13 @@ category: thoughts
 subcategory: writing
 back: thoughts.html
 title: the funny pages.
-quote: Haven't been the same since Bill Watterson.
+quote: Yukon, Ho!
 ---
 
-It was during the fall semester of 1995, and I was in fifth grade. For 10 minutes every Tuesday, we were forced to sit quietly and read something of value; the dictators called it 'Sustained Silent Reading', or SSR in short. At this age, mind you, only some of us read. The others, clearly too cool for reading, carved initials into desks (years later, these kids would fail at life). It was also during this time that Scholastic pamphlets were passed out, each copy holding descriptions for the newly released books in our favorite series: Goosebumbs, The Boxcar Children, Animorphs, and probably anything written by Judy Bloom. Mrs. Musial's class, fifth grade, SSR. Got that?
+The year _1995_; the grade - _fifth_. For _ten_ minutes every Tuesday, we were forced to sit quietly and read something of value; the dictators called it `Sustained Silent Reading`, SSR for short. Essentially, it was `thank-goodness-the-whipper-snappers-are-shutting-the-fuck-up` time. At least my _ten_ year-old self thought so. At this period in our life, _especially being enrolled in a public school_, only _some_ of us read. The others, _strung_ out on pubescant emotion, carved initials into desks with protractors, coloring the grooves with washable _Crayolas_ for enhancement. Tuesday, _bloody_ Tuesday. 
+
+<h2>[scholastic book club]</h2>
+It was also during this segment in our day in which _Scholastic Book Club_ pamphlets were passed out as new issues were released: on a monthly basis. How thrilling! Each new descriptions for the newly released books in our favorite series: Goosebumbs, The Boxcar Children, Animorphs, and probably anything written by Judy Bloom. Mrs.
 
 I was parusing through the pamphlet with moderate excitement; you never did know what exciting new series lay ahead. I remember stumbling upon a comic book collection, 'The Days Are Just Packed' - my first happening upon Calvin and Hobbes. It was given good remarks from a fellow classmate, Blake...Blake...it's amazing how I can't remember his last name for the life of me. He was in my Cub Scout pack years before, and by now he had become relatively "cool" for a fifth grader - he was dating a brunette hottie from the sixth grade, if I do recall correctly ;) Anyways...
 
@@ -21,8 +24,7 @@ As I read my way through all the collections over the course of the next few yea
 
 This morning I sat in a Holiday Inn (that I am not staying at) and munched on complimentary breakfast. They have free copies of the morning post sitting out, and I picked up one purely out of old habit. While I already read most of the news (thanks to a thing called the Internet/Digg), I turned my way to the comics section...
 
-Page Forty-Eight
-
+<h2>[page forty-eight]</h2>
 Page 48 of The Pueblo Chieftan is taken up mostly by eighteen three-paned black and white comic strips, while a crossword puzzle and a 'Celebrity Cipher' take up the other smidge. I imagine if this were a Sunday Edition the comics would be in separate section, but from what I understand, this is a dying fad. The comics that appear on page 48 are mostly the same as the ones present in the Tribune or Herald: Dennis the Menace, Family Circus, Beetle Bailey, Blondie, Garfield, BC, Peanuts (Classic), Rose is Rose, Born Loser, Frank and Ernest, Baby Blues, Pickles, Rex Morgan, Sherman's Lagoon, Get Fuzzy, and Zits. Notably missing from page 48, but usually included in the Chicago papers, are: For Better or for Worse, Mr. Boffo, Doonesbury, Foxtrot, Cathy, Brenda Starr, and Non-Sequitur.
 
 Once in a great while I will read the Sunday Comics, only to be disappointed time-and-time again. This process repeats itself; I always forget how dismal the comic scene has become, on paper at least. While I also believe the newspaper is a dying breed (in modernized, affluent countries), the daily comics - affectionately known as 'The Funny Pages' to the past generation - are dead.
@@ -46,7 +48,7 @@ Mr. BoffoEvery strip starts out with a single frame and depicts odd words on Mr.
 For Better or for Worse
 Clearly written by an over-sentimental woman, I enjoyed the strip when it was more subtle in its endeavor to win your heart. Other than that, it was boring.
 
-The Digital Age
+<h2>[digitalism]</h2>
 If you have taken the time to read (and re-read) the Calvin and Hobbes collections, you may agree with me when I say this: I never thought I would find a modern day substitute. Greatness was achieved through a combination of remarkable words (some of which I still don't understand) and interesting, original art. So much has been said about Bill Watterson's strip already, but I will say - once more with feeling - it is undoubtedly my favorite comic strip, ever. Clearly I am not the only one who feels this way, as my second strip on the 'Top Five' list, XKCD, was influenced heavily by Calvin and Hobbes.
 
 I forget who turned me on to the strip, but it was during my employment with the UIC ACCC (you know, the computer people). If I had to guess, it was either Indelli or Hef; and if you know them, that wouldn't be a surprise. It was not as popular (or Dugg) back then, but while clicking through the entire series of a couple hundred strips, I became emotionally attached watching the strip evolve - much like going through the Calvin and Hobbes strips from start to finish. I have always enjoyed watching something tangible, mine or not, evolve over years. I would probably equate this with the Amelie-esque 'like/dislike' monologues, where a narrator (and often the character themselves) depicts the things they enjoy and abhor in random sequences. For instance, Amelie enjoyed guessing how many couples were having orgasms at that very moment.
