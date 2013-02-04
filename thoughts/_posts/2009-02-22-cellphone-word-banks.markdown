@@ -9,7 +9,7 @@ title: cellphone<br/>word banks.
 quote: Before auto-correct.
 ---
 
-I've always been interested in data and analytics. In _2009_, before I had switched over to a _smart_ phone, I was still having to input words into my cellphone's word bank manually. By pressing keys! I, of course, kept them for laughs **\[along with some annotations\]**.
+Data and analytics have always fascinated me. In _2009_, before I made the crossover to a _smart_ phone, I still had to manually input words into my cellphone's `word bank`. By pressing keys! I, of course, kept the paper list I used to transfer the bank from phone to phone **\[along with some annotations\]**, anticipating future laughs.
 
 <h2>[the list]</h2>
 - 4340 
@@ -23,7 +23,7 @@ The previous working-title of the automated bar I wanted to open.
 - a/s/l? 
 
 ```
-Probably texted this to my friend James at some point, clearly referencing standard chat-room protocol.
+Clearly referencing standard chat-room protocol.
 ```
 
 - akira 
@@ -47,7 +47,7 @@ Consistently used to misspell this word.
 - alamosa 
 
 ```
-The town near the Walden Ranch.
+The town near my cabin.
 ```
 
 - alberquerque 
@@ -193,7 +193,7 @@ The name of an old bar in the town which I grew up.
 - hollitosis 
 
 ```
-I called my friend Holly this.
+I called my friend Holly this. She still does not like it.
 ```
 
 - hobbes

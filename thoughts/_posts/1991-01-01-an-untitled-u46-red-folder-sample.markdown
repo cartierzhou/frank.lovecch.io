@@ -6,10 +6,10 @@ category: thoughts
 subcategory: writing
 back: thoughts.html
 title: u-46 red folder.
-quote: I never owned a hamster as a pet.
+quote: Little trouble with the wheel, but...
 ---
 
-I attended _four_ different public schools in my lifetime, all of which belonged to the most corrupt district in the state of Illinois: _U46_. Before computers were widely available to these kinds of places, paper copies of _everything_ were _de facto_. A red folder full of writing samples, dating back to _1991_ **\[when I first entered the district\]**, was given to me as part of the graduation boot. The favorite? An untitled sample from _third_ grade **\[including grammatical errors\]**.
+I attended _four_ different schools over the course of my _glorious_ experience in the public education system. As luck would have it, _all_ of these schools belonged to the most corrupt school district in the state of Illinois: _U46_. Before computers were widely available to these kinds of institutions, paper copies of _everything_ were _de facto_. A red folder full of writing samples, dating back to _1991_ **\[when I first entered the district\]**, was given to me as pittance, part of the graduation boot. My favorite? An untitled sample from _third_ grade about a hamster **\[including grammatical errors\]**.
 
 <div class="snippet">
    <pre>

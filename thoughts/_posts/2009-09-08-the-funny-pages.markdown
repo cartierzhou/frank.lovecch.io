@@ -12,11 +12,14 @@ quote: Yukon, Ho!
 The year _1995_; the grade - _fifth_. For _ten_ minutes every Tuesday, we were forced to sit quietly and read something of value; the dictators called it `Sustained Silent Reading`, SSR for short. Essentially, it was `thank-goodness-the-whipper-snappers-are-shutting-the-fuck-up` time. At least my _ten_ year-old self thought so. At this period in our life, _especially being enrolled in a public school_, only _some_ of us read. The others, _strung_ out on pubescant emotion, carved initials into desks with protractors, coloring the grooves with washable _Crayolas_ for enhancement. Tuesday, _bloody_ Tuesday. 
 
 <h2>[scholastic book club]</h2>
-It was also during this segment in our day in which _Scholastic Book Club_ pamphlets were passed out as new issues were released: on a monthly basis. How thrilling! Each new descriptions for the newly released books in our favorite series: Goosebumbs, The Boxcar Children, Animorphs, and probably anything written by Judy Bloom. Mrs.
+Once a month, during this same segment in our day, the new _Scholastic Book Club_ pamphlets were issued to us. It was thrilling! I gaily remember anticipating a new realease from series like Goosebumbs, The Boxcar Children, and Animorphs. `You are never too old for The Boxcar Children`.
 
-I was parusing through the pamphlet with moderate excitement; you never did know what exciting new series lay ahead. I remember stumbling upon a comic book collection, 'The Days Are Just Packed' - my first happening upon Calvin and Hobbes. It was given good remarks from a fellow classmate, Blake...Blake...it's amazing how I can't remember his last name for the life of me. He was in my Cub Scout pack years before, and by now he had become relatively "cool" for a fifth grader - he was dating a brunette hottie from the sixth grade, if I do recall correctly ;) Anyways...
+I was parusing through the pamphlet with moderate excitement; you never did know what exciting new series lay ahead. I remember stumbling upon a comic book collection, 'The Days Are Just Packed' - my first happening upon Calvin and Hobbes. It was given good remarks from a fellow classmate, Blake Edwards **\[who also happened to be dating an older brunette vixen from the _sixth_ grade, lending his remarks more stature than should have been given precidence\]**.
 
 In those days my parents did the physical purchasing, and any book from the pamphlet which I circled in red usually got the green light. They never asked any questions or filtered content, so at least I had that going for me. I recall going through 'The Days Are Just Packed' very quickly. Not so coincidentally, I started reading the comics in the morning paper, and thus my love affair with Calvin and Hobbes began. 
+
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/funny_pages-01.png"/>
+<p class="img-caption">One of my favorite Calvin &amp; Hobbes strips.</p>
 
 The last strip of Calvin and Hobbes was published on December 31st, 1995 - six days after I received a few new Calvin and Hobbes collections for Christmas: 'Homicidal, Physco Jungle Cat', 'Revenge of the Baby-Sat', and 'The Essential Calvin and Hobbes'. I was just months into our relationship and Bill Watterson had cut it short, blimey! I remember reading that last strip, unofficially titled 'It's a Magical World', and getting watery (I was a sap back then, too).
 
@@ -29,8 +32,8 @@ Page 48 of The Pueblo Chieftan is taken up mostly by eighteen three-paned black 
 
 Once in a great while I will read the Sunday Comics, only to be disappointed time-and-time again. This process repeats itself; I always forget how dismal the comic scene has become, on paper at least. While I also believe the newspaper is a dying breed (in modernized, affluent countries), the daily comics - affectionately known as 'The Funny Pages' to the past generation - are dead.
 
-Major strips I can tolerate (with emphasis):
 
+<h2>[a sorry second]</h2>
 Peanuts
 Charles Schulz seemed to embrace commercialization, and it worked. I remember the Peanuts crew more for their animated films than the comic strip. The paper version lacks, except for Snoopy. To think that 'A Charlie Brown Christmas' aired in 1965 is odd, its utter simplicity and quotability ('All I want is what I have coming to me, all I want is my fair share!') has attributed to its belovedness, at least for my sister and I (or me?). 
 

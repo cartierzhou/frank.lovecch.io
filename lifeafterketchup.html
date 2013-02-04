@@ -1,0 +1,45 @@
+---
+layout: layout
+header: life after ketchup.
+back: index.html
+---
+
+<div class="project">
+   <div>
+      <h1>The story</h1>
+      <div class="meta">or how I came to be <span>inspired</span>
+      </div>
+      <div class="body">
+         {% for post in site.posts %}
+            {% if post.main == 'lifeafterketchup' %}
+               <p class="quote">"{{ post.quote }}"</p>
+               <div class="columns">
+	              <p>{{ post.content }}</p>
+	           </div>
+               <p class="header-text-date">{{ post.date | date_to_string }}</p>
+            {% endif %}
+	     {% endfor %}
+	     <img src="images/palm_tree.png" alt="" />
+         <div class="spacer">
+         </div>
+      </div>
+   </div>
+   <div class="container-fluid">
+	  <div class="posts">
+		 <div class="post-count">
+	        <h2>{% for post in site.categories.lifeafterketchup %}{% if post.status == 'completed' or post.status == 'wip' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{{ post_count }}</h2>
+	     <div>
+         {% for post in site.categories.lifeafterketchup %}
+            {% if post.status == 'completed' or post.status == 'wip' %}
+               <div class="row-fluid">
+                  <a href="{{ post.url }}">
+                     <div class="well">
+	                    {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+	                 </div>
+                  </a>
+               </div>
+            {% endif %}
+         {% endfor %}
+      </div>
+   </div>
+</div>
