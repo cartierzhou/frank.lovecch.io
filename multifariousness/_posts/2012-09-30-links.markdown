@@ -2,8 +2,8 @@
 layout: post
 main: false
 status: completed
-category: misc
-back: misc.html
+category: multifariousness
+back: multifariousness.html
 title: links.
 quote: Inspiration of the digital kind.
 ---

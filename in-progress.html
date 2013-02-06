@@ -20,10 +20,10 @@ back: index.html
    <div class="container-fluid">
 	  <div class="posts">
 		 <div class="post-count">
-	        <h2>{% for post in site.categories.thoughts %}{% if post.status == 'in-progress' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{% for post in site.categories.labs %}{% if post.status == 'in-progress' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{% for post in site.categories.misc %}{% if post.status == 'in-progress' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{% for post in site.categories.projects %}{% if post.status == 'in-progress' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{% for post in site.categories.rodsandricers %}{% if post.status == 'in-progress' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{% for post in site.categories.tech %}{% if post.status == 'in-progress' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{{ post_count }}</h2>
+	        <h2>{% for post in site.categories.thoughts %}{% if post.status == 'not-ready' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{% for post in site.categories.labs %}{% if post.status == 'not-ready' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{% for post in site.categories.misc %}{% if post.status == 'not-ready' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{% for post in site.categories.projects %}{% if post.status == 'not-ready' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{% for post in site.categories.rodsandricers %}{% if post.status == 'not-ready' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{% for post in site.categories.tech %}{% if post.status == 'not-ready' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{{ post_count }}</h2>
 	     <div>
          {% for post in site.categories.thoughts %}
-            {% if post.status == 'in-progress' %}
+            {% if post.status == 'not-ready' %}
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
@@ -34,7 +34,7 @@ back: index.html
             {% endif %}
          {% endfor %}
          {% for post in site.categories.labs %}
-            {% if post.status == 'in-progress' %}
+            {% if post.status == 'not-ready' %}
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
@@ -45,7 +45,7 @@ back: index.html
             {% endif %}
          {% endfor %}
          {% for post in site.categories.misc %}
-            {% if post.status == 'in-progress' %}
+            {% if post.status == 'not-ready' %}
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
@@ -56,7 +56,7 @@ back: index.html
             {% endif %}
          {% endfor %}
          {% for post in site.categories.projects %}
-            {% if post.status == 'in-progress' %}
+            {% if post.status == 'not-ready' %}
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
@@ -67,7 +67,7 @@ back: index.html
             {% endif %}
          {% endfor %}
          {% for post in site.categories.rodsandricers %}
-            {% if post.status == 'in-progress' %}
+            {% if post.status == 'not-ready' %}
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
@@ -78,7 +78,7 @@ back: index.html
             {% endif %}
          {% endfor %}
          {% for post in site.categories.tech %}
-            {% if post.status == 'in-progress' %}
+            {% if post.status == 'not-ready' %}
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">

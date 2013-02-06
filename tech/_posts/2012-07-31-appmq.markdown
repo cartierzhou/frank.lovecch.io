@@ -1,7 +1,7 @@
 ---
 layout: tech_post
 main: false
-status: in-progress
+status: not-ready
 category: tech
 back: tech.html
 title: appmq.

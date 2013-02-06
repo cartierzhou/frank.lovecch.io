@@ -1,7 +1,7 @@
 ---
 layout: post
 main: false
-status: in-progress
+status: not-ready
 category: projects
 back: projects.html
 title: heat exchanger.

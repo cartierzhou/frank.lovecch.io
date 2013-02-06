@@ -1,6 +1,6 @@
 ---
 layout: layout
-header: misc.
+header: multifariousness.
 back: index.html
 ---
 
@@ -11,7 +11,7 @@ back: index.html
       </div>
       <div class="body">
          {% for post in site.posts %}
-            {% if post.main == 'misc' %}
+            {% if post.main == 'multifariousness' %}
                <p class="quote">"{{ post.quote }}"</p>
                <div class="columns">
 	              <p>{{ post.content }}</p>
@@ -27,9 +27,9 @@ back: index.html
    <div class="container-fluid">
 	  <div class="posts">
 		 <div class="post-count">
-	        <h2>{% for post in site.categories.misc %}{% if post.status == 'completed' or post.status == 'wip' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{{ post_count }}</h2>
+	        <h2>{% for post in site.categories.multifariousness %}{% if post.status == 'completed' or post.status == 'wip' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{{ post_count }}</h2>
 	     <div>
-         {% for post in site.categories.misc %}
+         {% for post in site.categories.multifariousness %}
             {% if post.status == 'completed' or post.status == 'wip' %}
                <div class="row-fluid">
                   <a href="{{ post.url }}">

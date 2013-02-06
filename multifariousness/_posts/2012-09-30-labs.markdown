@@ -1,8 +1,21 @@
 ---
-main: labs
-quote: Podcast chronicles.
+layout: post
+main: false
+status: not-ready
+category: multifariousness
+back: multifariousness.html
+title: labs.
+quote: The Broken, a tribute.
 ---
 
 I first heard of Kevin Rose my freshman year in college after being shown an episode of [The Broken](http://thebroken.org) by my robe-wearing, computer-nerd mentor. For those unfamiliar, the _three_ episode series chronicled hacking in various aspects ranging from social to technical; `and they always did so with 40's of beer in hand`. Rose would eventually go onto drinking good beer on the [Digg](http://digg.com), but it never seemed to capture the spirit emanating from the lousily-shot series prior. 
 
 I've always wanted to do a [maker](http://maker.com) video series that had similar traits as _The Broken_, and I'm working on putting together _six_ videos for _two-thousand and thirteen_. Stay tuned.
+
+1. Monthly problems.
+1. Heat Exchanger.
+1. Pizza.
+1. Luggage.
+1. Color changing car.
+1. Bots
+1. Arduino + phone

@@ -2,8 +2,8 @@
 layout: post
 main: false
 status: wip
-category: misc
-back: misc.html
+category: multifariousness
+back: multifariousness.html
 title: kid hackery.
 quote: A list of things to teach my kids.
 ---
