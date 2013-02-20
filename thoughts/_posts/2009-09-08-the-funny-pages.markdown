@@ -9,19 +9,19 @@ title: the funny pages.
 quote: Yukon, Ho!
 ---
 
-The year _1995_; the grade - _fifth_. For _ten_ minutes every Tuesday, we were forced to sit quietly and read something of value; the dictators called it `Sustained Silent Reading`, SSR for short. Essentially, it was `thank-goodness-the-whipper-snappers-are-shutting-the-fuck-up` time. At least my _ten_ year-old self thought so. At this period in our life, _especially being enrolled in a public school_, only _some_ of us read. The others, _strung_ out on pubescant emotion, carved initials into desks with protractors, coloring the grooves with washable _Crayolas_ for enhancement. Tuesday, _bloody_ Tuesday. 
+The year _1995_; the grade - _fifth_. For _ten_ minutes every Tuesday, we were forced to sit quietly and read something substantial; the dictators called it `Sustained Silent Reading`, SSR for short. At this point in our adolescence, _especially being enrolled in a public school_, only _some_ of us read. The others, _strung_ out on pubescant emotion and dealing with an inner monologue full of bad-to-no parenting, carved initials into desks with protractors, coloring the grooves with washable _Crayolas_ for enhancement. Tuesday, _bloody_ Tuesday. 
 
 <h2>[scholastic book club]</h2>
 Once a month, during this same segment in our day, the new _Scholastic Book Club_ pamphlets were issued to us. It was thrilling! I gaily remember anticipating a new realease from series like Goosebumbs, The Boxcar Children, and Animorphs. `You are never too old for The Boxcar Children`.
 
-I was parusing through the pamphlet with moderate excitement; you never did know what exciting new series lay ahead. I remember stumbling upon a comic book collection, 'The Days Are Just Packed' - my first happening upon Calvin and Hobbes. It was given good remarks from a fellow classmate, Blake Edwards **\[who also happened to be dating an older brunette vixen from the _sixth_ grade, lending his remarks more stature than should have been given precidence\]**.
+I remember flipping through the releases avidly; one never did know what exciting new series would be found printed on the _ninenty-nine_ percent recycled pages. Then, one day, I stumbled upon [The Days Are Just Packed](http://www.amazon.com/Days-are-Just-Packed-Collection/dp/0836217357); a child's first encounter with [Calvin and Hobbes](http://en.wikipedia.org/wiki/Calvin_and_Hobbes). It was given good remarks from a fellow classmate, Blake Edwards **\[who also happened to be dating an older brunette vixen from the _sixth_ grade, lending his remarks more stature than should have been given precidence\]**.
 
-In those days my parents did the physical purchasing, and any book from the pamphlet which I circled in red usually got the green light. They never asked any questions or filtered content, so at least I had that going for me. I recall going through 'The Days Are Just Packed' very quickly. Not so coincidentally, I started reading the comics in the morning paper, and thus my love affair with Calvin and Hobbes began. 
+The books were quick to rummage through if one did not research definitions of half the words in any bubble **\[being a youth, my goal was not to learn with any help from myself\]**. Not so coincidentally, I took up reading the comics in the morning paper; my love affair with the strip had begun.
 
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/funny_pages-01.png"/>
-<p class="img-caption">One of my favorite Calvin &amp; Hobbes strips.</p>
+<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/thoughts/funny_pages-02.jpg"/>
+<p class="img-caption">It sure is.</p>
 
-The last strip of Calvin and Hobbes was published on December 31st, 1995 - six days after I received a few new Calvin and Hobbes collections for Christmas: 'Homicidal, Physco Jungle Cat', 'Revenge of the Baby-Sat', and 'The Essential Calvin and Hobbes'. I was just months into our relationship and Bill Watterson had cut it short, blimey! I remember reading that last strip, unofficially titled 'It's a Magical World', and getting watery (I was a sap back then, too).
+The last strip of Calvin and Hobbes was published on December _thirty-first_, _1995_ - six days after I received a few new Calvin and Hobbes collections for Christmas: 'Homicidal, Physco Jungle Cat', 'Revenge of the Baby-Sat', and 'The Essential Calvin and Hobbes'. I was just months into our relationship and Bill Watterson had cut it short, blimey! I remember reading that last strip, unofficially titled 'It's a Magical World', and getting watery (I was a sap back then, too).
 
 As I read my way through all the collections over the course of the next few years, I also read and re-read every Foreword and bit of information Mr. Watterson had to share, thus giving me and the like insight into his mind and actions. I also found myself taking up other comic collections: The Far Side and Foxtrot were the the only ones which still remain in my Rob Gordon 'Top Five' list.
 

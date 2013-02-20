@@ -5,7 +5,7 @@ status: wip
 category: thoughts
 subcategory: blog
 back: thoughts.html
-title: civil disobedience.
+title: uncivil disobedience.
 quote: An American in America.
 ---
 
@@ -195,3 +195,6 @@ When someone _really_ starts to get involved in computers, they find themselves 
 
 `Yes, I am a criminal. My crime is that of curiosity. My crime is that of judging people by what they say and think, not what they look like. My crime is that of outsmarting you, something that you will never forgive me for.
 `
+
+<h2>[notes]</h2>
+Taxes. 
