@@ -12,40 +12,51 @@ Last year, I made a good deal of money; `my bank account did not seem to notice`
 
 <h2>[history]</h2>
 
-I grew up in a middle-class family with _two_ working parents. I went to work at _fifteen_, taking only a paid year off **\[glorious unemployment\]**. Technically, I have been part of the workforce now for _12_ years, and all of which `I lived paycheck to paycheck`. Well, mostly. What I mean by this is that my ambitions 
+I grew up in a middle-class family with _two_ working parents. I went to work at _fifteen_, taking only a paid year off **\[glorious unemployment\]**. Technically, I have been part of the workforce now for _12_ years. and `I have lived paycheck to paycheck` for nearly all of them. What I mean by this is that my ambitions and interests are costly - I'm fully aware they will never be completed. I'm a tinkerer with extravagant projects and a _finite_ supply of money. I dislike borders - especially monetary ones, and will frequently spend the money failing to accomplish a project than pay a bill on time. _I have the worst credit score in history_, but this is mostly because of my refusal to pay parking tickets.
 
-My parents, with their Chicago ..., called it being `Nigger Rich`. 
+I don't think it irresponsible - some parts of the system work, some I work around. 
 
 <h2>[questions to my answers]</h2>
 
-I do not have _normal_ aspirations; I'm a tinkerer with extravagant projects and a finite supply of money. I dislike borders - especially monetary ones. _I have the worst credit score in history_. 
-
-- How much money did I withdraw from ATMs? **\[do I remember what I spent it on?\]**
-- How much money did I spend on the cabin?
-- How much money did I spend on the Jeep?
-- How much money did I spend on gas? 
-- How much money did I spend on food?
+- How much money did I spend on... the [Walden Ranch](/projects.html)?
+- How much money did I spend on... the Jeep?
+- How much money did I spend on... gas? monthly, weekly
+- How much money did I spend on... food? monthly, weekly
+- How much money did I spend on... dining out? monthly, weekly
+- How much money did I spend on... alcohol? monthly, weekly
+- How much money did I spend on... travel? 
+- How much money did I spend on... cell phone services?
+- How much money did I spend on... overdraft fees?
+- How much money did I withdraw from ATMs? 
+- How many deposits from checks?
+- How many other deposits?
+- Do I remember what I spent the cash on?
+- Was there a location pattern to where I pulled cash from?
 - What did I purchase that could be expensed?
-- What shows up as a PayPal transaction, and what were they?
-- How many overdrafts were there?
-- How much did I spend on cell phone services?
+- What shows up as a PayPal transactions, and what were they?
 - What was my average weekly spending?
-- How much did I spend on dining?
-- How much did I spend on booze?
-- How much did I spend on travel?
 - How much did I spend at local businesses compared with online realtors?
 - How much did I spend on take-out? **\[I don't eat fast food\]**
 
 <h2>[culling]</h2>
 
+After looking at the questions, I turned to `BASH` for simple analysis. I realize it would have been easy to do summations on columns with Excel / Google Spreadsheets, but Frankly **\[see what I did, there?\]** it would not have been as much fun.
+
 <div class="snippet">
-   <pre>
+   <pre class="terminal">
 #!/bin/bash
 
-# ,Posted Date,Description,Amount,Currency,Transaction Reference Number,FI Transaction Reference,Payee,Transaction Code,Server ID,Sic Code,Type,Credit/Debit,Origination Date,Available Date,Original Amount,Original Currency,
+# Search through .csv file for values.
+cherry_pick() {
+  
+  val=$2
+  pos=$1
 
-# helpers
+  grep ${val} moneyz.csv | cut -d, -f${pos}
 
+}
+
+# Count all items in array.
 count() {
   
   let num=0
@@ -59,6 +70,7 @@ count() {
 
 }
 
+# Sum all dollar items in array.
 sum() {
 
   let total=0
@@ -69,62 +81,122 @@ sum() {
     let total=total+$rounded
   done
 
-  #echo $total
-  
   local total=$total
   echo "$total"
 
 }
-
-# atm withdrawals where,when,amount
-
-VALUE="ATM Withdrawal"
-
-atm_withdrawal() {
-  
-  val=$2
-  pos=$1
-
-  grep ${val} moneyz.csv | cut -d, -f${pos}
-
-}
-
-where=`atm_withdrawal "3" $VALUE`
-when=`atm_withdrawal "2" $VALUE`
-amount=`atm_withdrawal "4" $VALUE`
-
-where=${where// /_}
-when=${when// /_}
-
-# transaction total
-transactions=$(count "$amount")
-echo "Total ATM Withdrawal transactions: $transactions"
-
-# how much went
-total=$(sum "$amount")
-echo "Total ATM Withdrawals: $ $total"
  </pre>
 </div>
 
 After removing `six` lines of white space **\[four from the top, and two from the bottom\]**, `three` lines for headers, my only checking account had a total of `1149` transactions to and from it. This _includes_ [PayPal](http://paypal.com), as I rarely have money in there, and most of the time it deducts from this checking account.
 
 <div class="snippet">
-   <pre>
+   <pre class="terminal">
 cat moneyz.csv | wc -l
 1149
   </pre>
+</div>
+
+<h2>[deposits]</h2>
+
+<div class="snippet">
+   <pre class="terminal">
+check_deposits() {
+
+  VALUE="ACH Deposit"
+
+  amount=`cherry_pick "11" $VALUE`
+
+  # Metrics.
+
+  transactions=$(count "$amount")
+  echo "Total $VALUE transactions: $transactions"
+
+  total=$(sum "$amount")
+  echo "Total $VALUEs: $ $total"
+
+}
+
+other_deposits() {
+
+  VALUE="Other Deposit"
+
+  amount=`cherry_pick "11" $VALUE`
+
+  # Metrics.
+
+  transactions=$(count "$amount")
+  echo "Total $VALUE transactions: $transactions"
+
+  total=$(sum "$amount")
+  echo "Total $VALUEs: $ $total"
+
+}
+
+cash_deposits() {
+
+  VALUE="Deposit"
+
+  amount=`cherry_pick "11" $VALUE`
+
+  # Metrics.
+
+  transactions=$(count "$amount")
+  echo "Total $VALUE transactions: $transactions"
+
+  total=$(sum "$amount")
+  echo "Total $VALUEs: $ $total"
+
+}
+
+check_deposits
+other_deposits
+cash_deposits
+ </pre>
 </div>
 
 <h2>[atms]</h2>
 
 Lately, I have been withdrawing money from ATMs to limit [miscellaneous](http://todo.com) expenditures. This has helped me keep track of my actual expenditures, as transactions nearly always show up many days later from smaller businesses, and I used to think I had all this money.
 
-1. Download webkit2png
+<div class="snippet">
+   <pre class="terminal">
+atm_withdrawals() {
 
-I was conversing with a female about [Pinterest](http://pinterest.com) and how/why she uses it, being that I didn't. Her answer was astoundingly simple: `It's easy to visualize and manage everything I'm interested in and want to remember; books, films, fashion, travel, etc.`. While the [demographic data](http://www.searchenginejournal.com/pinterestingly-enough-interesting-pinterest-stats/45328/) on _Pinterest_ is noticeably female, I think they're onto something - I haven't really visualized my bookmarks since I started storing them in the cloud on the [xmarks](http:)
+  VALUE="ATM Withdrawal"
 
-<h2>[how to]</h2>
-I didn't find any [Google Chrome](http://google.com/chrome) applications that existed for analyzing bookmarks, so I did it the old fashioned way: [Bash](http://bash.org). Luckily, the browser had some built-in exporting functions for bookmarks:
+  where=`cherry_pick "3" $VALUE`
+  when=`cherry_pick "2" $VALUE`
+  amount=`cherry_pick "4" $VALUE`
+
+  # Remove spaces in quote for proper iteration.
+  where=${where// /_}
+  when=${when// /_}
+
+  # Metrics.
+
+  transactions=$(count "$amount")
+  echo "Total $VALUE transactions: $transactions"
+
+  total=$(sum "$amount")
+  echo "Total $VALUEs: $ $total"
+
+}
+
+atm_withdrawals
+ </pre>
+</div>
+
+The totals are in. I took out quite a bit of cash from ATMS...where?
+
+<div class="snippet">
+   <pre class="terminal">
+./where_it_went.sh 
+Total ATM Withdrawal transactions: 66
+Total ATM Withdrawals: $ 9639
+ </pre>
+</div>
+
 
 <img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/tech/bookmarks-01.png"/>
 <p class="img-caption"></p>
