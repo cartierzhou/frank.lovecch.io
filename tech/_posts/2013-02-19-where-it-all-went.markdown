@@ -11,13 +11,11 @@ quote: A monetary evaluation of 2012.
 Last year, I made a good deal of money; `my bank account did not seem to notice`. While preparing to fill out my taxes **\[read - aggregating write-offs\]**, I was curious to see how I managed to spend it all, in order that I may [Do Better](/thoughts/2012-12-25-do-better). Using the nifty little export feature [TCF Bank](http://tcfexpress.com) provides, I was able to download a `.csv` record of all my transactions from `01/01/2012` to `12/31/2012`.
 
 <h2>[history]</h2>
-
 I grew up in a middle-class family with _two_ working parents. I went to work at _fifteen_, taking only a paid year off **\[glorious unemployment\]**. Technically, I have been part of the workforce now for _12_ years. and `I have lived paycheck to paycheck` for nearly all of them. What I mean by this is that my ambitions and interests are costly - I'm fully aware they will never be completed. I'm a tinkerer with extravagant projects and a _finite_ supply of money. I dislike borders - especially monetary ones, and will frequently spend the money failing to accomplish a project than pay a bill on time. _I have the worst credit score in history_, but this is mostly because of my refusal to pay parking tickets.
 
 I don't think it irresponsible - some parts of the system work, some I work around. 
 
 <h2>[questions to my answers]</h2>
-
 - How much money did I spend on... the [Walden Ranch](/projects.html)?
 - How much money did I spend on... the Jeep?
 - How much money did I spend on... gas? monthly, weekly
@@ -25,6 +23,7 @@ I don't think it irresponsible - some parts of the system work, some I work arou
 - How much money did I spend on... dining out? monthly, weekly
 - How much money did I spend on... alcohol? monthly, weekly
 - How much money did I spend on... travel? 
+- How much money did I spend on... coffee?
 - How much money did I spend on... cell phone services?
 - How much money did I spend on... overdraft fees?
 - How much money did I withdraw from ATMs? 
@@ -98,6 +97,7 @@ cat moneyz.csv | wc -l
 </div>
 
 <h2>[deposits]</h2>
+Text here.
 
 <div class="snippet">
    <pre class="terminal">
@@ -106,6 +106,7 @@ check_deposits() {
   VALUE="ACH Deposit"
 
   amount=`cherry_pick "11" $VALUE`
+  amount=${amount// /_}
 
   # Metrics.
 
@@ -122,6 +123,7 @@ other_deposits() {
   VALUE="Other Deposit"
 
   amount=`cherry_pick "11" $VALUE`
+  amount=${amount// /_}
 
   # Metrics.
 
@@ -138,6 +140,7 @@ cash_deposits() {
   VALUE="Deposit"
 
   amount=`cherry_pick "11" $VALUE`
+  amount=${amount// /_}
 
   # Metrics.
 
@@ -155,8 +158,15 @@ cash_deposits
  </pre>
 </div>
 
-<h2>[atms]</h2>
+<h2>[jeep]</h2>
+My dearest automobile has been around the block once or twice.
 
+GO CHRYSLER JEEP S
+QUADRATEC ESSENTIA
+NAPA STORE 3600006
+AUTOZONE #879
+
+<h2>[atms]</h2>
 Lately, I have been withdrawing money from ATMs to limit [miscellaneous](http://todo.com) expenditures. This has helped me keep track of my actual expenditures, as transactions nearly always show up many days later from smaller businesses, and I used to think I had all this money.
 
 <div class="snippet">
@@ -197,72 +207,123 @@ Total ATM Withdrawals: $ 9639
  </pre>
 </div>
 
+<h2>[budgeting]</h2>
+It took me _twenty-seven_ years, but I am finally making it a habit to budget logically. Before my analysis, I tried a tool called [BudgetSimple](http://budgetsimple.com) to build a chart, realized they were using [Highcharts](http://highcharts.com) in the background, then created my own visual.
 
-<img class="inline" src="http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/tech/bookmarks-01.png"/>
-<p class="img-caption"></p>
-
-Upon viewing the file, I noticed a tag I hadn't seen before at the very beginning of the document - `<!DOCTYPE NETSCAPE-Bookmark-file-1>` - so I did a little digging. The [Netscape Bookmark File Format](http://www.netstrider.com/tutorials/netscape/1.2/bookmarks/) from _nineteen ninety-six_; wow. 
-
-<div class="snippet">
-   <pre>
-cat bookmarks_9_25_12.html | grep DT | wc -l
-  </pre>
+<div class="snippet" id="budget-before" style="height: 500px;">
 </div>
 
-<div class="snippet">
-   <pre>
-#!/bin/bash
+<script>
+$(function () {
+  var chart;
+  $(document).ready(function () {
+    chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'budget-before',
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false
+      },
+      title: {
+        text: 'Budget (before)'
+      },
+      tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+        percentageDecimals: 1
+      },
+      plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+            enabled: true,
+            color: '#000000',
+            connectorColor: '#000000',
+          }
+        }
+      },
+      series: [{
+        type: 'pie',
+        data: [
+          ['cabin', 18.0],
+          ['rent<br/>electric<br/>parking', 16.0],
+          ['groceries', 12.0],
+          ['car payment', 9.0],
+          ['europe savings', 7.0],
+          ['entertainment', 7.0],
+          ['phone bill', 6.0],
+          ['misc.', 4.0],
+          ['student loans', 4.0],
+          ['business travel', 4.0],
+          ['gas', 4.0],
+          ['car insurance', 3.0],
+          ['savings', 2.0],
+          ['credit card payment', 2.0],
+          ['amazon / heroku', 1.0],
+          ['other', 1.0]
+        ]
+      }]
+    });
+  });
+});
+</script>
 
-for line in $(cat mylinks); do
-  echo "===== $line ====";  
-  resp=`curl "$line" -o /dev/null -sL -w "%{http_code}"`
-  echo "RESP: $resp"
-  if [ "$resp" == "200" ]; then
-    echo "$resp $line" >> good_links
-  else
-    echo "$resp $line" >> bad_links
-  fi
-  sleep 5
-done;
-  </pre>
+It was obvious from the data I should do X and X.
+
+<div class="snippet" id="budget-after" style="height: 500px;">
 </div>
 
-The `-o` option sends HTML output to a bitter, cold place and will never see the dark of terminal day again. Via '-w' We format the output of the response in such a way that only the [HTTP Response Code](http://www.x.com) is returned, appending that to either a `good` or `bad` file.
-
-<div class="snippet">
-   <pre>
-cat bad_links | wc -l
-  </pre>
-</div>
-
-_One-hundred seventy-eight_ **\[178\]** bad links in total.
-
-<div class="snippet">
-   <pre>
-cat good_links | wc -l
-  </pre>
-</div>
-
-_One-thousand seventy-eight_ good **\[1078\]** links in total.
-
-<div class="snippet">
-   <pre>
-cat bad_links | grep 000 | wc -l 34
-cat bad_links | grep 301 | wc -l 2
-cat bad_links | grep 400 | wc -l 1
-cat bad_links | grep 403 | wc -l 14
-cat bad_links | grep 404 | wc -l 117
-cat bad_links | grep 406 | wc -l 9
-cat bad_links | grep 410 | wc -l 3
-cat bad_links | grep 500 | wc -l 3
-  </pre>
-</div>
-
-paparazzi? 
-sed "s/200 //g" good_links > just_good_links
-
-<h2>[flat stats]</h2>
-amount?
-oldest?
-categories?
-bookmarks per year?
+<script>
+$(function () {
+  var chart;
+  $(document).ready(function () {
+    chart = new Highcharts.Chart({
+      chart: {
+        renderTo: 'budget-after',
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false
+      },
+      title: {
+        text: 'Budget (after)'
+      },
+      tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage}%</b>',
+        percentageDecimals: 1
+      },
+      plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+            enabled: true,
+            color: '#000000',
+            connectorColor: '#000000',
+          }
+        }
+      },
+      series: [{
+        type: 'pie',
+        data: [
+          ['cabin', 18.0],
+          ['rent<br/>electric<br/>parking', 16.0],
+          ['groceries', 12.0],
+          ['car payment', 9.0],
+          ['europe savings', 7.0],
+          ['entertainment', 7.0],
+          ['phone bill', 6.0],
+          ['misc.', 4.0],
+          ['student loans', 4.0],
+          ['business travel', 4.0],
+          ['gas', 4.0],
+          ['car insurance', 3.0],
+          ['savings', 2.0],
+          ['credit card payment', 2.0],
+          ['amazon / heroku', 1.0],
+          ['other', 1.0]
+        ]
+      }]
+    });
+  });
+});
+</script>

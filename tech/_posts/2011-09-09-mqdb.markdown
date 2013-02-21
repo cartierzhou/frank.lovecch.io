@@ -10,52 +10,510 @@ source: mqdb
 demo: http://franklovecchio-mqdb.herokuapp.com
 ---
 
-Lately (as in the past 6 months), I’ve had a lot of “oddball” ideas regarding pubsub protocols and what can be done with them.  Aside from this blog, I’m working on a Cassandra pubsub implementation using MQtt and websockets, as well as a basic Twilio Client demo that uses pubsub via VOIP/SMS (in case you were wondering, the platform we just introduced last week - m2m.io - already has this packaged up and authenticated!).  I’ve found the possibilites for any of the MQ protocols to be (nearly) limitless!  After all, isn’t real life much like MQ in terms of exchanges? (that was rhetorical…it is, bitches).
+Lately **\[as in the past _six_ months\]**, I've had a lot of _oddball_ ideas regarding pub-sub protocols and what can be done with them.  The possibilites for any of the message queuing protocols seem to be **\[nearly\]** limitless!  After all, isn't real life much like _MQ_ in terms of exchanges? **\[that was rhetorical...it is, bitches\]**
 
-<h2>Happenstance</h2>
-The idea for distributing databases with MQtt - from noSQL to SQL - came to me while drinking Jack Daniels and enjoying a late-summer sunset in San Luis Valley (wearing cowboy boots, no less).  I believe Netflix said it best, (and I’m paraphrasing here) 'different databases for different data'.  At my former employer, we used Cassandra, SimpleDB, and SQLite for various architectures and needs.  While we did have a connection between them, it was API based — I wanted more.  Then, I started playing around with Redis in my spare time.
+<h2>[happenstance]</h2>
+The idea for distributing databases with MQtt - from noSQL to SQL - came to me while drinking Jack Daniels and enjoying a late-summer sunset in San Luis Valley (wearing cowboy boots, no less).  I believe Netflix said it best, (and I’m paraphrasing here) 'different databases for different data.  At my former employer, we used Cassandra, SimpleDB, and SQLite for various architectures and needs.  While we did have a connection between them, it was API based — I wanted more.  Then, I started playing around with Redis in my spare time.
 
-<h2>Trials and Tribulations of the DB Kind</h2>
+<h2>[tribulations of the db kind]</h2>
 When I needed a one-off storage mechanism for a project on small EC2 instance, say a project like sabisushi.com, Redis started to become my go-to datastore (in a non-distributed environment) because of its weight (Cassandra is a bit heavy).  Somewhere in between experimenting Amazon introduced Elastic Cache, and it spawned my first failed idea: a client-side distributed app in Node.js which emulated Elastic Cache using the Redis PubSub implementation.  The main flaw?  One application (in a team of distributed applications, presumably) would always have to be online.  So, I took another stab at it…and ended up with this: mqdb (written in Java). Let’s go into detail…
 
-<h2>Cassandra as a Template</h2>
+<h2>[cassandra as a template]</h2>
 I thought to myself, “What if I follow a similar Cassandra distribution pattern and use MQtt to connect them?”.  MQtt, in terms of speed, is freaky fast — like Android MQtt client -> accelerometer -> 3G -> DB in realtime freaky fast, so I wasn’t concerned there (though I probably wouldn’t hit anywhere near the throughput of Redis’ capabilities?).  What I came up with is obviously much more basic in terms of how data is replicated, but the effect is somewhat the same: a distributed, replicated database from a simpler architecture (Redis was meant to be master/slave), and with no single point of failure (the m2m.io broker(s) are scaling + distributed themselves).  The final product consists of two separate applications; the first app stands in front of the Redis nodes. For the Redis connection, I used the Jedis Java client and abstracted the MQtt connection out (though not fully…yet).  The second app is a demo which would has code that would be implemented into whatever your needs are (say a distributed application of sorts).
 
-<h2>Tokening</h2>
+<h2>[tokening]</h2>
 I emulated a basic form of Cassandra tokening (I’m ignoring numeric key/set names), and it’s probably best explained like so: let’s say you have 6 Redis databases on 6 different EC2 boxes and those are going to be your “cluster” (each EC2 box is considered a node).  When you initially stand up the MQtt application in front of each node, you have a replication factor (RF) of 6 — each piece of data you write from your distributed app hits all 6 nodes.  Now, 6 might be over-doing it; maybe you want a specific portion of the written data to be stored on nodes 1, 2, and 5 (key or set names from a-m), and another to hit nodes 2, 4, and 6 (key or set names from n-z); this would give you a RF of 3…so to speak.  You could also split up the data in a more random fashion based on hash of key/set name and token the nodes based on hashes, but we’re keeping it simple (and the latter example is ideal).  When you want to tell a node to change the way it stores data, you simply publish on a specific m2m.io space (which are namespaces in MQtt terms) with a payload that relates to the new ranges (note: this does not make the Redis node fetch the data from other nodes that match its new range — wayyy to deep for this example!).  
 
-<h2>Setup</h2>
+<h2>[setup]</h2>
 I differentiated the m2m.io spaces for ease of understanding and use.  By default, each node subscribes on all stuff that relates to 'redis', and writes all data it receives.  The integrated application only subscribes on the space which the nodes return responses on (if they’ve been asked to fetch a key/set). 
 
-<div class="gist">
-   <script src="https://gist.github.com/1379857.js"> </script>
-</div>
+<div class="snippet">
+   <pre class="prettyprint linenums languague-java">
+package com.mqdb.shared;
+ 
+public class Constants {
+ 
+	/* Configure the private spaces: domain/stuff/thing */
+ 
+	/* The space in which the nodes subscribe on */
+	public static final String REDIS_SPACE = "com.2lemetry/redis/#";
+ 
+	/* The space in which the nodes write on if TOKEN matches JSON */
+	public static final String WRITE_SPACE = "com.2lemetry/redis/write";
+ 
+	/* The space in which the nodes read data on */
+	public static final String READ_SPACE = "com.2lemetry/redis/read";
+ 
+	/* The space in which the nodes publish on if they are asked to read data */
+	public static final String DATA_SPACE = "com.2lemetry/redis/data";
+ 
+	/* The space in which the nodes update configuration on */
+	public static final String CTRL_SPACE = "com.2lemetry/redis/ctrl";
+ 
+	/* m2m.io broker URL (dev) */
+	public static final String BROKER_URL = "&lt;brokerurl&gt;";
+	public static final String BROKER_PORT = "1883";
+ 
+	/* Fill in your credentials */
+	public static final String USERNAME = "&lt;username&gt;";
+	public static final String PASSWORD = "&lt;password&gt;";
+ 
+	/* Payload constants */
+	public static final String ACTION_TOKEN = "token";
+	public static final String ACTION_WRITE = "write";
+	public static final String ACTION_READ = "read";
+	public static final String TYPE_KEYVALUE = "keyvalue";
+	public static final String TYPE_SET = "set";
+ 
+	/* Redis constants */
+	public static final String RESERVED_KEY_NODE = "node";
+ 
+}
+   </pre>
+</div> 
 
 <h2>DAO to the Max</h2>
 While my example is using a Redis DAO, you could theoretically stand up clients in front of different databases and have a cross-database platform…think legacy + modern!  Very cool.
 
-<div class="gist">
-   <script src="https://gist.github.com/1379858.js"> </script>
-</div>
+<div class="snippet">
+   <pre class="prettyprint linenums languague-java">
+package com.mqdb.redis;
+ 
+import java.util.List;
+import java.util.Set;
+ 
+import org.apache.log4j.Logger;
+ 
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.JedisPoolConfig;
+ 
+public class DAO {
+ 
+	private Logger log = Logger.getLogger(DAO.class.getName());
+ 
+	JedisPool pool;
+ 
+	public DAO() {
+		pool = new JedisPool(new JedisPoolConfig(), "localhost");
+	}
+ 
+	/* {"action":"write","type":"keyvalue","key":"&lt;key&gt;","value":"&lt;value&gt;"} */
+	public void simpleWrite(String key, String value) {
+		log.info("Writing keyvalue");
+		
+		Jedis jedis = pool.getResource();
+		try {
+			jedis.set(key, value);
+			log.info("Write success");
+		} catch (Exception e) {
+			log.error("Error writing keyvalue: " + e.getLocalizedMessage());
+		} finally {
+			pool.returnResource(jedis);
+		}
+	}
+ 
+	/* {"action":"write","type":"set","set":"&lt;set&gt;","value":"&lt;value&gt;"} */
+	public void setWrite(String set, String value) {
+		log.info("Writing to set");
+		
+		Jedis jedis = pool.getResource();
+		try {
+			jedis.zadd(set, 0, value);
+			log.info("Write success");
+		} catch (Exception e) {
+			log.error("Error writing to set: " + e.getLocalizedMessage());
+		} finally {
+			pool.returnResource(jedis);
+		}
+	}
+ 
+	/* Not tested yet -- &lt;value&gt; would be an array */
+	/* {"action":"write","type":"set","set":"&lt;set&gt;","value":"&lt;value&gt;"} */
+	public void setWriteMultiple(String set, List&lt;String&gt; values) {
+		log.info("Writing multiple values to set");
+		
+		Jedis jedis = pool.getResource();
+		try {
+			for (String value : values) {
+				jedis.zadd(set, 0, value);
+			}
+			log.info("Write success");
+		} catch (Exception e) {
+			log.info("Error writing multiple values to set: "
+					+ e.getLocalizedMessage());
+		} finally {
+			pool.returnResource(jedis);
+		}
+	}
+ 
+	/* {"action":"read","type":"keyvalue","key":"&lt;key&gt;"} */
+	public String simpleRead(String key) {
+		log.info("Reading keyvalue");
+		
+		Jedis jedis = pool.getResource();
+		String value = null;
+		try {
+			value = jedis.get(key);
+			log.info("Read success");
+		} catch (Exception e) {
+			log.error("Error reading keyvalue: " + e.getLocalizedMessage());
+		} finally {
+			pool.returnResource(jedis);
+		}
+		return value;
+	}
+ 
+	/* {"action":"read","type":"set","set":"&lt;set&gt;"} */
+	public Set&lt;String&gt; setRead(String set) {
+		log.info("Reading set");
+		
+		Jedis jedis = pool.getResource();
+		Set&lt;String&gt; data = null;
+		try {
+			data = jedis.zrange(set, 0, -1);
+			log.info("Read success");
+		} catch (Exception e) {
+			log.error("Error reading set: " + e.getLocalizedMessage());
+		} finally {
+			pool.returnResource(jedis);
+		}
+		return data;
+	}
+}
+   </pre>
+</div> 
+
 
 <h2>Models</h2>
 Each MQtt payload is abstracted into a model for ease of use.  I have 3 models; 1 for data being written, 1 for management payloads (e.g. re-tokening node), and 1 for publishing data being read off the node.
 
-<div class="gist">
-   <script src="https://gist.github.com/1379859.js"> </script>
-</div>
+<div class="snippet">
+   <pre class="prettyprint linenums languague-java">
+package com.mqdb.redis;
+ 
+public class Payload {
+ 
+	private String action;
+	private String type;
+	private String key;
+	private String set;
+	private String value;
+ 
+	public String getAction() {
+		return action;
+	}
+ 
+	public void setAction(String action) {
+		this.action = action;
+	}
+ 
+	public String getType() {
+		return type;
+	}
+ 
+	public void setType(String type) {
+		this.type = type;
+	}  
+ 
+	public String getKey() {
+		return key;
+	}
+ 
+	public void setKey(String key) {
+		this.key = key;
+	}
+ 
+	public String getSet() {
+		return set;
+	}
+ 
+	public void setSet(String set) {
+		this.set = set;
+	}
+ 
+	public String getValue() {
+		return value;
+	}
+ 
+	public void setValue(String value) {
+		this.value = value;
+	}
+ 
+}
+   </pre>
+</div> 
 
-<div class="gist">
-   <script src="https://gist.github.com/1379860.js"> </script>
-</div>
 
-<div class="gist">
-   <script src="https://gist.github.com/1379862.js"> </script>
-</div>
+<div class="snippet">
+   <pre class="prettyprint linenums languague-java">
+package com.mqdb.redis;
+ 
+public class PayloadCtrl {
+ 
+	private String action;
+	private String target;
+	private String begin_range;
+	private String end_range;
+ 
+	public String getAction() {
+		return action;
+	}
+ 
+	public void setAction(String action) {
+		this.action = action;
+	}
+ 
+	public String getTarget() {
+		return target;
+	}
+ 
+	public void setTarget(String target) {
+		this.target = target;
+	}
+ 
+	public String getBegin_range() {
+		return begin_range;
+	}
+ 
+	public void setBegin_range(String begin_range) {
+		this.begin_range = begin_range;
+	}
+ 
+	public String getEnd_range() {
+		return end_range;
+	}
+ 
+	public void setEnd_range(String end_range) {
+		this.end_range = end_range;
+	}
+ 
+}
+   </pre>
+</div> 
+
+<div class="snippet">
+   <pre class="prettyprint linenums languague-java">
+package com.mqdb.redis;
+ 
+import java.util.Set;
+ 
+public class PayloadData {
+ 
+	private String key;
+	private String set;
+	private String value;
+	private Set&lt;String&gt; values;
+ 
+	public String getKeyvalue() {
+		return key;
+	}
+ 
+	public void setKeyvalue(String key) {
+		this.key = key;
+	}
+ 
+	public String getSet() {
+		return set;
+	}
+ 
+	public void setSet(String set) {
+		this.set = set;
+	}
+ 
+	public String getValue() {
+		return value;
+	}
+ 
+	public void setValue(String value) {
+		this.value = value;
+	}
+ 
+	public Set&lt;String&gt; getValues() {
+		return values;
+	}
+ 
+	public void setValues(Set&lt;String&gt; values) {
+		this.values = values;
+	}
+ 
+}
+   </pre>
+</div> 
+
 
 <h2>MQDB, Redis Appplication</h2>
 We’ve arrived at the application which stands in front of the Redis DB; it handles all the MQtt connections, payload management, DAOs, etc (the MQtt class needs to be abstracted for use, still — it currently just shows the methods I used).
  
-<div class="gist">
-   <script src="https://gist.github.com/1381688.js"> </script>
-</div>
+<div class="snippet">
+   <pre class="prettyprint linenums languague-java">
+package com.mqdb.application;
+ 
+import org.apache.log4j.Logger;
+ 
+import com.google.gson.Gson;
+import com.mqdb.redis.Payload;
+import com.mqdb.redis.PayloadCtrl;
+import com.mqdb.shared.Constants;
+import com.mqdb.shared.MQtt;
+ 
+/**
+ * This class is a demo application which uses the m2m.io platform for
+ * distributed reads/writes to a Redis cluster on EC2 via Java clients stood-up
+ * in front of each Redis node. This would typically be incorporated into an API
+ * or distributed application.
+ * 
+ * @author franklovecchio
+ * 
+ */
+public class IntegrationApplication extends MQtt {
+ 
+	private Logger log = Logger.getLogger(IntegrationApplication.class
+			.getName());
+ 
+	public IntegrationApplication(String app) {
+		super.connect(app);
+ 
+		/*
+		 * The spaces in which we are subscribing on (if a node responds with a
+		 * read is the only response at the moment)
+		 */
+		String[] topics = { Constants.DATA_SPACE };
+ 
+		int[] levels = { 1 };
+ 
+		try {
+			super.getMqtt().subscribe(topics, levels);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+ 
+		/* Run the demo method */
+		demo();
+	}
+ 
+	/**
+	 * When a write/read arrives, we assume it was us asking for data
+	 */
+	@Override
+	public void publishArrived(String arg0, byte[] arg1, int arg2, boolean arg3)
+			throws Exception {
+		String payloadData = new String(arg1);
+ 
+		log.info("Received a read response: " + payloadData);
+	}
+ 
+	/**
+	 * An example call to re-token a node
+	 */
+	public void reToken(String target, String beginRange, String endRange) {
+		/* Create JSON object */
+		PayloadCtrl payloadCtrl = new PayloadCtrl();
+		payloadCtrl.setAction(Constants.ACTION_TOKEN);
+		payloadCtrl.setTarget(target);
+		payloadCtrl.setBegin_range(beginRange);
+		payloadCtrl.setEnd_range(endRange);
+ 
+		/* Publish data for DB nodes */
+		try {
+			publish(Constants.CTRL_SPACE, new Gson().toJson(payloadCtrl)
+					.getBytes(), 0, false);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+ 
+	/**
+	 * An example which writes a key/value pair:
+	 * {"action":"write","type":"keyvalue","key":"key","value":"value"}
+	 */
+	public void writeSimpleData(String key, String value) {
+		/* Create JSON object */
+		Payload payload = new Payload();
+		payload.setAction(Constants.ACTION_WRITE);
+		payload.setType(Constants.TYPE_KEYVALUE);
+		payload.setKey(key);
+		payload.setValue(value);
+ 
+		/* Publish data for DB nodes */
+		try {
+			publish(Constants.WRITE_SPACE, new Gson().toJson(payload)
+					.getBytes(), 0, false);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+ 
+	/**
+	 * An example method which reads a key/value pair:
+	 * {"action":"read","type":"keyvalue","key":"key"}
+	 */
+	public void readSimpleData(String key) {
+		/* Create JSON object */
+		Payload payload = new Payload();
+		payload.setAction(Constants.ACTION_READ);
+		payload.setType(Constants.TYPE_KEYVALUE);
+		payload.setKey(key);
+ 
+		/* Publish data for DB nodes */
+		try {
+			publish(Constants.READ_SPACE,
+					new Gson().toJson(payload).getBytes(), 0, false);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+ 
+	/**
+	 * DEMO METHOD -- 1) re-token node-1 2) write to node-1 3) read from node-1
+	 */
+	public void demo() {
+		log.info("Executing demo method");
+ 
+		/* Delay to wait for connected */
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+ 
+		log.info("Re-tokening node-1");
+		reToken("node-1", "a", "k");
+ 
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+ 
+		log.info("Writing to node-1");
+		writeSimpleData("key", "value");
+ 
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+ 
+		log.info("Reading from node-1");
+		readSimpleData("key");
+	}
+ 
+	/**
+	 * Connect to the m2m.io MQtt broker
+	 * 
+	 * @param args
+	 */
+	public static void main(String... args) {
+		/*
+		 * Grab the application number from the command line: java -jar
+		 * &lt;this.jar&gt; app-&lt;X&gt;
+		 */
+		String app = args[0];
+ 
+		/* Starts the MQtt connection to the m2m.io broker */
+		new IntegrationApplication(app);
+	}
+}
+   </pre>
+</div> 

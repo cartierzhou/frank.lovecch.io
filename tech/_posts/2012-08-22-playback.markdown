@@ -17,52 +17,52 @@ I've been doing a lot of front-end development these past couple years, in betwe
 Let's let history tell the story. _Two_ years ago, I would have written a PHP-based application in [CodeIgniter](http://codeigniter.com), and `heavily mixed Javascript and PHP`, using a library like [YUI](http://yuilibrary.com/) as the AJAX wrapper for building UI elements from data sets:
 
 <div class="snippet">
-   <pre>
-YAHOO.util.Event.addListener(window, &quot;load&quot;, function () {
+   <pre class="prettyprint linenums languague-javascript">
+YAHOO.util.Event.addListener(window, 'load', function () {
   YAHOO.example.XHR_JSON = function () {
     var myColumnDefs = [{
-      key: &quot;status&quot;,
-      label: &quot;Status&quot;,
+      key: 'status',
+      label: 'Status',
       sortable: true,
       resizeable: true
     }, {
-      key: &quot;name&quot;,
-      label: &quot;Name&quot;,
+      key: 'name',
+      label: 'Name',
       sortable: true,
       resizeable: true
     }];
-    var myDataSource = new YAHOO.util.DataSource(&quot;doThis.php?someParam=&lt;? echo $someParam; ?&gt;&amp;someOtherParam=&lt;? echo $someOtherParam; ?&gt;&quot;);
+    var myDataSource = new YAHOO.util.DataSource('doThis.php?someParam=&lt;? echo $someParam; ?&gt;&amp;someOtherParam=&lt;? echo $someOtherParam; ?&gt;');
     myDataSource.responseType = YAHOO.util.DataSource.TYPE_JSON;
-    myDataSource.connXhrMode = &quot;queueRequests&quot;;
+    myDataSource.connXhrMode = 'queueRequests';
     myDataSource.responseSchema = {
-      resultsList: &quot;ResultSet.Result&quot;,
-      fields: [&quot;status&quot;, &quot;name&quot;]
+      resultsList: 'ResultSet.Result',
+      fields: ['status', 'name']
     };
-    singleSelectDataTable = new YAHOO.widget.DataTable(&quot;single&quot;,
+    singleSelectDataTable = new YAHOO.widget.DataTable('single',
     myColumnDefs, myDataSource, {
-      selectionMode: &quot;single&quot;,
-      width: &quot;100%&quot;
+      selectionMode: 'single',
+      width: '100%'
     });
     singleSelectDataTable.on('initEvent', function () {
       YAHOO.util.Dom.setStyle(singleSelectDataTable.getTableEl(), 'width', '100%');
     });
     // Subscribe to events for row selection
-    singleSelectDataTable.subscribe(&quot;rowMouseoverEvent&quot;, singleSelectDataTable.onEventHighlightRow);
-    singleSelectDataTable.subscribe(&quot;rowMouseoutEvent&quot;, singleSelectDataTable.onEventUnhighlightRow);
-    singleSelectDataTable.subscribe(&quot;rowClickEvent&quot;, singleSelectDataTable.onEventSelectRow);
-    singleSelectDataTable.subscribe(&quot;rowSelectEvent&quot;, function (trEl, record) {
+    singleSelectDataTable.subscribe('rowMouseoverEvent', singleSelectDataTable.onEventHighlightRow);
+    singleSelectDataTable.subscribe('rowMouseoutEvent', singleSelectDataTable.onEventUnhighlightRow);
+    singleSelectDataTable.subscribe('rowClickEvent', singleSelectDataTable.onEventSelectRow);
+    singleSelectDataTable.subscribe('rowSelectEvent', function (trEl, record) {
       var status = trEl.record._oData.status;
       var name = trEl.record._oData.name;
-      ... this shit continues
   }();
-});	
-  </pre>
+});
+... this shit seriously continues
+   </pre>
 </div>
 
 _One_ year ago, I would have been writing a Java-based application in [Play! 1.2.4](http://www.playframework.org/documentation/1.2.4/home), and `echoing HTML inside Javascript`. I remember re-rendering the headers of `ul` blocks and having to create my own `repaint` methods **\[because of CSS issues\]** when building UI elements from data sets:
 
 <div class="snippet">
-   <pre>
+   <pre class="prettyprint linenums languague-javascript">
 function HTMLCreator() {
   this.createDivTableHeader = function () {
     var html = '&lt;li class=&quot;ticket-header&quot;&gt;';
@@ -78,9 +78,9 @@ function HTMLCreator() {
     html += '&lt;/li&gt;';
     return html;
   };
-  ... this shit continues
-}
-  </pre>
+}  
+... this shit continues
+   </pre>
 </div>
 
 It makes me want to cry/pout when looking back. Building sustainable, reusable features like that took forever. I didn't know any better, and the learning curve of the shiny new frameworks like [Backbone.js](http://backbonejs.org) was rather steep; especially when you wanted to throw in learning _true_ _CoffeeScript_ at the same time **\[because it just seemed like the thing to do\]**.
@@ -121,15 +121,15 @@ In order to run the application, you'll need to download _Play!_, have Java inst
 
 <div class="snippet">
    <pre class="terminal">
-Franks-MacBook-Pro:Desktop franklovecchio$ git clone https://github.com/franklovecchio/playback.git
+git clone https://github.com/franklovecchio/playback.git
 Cloning into playback...
 remote: Counting objects: 151, done.
 remote: Compressing objects: 100% (113/113), done.
 remote: Total 151 (delta 38), reused 139 (delta 29)
 Receiving objects: 100% (151/151), 146.67 KiB | 96 KiB/s, done.
 Resolving deltas: 100% (38/38), done.
-Franks-MacBook-Pro:Desktop franklovecchio$ cd playback
-Franks-MacBook-Pro:playback franklovecchio$ sudo play run
+cd playback
+sudo play run
   </pre>
 </div>
 
@@ -215,8 +215,7 @@ Our main application template is located at `/app/views/app.scala.html`. It is s
          &quot;app/app.js&quot; // Start the app here
       )
    )
-}
-   </pre>
+}  </pre>
 </div>
 
 It's pretty self-explanatory, and everything at bottom of the _List_ is dependent on the files described above it. _Pages_ are displayed in blocks, and are an agnostic concept that came from developing these applications. A _Page_ is simply an _Eclipse_ package and has _four_ class files associated with it **\[UI isn't always used\]**.
@@ -313,7 +312,7 @@ content: html body
 I may have overdone it a bit, but after reading through various blogs and [StackOverflow](http://stackoverflow.com) rants, I decided that the ability to know what's in a global namespace at any given time could be useful, even if they're a bit long in this case **\[App.Pages.Views.Action1 could easily be App.P.V.A1\]**. All class files are scoped separately than their instantiated counterparts - I'm not sure if this is good practice or not, but it works. Nothing is ever set in `window` except for `App`, `Portal`, and `Helpers`:
 
 <div class="snippet">
-   <pre>
+   <pre class="prettyprint linenums languague-coffeescript">
 # Holds the Marionette application.
 window.Portal = { } 
 
@@ -379,7 +378,7 @@ In `/app/assets/javascripts/app/app.coffee`, where the application is started fr
 **Note**: using some Googled trickery, routes are not case sensitive!
 
 <div class="snippet">
-   <pre>
+   <pre class="prettyprint linenums languague-coffeescript">
 ROUTES =
   'action1/:page': 'standardRouter'
   'action2/:page': 'standardRouter'
@@ -413,7 +412,7 @@ I think the best way to follow the _Page_ process is to show modifications neces
 The entire _Backbone_ application instantiation can be summed up by _42_ lines of _CoffeeScript_:
 
 <div class="snippet">
-   <pre>
+   <pre class="prettyprint linenums languague-coffeescript">
 ROUTES =
   'action1/:page': 'standardRouter'
   'action2/:page': 'standardRouter'
@@ -476,7 +475,7 @@ To create a third page in this app, we'll call it `Action3`, we'd start off by a
 In order to simplify pages, I'm using the `eval()` function to instantiate _Page_ classes from a single defined route object inside `/app/assets/javscripts/app/app.coffee` **\[view the source of the Routes class, it's pretty cool\]**. We need a reference to our new route, now:
 
 <div class="snippet">
-   <pre>
+   <pre class="prettyprint linenums languague-coffeescript">
 ROUTES =
   'action1/:page': 'standardRouter' 
   'action2/:page': 'standardRouter'
@@ -542,25 +541,25 @@ In order for the application to know about this _Scala_ template, we need to ref
    &lt;script src=&quot;/assets/_Javascripts_/@jsFile&quot;&gt;&lt;/script&gt;
 }
    </pre>
-</div>
+</div> 
 
 <h2>[views]</h2>
 All pages are defined as _Marionette Layouts_, as it makes it easy to add new `Marionette Regions`, which typically hold `Collections`, `Models`, or even nested `Layouts`. A simple example creates a single, swappable content region:
 
 <div class="snippet">
-   <pre>
+   <pre class="prettyprint linenums languague-coffeescript">
 class App.Views.Action3 extends Backbone.Marionette.Layout
 
   template: '#template-action3'
   regions:
     content: '#region-content'
 
-  @trace close: () -&amp;amp;gt;
+  @trace close: () ->
     
     @remove()
     @unbind()
-    </pre>
-</div>   
+   </pre>
+</div>  
 
 If you wanted to add a button-click to this _View_, you would first modify the _Scala_ template, noting that we add a `do-` prefix to the DOM ID, so as to note the _View_ encapsulates it. It's easy to miss what's bound and what's not once your application gets bigger, and this seems to help:
 
@@ -585,13 +584,13 @@ If you wanted to add a button-click to this _View_, you would first modify the _
    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/script&gt;
-    </pre>
+   </pre>
 </div> 
 
 That _View_ event needs to be referenced in the _Javascript_ next, so the first file to be modified is `/app/assets/javscripts/pages/action3/view.coffee`:
 
 <div class="snippet">
-   <pre>
+   <pre class="prettyprint linenums languague-coffeescript">
 class App.Views.Action3 extends Backbone.Marionette.Layout
 
   template: '#template-action3'
@@ -605,11 +604,11 @@ class App.Views.Action3 extends Backbone.Marionette.Layout
 
     App.Pages.Events.Action3.doSomething()
 
-  @trace close: () -&amp;gt;
+  @trace close: () ->
     
     @remove()
     @unbind()
-    </pre>
+   </pre>
 </div> 
 
 The `doSomething` method references a method of the same name in the _Events_ class related to the page; `it's a good idea to keep all logic inside the Events classes of Pages`.
@@ -628,27 +627,27 @@ In the code, this boils down to:
 1. `renderPage1` renders the _Layout_, and could swap in requested data.
 
 <div class="snippet">
-   <pre>
+   <pre class="prettyprint linenums languague-coffeescript">
 class App.Events.Action3 extends Backbone.Model
   
-  @trace initialize: () -&gt;
+  @trace initialize: () ->
       
   # Any checks that need to be done to show page.
-  @trace continueToLoad: () -&gt;
+  @trace continueToLoad: ()->
   
     return true 
   
   # Render the page.
-  @trace doBeforeLayouts: () -&gt;
+  @trace doBeforeLayouts: () ->
 
     App.Pages.State.Action3.setLayout new App.Views.Action1()
     App.Global.State.getContentRegion().show App.Pages.State.Action3.getLayout()
 
-  @trace renderPage1: () -&gt;
+  @trace renderPage1: () ->
   
     # Add data if you wish.
     
-  @trace router: (page) -&gt;
+  @trace router: (page) ->
 
     if !@continueToLoad()
       return
@@ -662,49 +661,49 @@ class App.Events.Action3 extends Backbone.Model
         
   # Non-render methods
   
-  @trace doSomething: (event) -&gt;    
+  @trace doSomething: (event) ->
 
     App.Pages.UI.Action3.showSomeAlert()
-    </pre>
+   </pre>
 </div> 
 
 <h2>[ui]</h2>
 Anytime I've used _jQuery_ to manipulate elements on a large scale, `it got messy really fast`. The best way I could think to keep this in check was to move all references of _jQuery_ manipulation to a separate helper. Because it's so prevalent, it just made sense to package this `UI` class with all _Pages_. In the constructor, single references are made to the elements being manipulated - `this works really well for managing complicated shit`:
 
 <div class="snippet">
-   <pre>
+   <pre class="prettyprint linenums languague-coffeescript">
 class App.UI.Action3
   
-  constructor: () -&gt;
+  constructor: () ->
     
     @someAlert ='div#some_alert'
 
-  @trace showSomealert: () -&gt;
+  @trace showSomealert: () ->
     
     $(@someAlert).slideDown()
-    </pre>
-</div>
+   </pre>
+</div> 
    
 <h2>[state]</h2>
 Managing global variables has always been a pain in the ass in _Javascript_, which is probably why I went so namespace crazy above. `Every Page` has a _State_ class which holds, at the very least, its _Layout_ reference. Every time the _Backbone Router_ is called and the _Page_ is rendered, the globals are cleared. In it's most basic form:
 
 <div class="snippet">
-   <pre>
+   <pre class="prettyprint linenums languague-coffeescript">
 class App.State.Action3 extends Backbone.Model
   
-  @trace initialize: () -&gt;
+  @trace initialize: () ->
     
     # Set
     App.Data.Pages.Action3 = { }
   
-  @trace setLayout: (layout) -&gt;
+  @trace setLayout: (layout) ->
 
     App.Data.Pages.Action3.layout = layout
   
-  @trace getLayout: () -&gt;
+  @trace getLayout: () ->
   
     App.Data.Pages.Action3.layout  
-    </pre>
-</div>
+   </pre>
+</div> 
 
 That's all she wrote for now. I didn't go through the _Helper_ classes much, as the code for those is well-documented in the source...and mostly self-explanatory. I'll work on making this a more exhaustive tutorial. I hope this gives you an idea of how to structure your front-end applications in a more well-formed way! 
