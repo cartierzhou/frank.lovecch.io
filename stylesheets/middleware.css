@@ -119,3 +119,7 @@ code {
   line-height: 190%;
   border: none;
 }
+.not-ready-category {
+  color: gray; 
+  font-style: italic;
+}

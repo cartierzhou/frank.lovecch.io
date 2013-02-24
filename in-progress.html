@@ -27,29 +27,18 @@ back: index.html
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
-	                    {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+	                    {{ post.title }} <span class="not-ready-category">{{ post.category }}</span> <span>{{ post.date | date_to_string }}</span>
 	                 </div>
                   </a>
                </div>
             {% endif %}
          {% endfor %}
-         {% for post in site.categories.labs %}
+         {% for post in site.categories.multifariousness %}
             {% if post.status == 'not-ready' %}
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
-	                    {{ post.title }}<span>{{ post.date | date_to_string }}</span>
-	                 </div>
-                  </a>
-               </div>
-            {% endif %}
-         {% endfor %}
-         {% for post in site.categories.misc %}
-            {% if post.status == 'not-ready' %}
-               <div class="row-fluid">
-                  <a href="{{ post.url }}">
-                     <div class="well">
-	                    {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+	                    {{ post.title }} <span class="not-ready-category">{{ post.category }}</span> <span>{{ post.date | date_to_string }}</span>
 	                 </div>
                   </a>
                </div>
@@ -60,7 +49,7 @@ back: index.html
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
-	                    {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+	                    {{ post.title }} <span class="not-ready-category">{{ post.category }}</span> <span>{{ post.date | date_to_string }}</span>
 	                 </div>
                   </a>
                </div>
@@ -71,7 +60,7 @@ back: index.html
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
-	                    {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+	                    {{ post.title }} <span class="not-ready-category">{{ post.category }}</span> <span>{{ post.date | date_to_string }}</span>
 	                 </div>
                   </a>
                </div>
@@ -82,7 +71,7 @@ back: index.html
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
-	                    {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+	                    {{ post.title }} <span class="not-ready-category">{{ post.category }}</span> <span>{{ post.date | date_to_string }}</span>
 	                 </div>
                   </a>
                </div>
