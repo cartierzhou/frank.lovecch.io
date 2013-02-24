@@ -1,5 +1,5 @@
 ---
-layout: thoughts_post
+layout: post
 main: false
 status: not-ready
 category: thoughts

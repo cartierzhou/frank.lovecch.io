@@ -32,6 +32,13 @@ header.header-container {
     -khtml-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+  }
+  div.header-image:hover {
+     opacity: .95;
+     cursor: pointer;
+  }
+  h1.header-link:hover {
+    opacity: .88;
     cursor: pointer;
   }
   div.header-image-in-progress {
@@ -43,7 +50,10 @@ header.header-container {
     -khtml-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    cursor: pointer;
+  }
+  div.header-image-in-progress:hover {
+     opacity: .95;
+     cursor: pointer;
   }
     div.header-text {
       margin-right: 20px;

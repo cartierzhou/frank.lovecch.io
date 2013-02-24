@@ -15,28 +15,28 @@ back: index.html
                <p class="quote">"{{ post.quote }}"</p>
                <img class="project" src="/images/rodsandricers.png" />
                <div class="columns">
-	              <p>{{ post.content }}</p>
-	           </div>
+                  <p>{{ post.content }}</p>
+               </div>
                <p class="header-text-date">{{ post.date | date_to_string }}</p>
             {% endif %}
-	     {% endfor %}
-	     <img src="images/palm_tree.png" alt="" />
+         {% endfor %}
+         <img src="images/palm_tree.png" alt="" />
          <div class="spacer">
          </div>
       </div>
    </div>
    <div class="container-fluid">
-	  <div class="posts">
-		 <div class="post-count">
-	        <h2>{% for post in site.categories.rodsandricers %}{% if post.status == 'completed' or post.status == 'wip' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{{ post_count }}</h2>
-	     <div>
+      <div class="posts">
+         <div class="post-count">
+            <h2>{% for post in site.categories.rodsandricers %}{% if post.status == 'completed' or post.status == 'wip' %}{% capture post_count %}{{ post_count | plus: 1 }}{% endcapture %}{% endif %}{% endfor %}{{ post_count }}</h2>
+         <div>
          {% for post in site.categories.rodsandricers %}
             {% if post.status == 'completed' or post.status == 'wip' %}
                <div class="row-fluid">
                   <a href="{{ post.url }}">
                      <div class="well">
-	                    {{ post.title }}<span>{{ post.date | date_to_string }}</span>
-	                 </div>
+                        {{ post.title }}<span>{{ post.date | date_to_string }}</span>
+                     </div>
                   </a>
                </div>
             {% endif %}

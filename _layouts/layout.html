@@ -4,14 +4,16 @@
       {% include absolute_deps.textile %}
    </head>
    <body onload="prettyPrint()">
-	  {% include gcf.textile %}
+      {% include gcf.textile %}
       <header class="header-container">
-	     <a href="index.html">
-            <div class="header-mast">
-               <div class="header-logo">
-                  <h1>frank.lovecch.io</h1>
-               </div>
+         <div class="header-mast">
+            <div class="header-logo">
+               <a class="about" href="/about.html">
+                  <h1 class="header-link">frank.lovecch.io</h1>
+               </a>
             </div>
+         </div>
+         <a href="/index.html">
             <div class="header-image">
                <div class="header-text">
                   <p class="header-text-date">{{ page.subheader }}</p>
@@ -19,7 +21,9 @@
                </div>
             </div>
          </a>
-         <a href="{{ page.back }}"><h5 class="center cursor">[&larr;]</h5></a>
+         <a href="{{ page.back }}">
+            <h5 class="center cursor">[&larr;]</h5>
+         </a>
       </header>
       <div class="content-container">
          {{ content }}
