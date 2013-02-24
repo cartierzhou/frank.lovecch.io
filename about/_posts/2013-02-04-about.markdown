@@ -1,7 +1,0 @@
----
-main: about
-quote: Lloyd Dobler, eh?
-image: /images/rodsandricers.png
----
-
-_modern-day grifter, digital business empowerer, tinkerer, vintage auto enthusiast, api masherer, android developer, and at my roots: a self-taught lifehacker_

@@ -1,0 +1,10 @@
+---
+main: about
+quote: Lloyd Dobler, eh?
+---
+
+<h2>[one-hundred &amp; eight-four characters]</h2>
+`modern-day grifter`, digital business empowerer, tinkerer, vintage auto enthusiast, api masherer, existential nihilist, patriot to the cause - and at my roots: a self-taught lifehacker.
+
+<h2>[the palm tree]</h2>
+It is without a doubt you have been asking yourself, _what_ is _with_ the `palm tree` inisigia? All your questions will remain unanswered.

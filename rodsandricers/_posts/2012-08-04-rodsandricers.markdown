@@ -1,7 +1,6 @@
 ---
 main: rodsandricers
 quote: Han would be proud.
-image: /images/rodsandricers.png
 ---
 
 If you've never sat in an unrestored vintage automobile and `inhaled deeply that tinted must`, my heart pains for you.

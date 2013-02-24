@@ -1,27 +1,12 @@
-<!doctype html> 
 <html>
    <head>
-      {% include relative_deps.textile %}
+      {% include absolute_deps.textile %}
    </head>
    <body onload="prettyPrint()">
-      {% include gcf.textile %}
-      <div class="content-container">
-         <div class="project">
-            <div>
-               <div class="body">
-                  <p class="quote">"{{ page.quote }}"</p>
-                  <div class="meta">
-                  </div>
-                  <img class="project" src="{{ page.image }}" />
-                  <div class="columns">
-                     <p><span style="font-size: 40px;">&para;</span>{{ content }}</p>
-                  </div>
-                  <p class="header-text-date">{{ page.date | date: "%d %B %Y" }}</p>
-                  <img src="/images/palm_tree.png" alt="" />
-                  <div class="spacer">
-                  </div>
-               </div>
-            </div>
+      <div class="container">
+         {% include gcf.textile %}
+         <div class="content-container">
+            {{ content }}
          </div>
       </div>
       {% include footer.textile %}
