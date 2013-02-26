@@ -27,7 +27,6 @@ div.single-post-container {
     float: left;
     width: 31%;
     margin-left: 2%;
-    /*border: 1px solid rgb(255, 255, 255);*/
     color: #0b3a6e;
     text-decoration: none;
     line-height: 200%;
@@ -105,9 +104,14 @@ pre {
   word-wrap: normal;
   white-space: pre;
 }
+.terminal-header {
+  position: aboslute; 
+  padding-bottom: 10px; 
+  opacity: .85; 
+  color: gray;
+}
 pre.terminal {
-  background-image: url(/images/black_twill.png); 
-  background-repeat: repeat;
+  background: black;
   color: white;
   font-weight: normal;
   font-size: 14px;

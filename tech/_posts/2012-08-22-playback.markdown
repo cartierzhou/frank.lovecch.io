@@ -121,6 +121,7 @@ In order to run the application, you'll need to download _Play!_, have Java inst
 
 <div class="snippet">
    <pre class="terminal">
+<div class="terminal-header"><i>terminal</i></div>
 git clone https://github.com/franklovecchio/playback.git
 Cloning into playback...
 remote: Counting objects: 151, done.
