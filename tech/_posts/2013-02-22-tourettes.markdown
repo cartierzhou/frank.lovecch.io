@@ -18,6 +18,9 @@ There is something so deliriously enticing about using the command `say` for dev
 dir=`pwd`
 script=$dir/tourettes.sh
 echo "Adding script to: $script"
+
+# Create crontab if one doesn't exist
+crontab -e
  
 # Cron declaration -- */10 * * * * -- every 10
 add_cronjob() {
