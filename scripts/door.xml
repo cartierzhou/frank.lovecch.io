@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-	<Pause length="10"/>
-    <Play loop="10">/sounds/9.wav</Play>
+  <Play>http://www.dialabc.com/i/cache/dtmfgen/wavpcm8.300/9.wav</Play>
 </Response>
