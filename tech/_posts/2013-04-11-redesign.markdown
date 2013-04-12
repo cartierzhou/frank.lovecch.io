@@ -57,6 +57,8 @@ To push all my changes after Jekyll compiled the goods:
    <pre class="terminal">
 <div class="terminal-header"><i>terminal</i></div>
 s3cmd sync _site/ s3://frank.lovecch.io
-s3cmd setacl --acl-public s3://frank.lovecch.io --recursive
+s3cmd sync _site/ s3://frank.lovecch.io --delete-removed
+s3cmd setacl --acl-public s3://frank.lovecch.io/ --recursive
+s3cmd setacl --acl-public s3://franklovecchio/images/ --recursive
   </pre>
 </div>
