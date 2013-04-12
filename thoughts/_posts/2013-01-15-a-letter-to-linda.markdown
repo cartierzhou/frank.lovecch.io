@@ -12,7 +12,7 @@ quote: The heartless twit.
 When a friend and I moved into `2547 River Drive`, it was falling apart. We let some things slide because rent was _twelve-hundred_ dollars, and the location was cherry - I could walk to work downtown! Unfortunately, when we moved out, it wasn't in much better condition, and when I received word the lady managing the house wanted to renovate it and charge us for prior damanges **\[charging us twice our security deposit\]**, I wrote a letter with gusto. `In hindsight, I probably shouldn't have called her a twit`, but I felt taken advantage of.
 
 <div class="snippet">
-   <pre>
+   <pre class="text">
 Linda,
 
 I knew you were a twit the moment you assumed the microwave was melted. Any logical-minded, non-twit would have simply pulled the plastic wrap off to reveal a beautiful facade (it took me all of 2 seconds to realize this was the issue).

@@ -1,7 +1,7 @@
 ---
 layout: tech_post
 main: false
-status: complete
+status: wip
 category: tech
 back: tech.html
 title: redesign.
@@ -9,3 +9,54 @@ quote: Jekyll and I; advancing the slow-web movement.
 source: frank.lovecch.io
 ---
 
+I have _troves_ of digital data sitting on [S3](http://aws.amazon.com/s3/); even my first website exists there, nicely tucked away in a zip file for an occasional download and round of laughter.`It has taken me a lot longer than I would have initially expected` to filter through the many [domain names](/multifariousness/domains.html) I had acquired over the years. Each code base contained progressively better content and style, but it all remains to be _Fucking PHP_.
+
+photo.
+
+<h2>[on simplifying]</h2>
+_Fucking PHP_ is **not** the kind of PHP you write after a couple years of working with the language **\[and knowing some object-oriented principles\]**; it is the kind of code that contains content. This content can only be extrapolated through time, alcohol, and lots of copy-paste. `I lived to tell the tale`.
+
+The tech world had come along way between when I first started writing software and the end of my content-combing process; many new platforms existed to [bootstrap](http://twitter.github.io/bootstrap/) applications quickly and efficiently. I didn't really want/need a framework that required a server, so I decided on a blog engine called [Jekyll](https://github.com/mojombo/jekyll).
+
+<h2>[hosting]</h2>
+First, I hosted this site on [Github](http://github.io), then it moved to [Heroku](http://heroku.com), before making its final transition to [AWS](http://aws.amazon.com). [This tutorial](http://vvv.tobiassjosten.net/development/jekyll-blog-on-amazon-s3-and-cloudfront/) turned out to be a great tutorial on how to setup my current hosting status.
+
+<h2>[design]</h2>
+I do not fancy myself a "website designer"; I don't want to care about _Fucking Internet Explorer_ **\[which, yes, is in the same category as Fucking PHP\]** and I don't care if it doesn't work in anything but Chrome.
+
+`My company's CTO just told me we need to support more browsers than just Chrome. I put in my two weeks notice.`
+&mdash; Hipster Hacker (@hipsterhacker)
+
+I only had one idea in mind when putting together the site; `if I transferred it to paper, it would still feel like me.` I came to have _six_ major groupings of posts pretty simply; _three_ was too little, and any more than _six_ looked cluttered.
+
+<h2>[jekyll usage]</h2>
+
+More than occasionally, I type out thoughts in furious bursts...and something doesn't compile correctly. During these occurences, for sanity's sake, I run Jekyll like so:
+
+<div class="snippet">
+   <pre class="terminal">
+<div class="terminal-header"><i>terminal</i></div>
+jekyll --no-auto --server
+  </pre>
+</div>
+
+`I don't use that many Jekyll features, but that's really a feature of the platform in itself`; by hackers for hackers. So, here's how I use it:
+
+- Every post is a [markdown](http://m) file.
+
+I have _three_ types of `status` tags which define how the post is rendered:
+
+- `completed` The post shows up normally, with a standard header.
+- `wip` The post shows up, but with a construction header.
+- `not-ready` The post can be viewed under [In Progress](/in-progress.html), but is usually just garble. I know, the naming conventions is off. Oh well.
+
+
+To push all my changes after Jekyll compiled the goods:
+
+<div class="snippet">
+   <pre class="terminal">
+<div class="terminal-header"><i>terminal</i></div>
+s3cmd sync _site/ s3://frank.lovecch.io
+s3cmd setacl --acl-public s3://frank.lovecch.io --recursive
+  </pre>
+</div>

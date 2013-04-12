@@ -85,7 +85,7 @@ Most of the rights gauranteed to the citizens of this country have been stricken
 <p style="text-decoration: line-through;">Amendment I</p>
 
 <div class="newspaper_snippet">
-   <pre>
+   <pre class="text">
 Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.
   </pre>
 </div>
@@ -100,7 +100,7 @@ _Even_ the [motto](http://en.wikipedia.org/wiki/E_pluribus_unum) of country was 
 <p style="text-decoration: line-through;">Amendment IV</p>
 
 <div class="newspaper_snippet">
-   <pre>
+   <pre class="text">
 The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.
   </pre>
 </div>
@@ -110,7 +110,7 @@ In `2001`, [The Patriot Act](http://en.wikipedia.org/wiki/Patriot_Act) was intro
 <p style="text-decoration: line-through;">Amendment V</p>
 
 <div class="newspaper_snippet">
-   <pre>
+   <pre class="text">
 No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.
   </pre>
 </div>
@@ -120,7 +120,7 @@ In `2012`, amendments to [The National Defense Authorization Act](http://en.wiki
 <p style="text-decoration: line-through;">Amendment VI</p>
 
 <div class="newspaper_snippet">
-   <pre>
+   <pre class="text">
 In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the State and district wherein the crime shall have been committed, which district shall have been previously ascertained by law, and to be informed of the nature and cause of the accusation; to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor, and to have the Assistance of Counsel for his defence.
   </pre>
 </div>
@@ -130,7 +130,7 @@ In `2012`, amendments to [The National Defense Authorization Act](http://en.wiki
 <p style="text-decoration: line-through;">Amendment VII</p>
 
 <div class="newspaper_snippet">
-   <pre>
+   <pre class="text">
 In Suits at common law, where the value in controversy shall exceed twenty dollars, the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise re-examined in any Court of the United States, than according to the rules of the common law.
   </pre>
 </div>
@@ -142,7 +142,7 @@ In `2012`, amendments to [The National Defense Authorization Act](http://en.wiki
 [Some](http://www.lofgren.house.gov/images/stories/pdf/draft%20lofgren%20bill%20to%20exclude%20terms%20of%20service%20violations%20from%20cfaa%20%20wre%20fraud%20011513.pdf) might say computer crime punishments are a direct violation of this amendment.
 
 <div class="newspaper_snippet">
-   <pre>
+   <pre class="text">
 Excessive bail shall not be required, nor excessive fines imposed, nor cruel and unusual punishments inflicted.
   </pre>
 </div>
@@ -152,7 +152,7 @@ Excessive bail shall not be required, nor excessive fines imposed, nor cruel and
 Colorado Marijuana laws.
 
 <div class="newspaper_snippet">
-   <pre>
+   <pre class="text">
 The powers not delegated to the United States by the Constitution, nor prohibited by it to the States, are reserved to the States respectively, or to the people.
   </pre>
 </div>

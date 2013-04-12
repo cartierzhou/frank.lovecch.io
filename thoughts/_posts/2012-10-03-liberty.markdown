@@ -1,14 +1,3 @@
----
-layout: post
-main: false
-status: not-ready
-category: thoughts
-subcategory: blog
-back: thoughts.html
-title: An Office Divided.
-quote: Give me your tired, your poor, your huddled masses yearning to breathe free.
----
-
 The human condition is complicated - but understood - and yet, its mostly misconstrued by a myriad of sources. My small, [Mad-Men](http://madmen.com)-esque office space on the _ninth_ floor of the `Daniels & Fischer Tower` is no different; a tiny entity (BETTER WORD things in body...) comprised of the same triteness abundant in society **\[at least American\]**. 
 
 https://en.wikipedia.org/wiki/Turtles_all_the_way_down

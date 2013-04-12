@@ -24,7 +24,7 @@ header.header-container {
       cursor: pointer;
   }
   div.header-image {
-    background: url(../images/header.png) no-repeat;
+    background: url(http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/site/header.png) no-repeat;
     width: 960px;
     height: 300px;
     margin: 0 auto;
@@ -42,7 +42,7 @@ header.header-container {
     cursor: pointer;
   }
   div.header-image-in-progress {
-    background: url(../images/header_in_progress.jpg) no-repeat;
+    background: url(http://franklovecchio.s3.amazonaws.com/images/frank.lovecch.io/site/header_in_progress.jpg) no-repeat;
     width: 960px;
     height: 300px;
     margin: 0 auto;
@@ -66,3 +66,7 @@ header.header-container {
 	    letter-spacing: 1px;
 	    color: gray;
 	  }
+    .content-container .main {
+      width: 80%;
+      margin: 0 auto;
+    }

@@ -14,7 +14,7 @@ When I was in college, I posted on Craigslist. Nothing dirty, just a _boy seeks 
 I won't go into depth about the few dates I went on over the course of a year, but things ended up working out pretty well. Moral of the story? Write a good profile.
 
 <div class="snippet">
-   <pre>
+   <pre class="text">
 In 160 characters or less (stolen from my Twitter):
 modern-day grifter, digital business empowerer, tinkerer, vintage auto enthusiast, api masherer, android developer, and at my roots: a self-taught lifehacker.
 

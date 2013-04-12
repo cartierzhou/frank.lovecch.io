@@ -147,7 +147,7 @@ Using _Play!_'s Scala templates, we have the ability to manage our assets in one
 Our main application template is located at `/app/views/app.scala.html`. It is strictly a dependency management tool for passing resources to another template, `main.scala.html`, where we'll hold all our static resources. `By doing this we can define separate applications`, if we like, inside a single _Play!_ app, **\[think PROD, STAGING, and DEV\]**. There isn't a way to share client-side resources between _two_ separate _Play!_ apps like there is on the server-side **\[vis-a-vis [plugins](https://github.com/playframework/Play20/wiki/Modules)\]**, and creating separate apps without using separate `git branches` seemed to work well like this. The whole file is displayed below, and references every non third-party _Javascript_ we're using **\[typically everything we wrote\]**:
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 @()
 @main(
    css = List(),
@@ -224,7 +224,7 @@ It's pretty self-explanatory, and everything at bottom of the _List_ is dependen
 The `main.scala.html` template holds all references to the third-party libraries we are using to make the application browser compatible back to _Internet Explorer 7_; there's nothing like `building on the shoulders of giants`:
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 @(
    css: List[String], 
    headJs: List[String], 
@@ -488,7 +488,7 @@ ROUTES =
 Next, we need to add the template references. First, we'll create the new _Scala_ template as `/app/views/action3.scala.html` using standard _Bootstrap_ CSS. You'll note that each _Page_ can reference it's own container-type:
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 @()
 &lt;script type=&quot;text/template&quot; id=&quot;template-action3&quot;&gt;
 &lt;div class=&quot;container-fluid offset-from-top&quot;&gt;
@@ -510,7 +510,7 @@ Next, we need to add the template references. First, we'll create the new _Scala
 In order for the application to know about this _Scala_ template, we need to reference it where all _Pages_ are defined, in `/app/views/layout.scala.html`:
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 @(css: List[String], js: List[String])
 
 &lt;!-- Global Templates --&gt;
@@ -565,7 +565,7 @@ class App.Views.Action3 extends Backbone.Marionette.Layout
 If you wanted to add a button-click to this _View_, you would first modify the _Scala_ template, noting that we add a `do-` prefix to the DOM ID, so as to note the _View_ encapsulates it. It's easy to miss what's bound and what's not once your application gets bigger, and this seems to help:
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 @()
 &lt;script type=&quot;text/template&quot; id=&quot;template-action2&quot;&gt;
 &lt;!-- Bound:

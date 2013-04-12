@@ -12,7 +12,7 @@ quote: A patriot to only the cause.
 I was in sunny Salida, CO, and trapped on the back porch of a condo I couldn't get into. The location of the hidden key was not known to me, and I was waiting on a phone call. Since there was lots of time to kill, I jumped onto the neighbor's Wi-Fi connection. `Somewhere in between downloading films and pornography`, I felt it necessary to let _Peter Sunde_, one of [The Pirate Bay](http://thepiratebay.se)'s founders, know what his battles meant to me.  File sharing and theft is more than what the title describes - it's about the battle to keep the internet open, unrestricted, and free from the limitations the money-hungry corporate sector would like to impose. Looking back, I'm such a dork.
 
 <div class="snippet">
-   <pre>
+   <pre class="text">
 To the staff of the TPB Crew:
 
 From across the sea, I am sending a simple image you might enjoy. I have developed it for part of a tattoo to be inked in the near future. I am sure you have seen the portrait of American Marines raising the flag in Iwo Jima, as well as its mutually respected pirate rip-offs.

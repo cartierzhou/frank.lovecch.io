@@ -1,5 +1,5 @@
 div.project {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
 }
@@ -103,12 +103,14 @@ div.project {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-family: Georgia;
-    font-style: italic;
+  font-style: italic;
 	color: rgb(69, 54, 37);
 	font-weight: bold;
 	letter-spacing: 0.1em;
 	font-size: 1.25em;
 	text-align: center;
+  width: 70%;
+  margin: 0 auto;
   }
   div.project div.date {
     font-family: Georgia;

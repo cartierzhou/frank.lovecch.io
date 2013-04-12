@@ -13,7 +13,7 @@ source: pinmarks
 
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 cat ~/Library/Application\ Support/Google/Chrome/Profile\ 1/Bookmarks
   </pre>
 </div>
@@ -31,13 +31,13 @@ I didn't find any [Google Chrome](http://google.com/chrome) applications that ex
 Upon viewing the file, I noticed a tag I hadn't seen before at the very beginning of the document - `<!DOCTYPE NETSCAPE-Bookmark-file-1>` - so I did a little digging. The [Netscape Bookmark File Format](http://www.netstrider.com/tutorials/netscape/1.2/bookmarks/) from _nineteen ninety-six_; wow. 
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 cat bookmarks_9_25_12.html | grep DT | wc -l
   </pre>
 </div>
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 #!/bin/bash
 
 for line in $(cat mylinks); do
@@ -57,7 +57,7 @@ done;
 The `-o` option sends HTML output to a bitter, cold place and will never see the dark of terminal day again. Via '-w' We format the output of the response in such a way that only the [HTTP Response Code](http://www.x.com) is returned, appending that to either a `good` or `bad` file.
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 cat bad_links | wc -l
   </pre>
 </div>
@@ -65,7 +65,7 @@ cat bad_links | wc -l
 _One-hundred seventy-eight_ **\[178\]** bad links in total.
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 cat good_links | wc -l
   </pre>
 </div>
@@ -73,7 +73,7 @@ cat good_links | wc -l
 _One-thousand seventy-eight_ good **\[1078\]** links in total.
 
 <div class="snippet">
-   <pre>
+   <pre class="code">
 cat bad_links | grep 000 | wc -l 34
 cat bad_links | grep 301 | wc -l 2
 cat bad_links | grep 400 | wc -l 1
