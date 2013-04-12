@@ -9,6 +9,8 @@ title: uncivil disobedience.
 quote: An American in America.
 ---
 
+http://www.storyleak.com/are-you-living-in-fourth-amendment-exclusion-zone/
+
 I can accept I am but a [bag of meat, sitting on a rock in outer space](http://theoatmeal.com/comics/religion), and that there is [probably](http://en.wikipedia.org/wiki/Existential_nihilism) _nothing_ to this thing but that which we have created for ourselves. But, I _do_ consciously hope there is some semblance of magic in existance which we dinky humans are not privy to understanding - something other than [turtle upon turtle](http://en.wikipedia.org/wiki/Turtles_all_the_way_down), of course.
 
 In using the above as a foundation, I have _never_ found my morals to be compromised; logic, [gut](http://www.amazon.com/Blink-Power-Thinking-Without/dp/0316010669), and feelings have helped structure these more clearly than any religion could have. If I had to break this down into a mission statement:

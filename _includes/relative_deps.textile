@@ -1,3 +1,8 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta property="og:image" content="http://frank.lovecch.io/images/header.png" />
+<meta property="og:title" content="Modern-Day Grifter" />
+<meta property="og:description"content="A place to call my own."/>
 <title>modern-day grifter | frank.lovecch.io</title>
 <link href="../../../../stylesheets/bootstrap.css" rel="stylesheet" />
 <link href="../../../../stylesheets/prettify.css" rel="stylesheet" />

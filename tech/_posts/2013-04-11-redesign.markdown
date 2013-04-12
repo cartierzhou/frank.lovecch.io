@@ -1,0 +1,11 @@
+---
+layout: tech_post
+main: false
+status: complete
+category: tech
+back: tech.html
+title: redesign.
+quote: Jekyll and I; advancing the slow-web movement.
+source: frank.lovecch.io
+---
+
